@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-kanit: "Kanit", sans-serif;
+  --primary: #ae39a3;
+  --black-2: #000;
+  --white: #fff;
+}
+
+body {
+  font-family: var(--font-kanit);
+}
+
+.cursor1 {
+  position: fixed;
+  width: 8px;
+  height: 8px;
+  background-color: var(--primary);
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.25s ease;
+  z-index: 999;
+}
+
+.cursor2 {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--primary);
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: opacity, 0.3s ease;
+  z-index: 999;
+}
+
+.cursor1.hide,
+.cursor2.hide {
+  opacity: 0;
+}
+
+@layer base {
+  body {
+    @apply text-black;
+  }
+}
+
+@keyframes backgroundGradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+.bg-background-gradient {
+  background: linear-gradient(
+    80deg,
+    #feefff,
+    #f2deff,
+    #f0ebff,
+    #feeaff,
+    #fde1ff,
+    #ffe7ff
+  );
+  background-size: 400% 400%;
+  animation: backgroundGradient 6s ease infinite;
+}
+
+@keyframes slide-left {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-slide-left {
+  animation: slide-left calc(30s / 2) linear infinite;
+}
