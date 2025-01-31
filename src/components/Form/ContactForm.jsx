@@ -11,11 +11,17 @@ const ContactForm = () => {
     reset();
   };
 
+  const currentDate = new Date();
+  const currentYear = currentDate.getFullYear();
+  const currentMonth = String(currentDate.getMonth() + 1).padStart(2, "0");
+
+  const monthYear = `${currentYear}-${currentMonth}`;
+
   return (
-    <div className=" flex flex-col w-full shadow-lg h-full mr-36 ">
-      <div className="flex w-full ">
+    <div className="flex flex-col w-full shadow-lg h-full mr-36">
+      <div className="flex w-full">
         <button
-          className={`p-3 w-1/2 text-center text-violet  ${
+          className={`p-3 w-1/2 text-center text-violet ${
             activeTab === "calendly"
               ? "bg-white rounded-tr-lg rounded-tl-lg font-medium"
               : "bg-transparent font-light"
@@ -37,9 +43,9 @@ const ContactForm = () => {
       </div>
 
       {activeTab === "calendly" ? (
-        <div className="w-full h-[700px] bg-white ">
+        <div className="w-full h-[700px] bg-white">
           <InlineWidget
-            url="https://calendly.com/novexis-consulting/45min?preview_source=et_card&month=2025-01"
+            url={`https://calendly.com/novexis-consulting/45min?locale=es&preview_source=et_card&month=${monthYear}`}
             styles={{ height: "100%", width: "100%" }}
           />
         </div>
@@ -49,7 +55,7 @@ const ContactForm = () => {
             onSubmit={handleSubmit(onSubmit)}
             className="flex flex-col justify-between w-full h-[700px] p-4 bg-white"
           >
-            <div className="w-full  space-y-3">
+            <div className="w-full space-y-3">
               <input
                 type="text"
                 {...register("name", { required: true })}
@@ -72,7 +78,7 @@ const ContactForm = () => {
             <div className="flex pb-4 justify-center">
               <button
                 type="submit"
-                className=" w-[15rem] bg-pink-600 text-white py-4 rounded-lg"
+                className="w-[15rem] bg-pink-600 text-white py-4 rounded-lg"
               >
                 Enviar
               </button>

@@ -7,16 +7,16 @@ import carIcon from "../../../../../public/icons/carIcon.png";
 import ticketIcon from "../../../../../public/icons/ticket.png";
 import Button from "@/components/Button/Button";
 
-const RecamPage = () => {
+const SofoconPage = () => {
   return (
     <div className="py-36 px-20 bg-background-gradient min-h-screen">
       <div className="flex flex-col items-center gap-[1rem]">
         <p className="font-medium text-xs border rounded-[7.75rem] min-w-[8rem] py-1.5 px-4 leading-[20.8px] text-center">
-          Web App
+          Dashboard & Mobile App
         </p>
-        <h1 className="font-semibold text-xl leading-[52.8px]">RECam</h1>
+        <h1 className="font-semibold text-xl leading-[52.8px]">SOFOCON</h1>
         <p className="text-violet font-medium text-sm leading-[24px]">
-          Graba. Supervisa. Confía
+          Gestión eficiente de la empresa y seguimiento de las ventas
         </p>
       </div>
       <div className="bg-slate-400 flex justify-center items-center h-[35rem] mt-10 text-white">
@@ -58,11 +58,12 @@ const RecamPage = () => {
       </div>
       <div className="flex justify-center items-center py-20 px-32">
         <p className="italic text-sm leading-[34px] text-center text-textGray">
-          RECam. es una aplicación de escritorio y móvil que permite la
-          supervisión de exámenes en entornos remotos, otorgando a los docentes
-          la posibilidad monitorear en tiempo real la pantalla y cámara de sus
-          estudiantes durante el examen, garantizando una experiencia de
-          supervisión fluida y confiable.
+          La empresa recurrió a nosotros con la necesidad de un software para
+          organizar no solo el stock y el inventario de productos, sino también
+          monitorear las ventas por empleado, crear rutas personalizadas por
+          área, capturar todos los datos de los clientes, rastrear la ubicación
+          de los vendedores, así como seguir la ruta de los productos desde el
+          taller hasta las manos del cliente.
         </p>
       </div>
       <div className="flex  flex-col gap-3">
@@ -81,12 +82,12 @@ const RecamPage = () => {
             </p>
           </div>
           <div className="flex justify-end items-end bg-violet rounded-[10px] pt-10 w-[60%]">
-            <Image src={image1} alt="recam1" />
+            <Image src={image1} alt="sofocon1" />
           </div>
         </div>
         <div className="flex gap-8">
           <div className="flex justify-center items-end bg-violet rounded-[10px] pt-10 w-[60%]">
-            <Image src={image2} alt="recam1" />
+            <Image src={image2} alt="sofocon1" />
           </div>
           <div className=" bg-backgroundGray rounded-[10px] p-10 w-[40%]">
             <h3 className="font-medium text-violet text-lg leading-[52.8px]">
@@ -193,7 +194,7 @@ const RecamPage = () => {
       </div>
       <div className="flex rounded-[40px] border-[5px] border-violet px-10">
         <div className="w-1/2 flex flex-col justify-center">
-          <h3 className="font-semibold text-xl leading-[70.4px]">RECAM</h3>
+          <h3 className="font-semibold text-xl leading-[70.4px]">SOFOCON</h3>
           <p className="font-medium text-violet text-md leading-[35.2px]">
             La herramienta para el negocio del futuro
           </p>
@@ -211,4 +212,4 @@ const RecamPage = () => {
     </div>
   );
 };
-export default RecamPage;
+export default SofoconPage;

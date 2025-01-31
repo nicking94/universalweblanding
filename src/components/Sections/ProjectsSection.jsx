@@ -3,7 +3,7 @@ import Button from "../Button/Button";
 const ProjectCard = ({ title, subtitle, description, children }) => {
   return (
     <div className="flex gap-[64px] px-20 py-10 h-full">
-      <div className="flex flex-col gap-[12px] w-[25%]">
+      <div className="flex flex-col gap-[12px] w-[30%]">
         <p className="text-violet text-xs leading-[20.8px] font-medium">
           Nuestros trabajos
         </p>

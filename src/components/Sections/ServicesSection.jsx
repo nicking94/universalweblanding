@@ -5,8 +5,8 @@ const ServicesCard = ({
   title,
   description,
   children,
-  width = "w-[25%]",
-  width2 = "w-[75%]",
+  width = "w-[30%]",
+  width2 = "w-[70%]",
   bg = "bg-white",
 }) => {
   return (
