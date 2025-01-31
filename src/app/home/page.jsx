@@ -79,12 +79,12 @@ export default function HomePage() {
             </span>{" "}
             en software
           </h1>
-          <p className="px-4 text-xs md:text-sm font-light text-center">
+          <p className="px-4 text-xs md:text-sm font-light text-center mb-10">
             Somos una empresa especializada en{" "}
             <span className="font-medium">soluciones de software a medida</span>{" "}
             que impulsan la innovación y eficiencia en su negocio.
           </p>
-          <div className="bg-slate-200 flex justify-center items-center w-full bg-gray-200 h-[48rem]">
+          <div className="bg-slate-200 flex justify-center items-center w-full bg-gray-200 h-[41rem]">
             video
           </div>
         </div>
