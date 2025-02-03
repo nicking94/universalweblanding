@@ -66,12 +66,12 @@ export default function HomePage() {
   return (
     <div className="w-full h-full">
       <section
-        id="hero"
+        id="hero" 
         data-aos="fade"
         className="min-h-[100vh] pointer-events-auto"
       >
         <div className="pt-10 flex flex-col items-center text-center">
-          <h1 className="px-4 pt-10 text-lg md:text-xxl font-semibold">
+          <h1 className="px-4 pt-10 text-lg lg:text-xxl font-semibold">
             Convierte tu{" "}
             <span className="text-violet">
               {displayedText}
@@ -79,7 +79,7 @@ export default function HomePage() {
             </span>{" "}
             en software
           </h1>
-          <p className="px-4 text-xs md:text-sm font-light text-center mb-10">
+          <p className="px-4 text-xs lg:text-sm font-light text-center mb-10">
             Somos una empresa especializada en{" "}
             <span className="font-medium">soluciones de software a medida</span>{" "}
             que impulsan la innovación y eficiencia en su negocio.
@@ -90,7 +90,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <div className="fixed bottom-[5%] left-[80%] md:left-[96%] z-50">
+      <div className="fixed bottom-[5%] left-[80%] lg:left-[96%] z-50">
         <Image
           className="cursor-pointer hover:scale-105 transition-all duration-300"
           src={whatsappLogo}
@@ -103,7 +103,7 @@ export default function HomePage() {
       <section
         id="slider"
         data-aos="fade"
-        className="flex flex-col md:flex-row md:items-center bg-background-gradient "
+        className="flex flex-col lg:flex-row lg:items-center bg-background-gradient "
       >
         <Slider />
       </section>
@@ -117,11 +117,11 @@ export default function HomePage() {
       </section>
       <section id="tools" data-aos="fade-up">
         <div className="py-10">
-          <div className=" px-2 md:px-20">
-            <p className="text-violet text-xxs md:text-xs md:leading-[20.8px] font-medium">
+          <div className=" px-2 lg:px-20">
+            <p className="text-violet text-xxs lg:text-xs lg:leading-[20.8px] font-medium">
               Nuestras herramientas
             </p>
-            <h1 className="font-semibold text-lg md:text-xl md:leading-[70px]">
+            <h1 className="font-semibold text-lg lg:text-xl lg:leading-[70px]">
               Trabajamos con las mejores tecnologías del mercado:
             </h1>
           </div>
@@ -142,7 +142,7 @@ export default function HomePage() {
         id="services"
         data-aos="fade"
         data-aos-duration="3000"
-        className="bg-background-gradient flex flex-col md:flex-row md:items-center"
+        className="bg-background-gradient flex flex-col lg:flex-row lg:items-center"
       >
         <ContactSection
           width="w-[55%]"

@@ -4,14 +4,14 @@ import logo from "../../../public/images/logo.svg";
 
 const Footer = () => {
   return (
-    <footer className=" py-6 px-4 md:px-12 flex flex-col md:flex-row items-center justify-between">
+    <footer className=" py-6 px-4 lg:px-12 flex flex-col lg:flex-row items-center justify-between">
       <div className="text-lg font-bold">
         <Link href="/">
           <Image src={logo} alt="Logo" width={136} height={32} />
         </Link>
       </div>
 
-      <nav className="mb-4 md:mb-0">
+      <nav className="mb-4 lg:mb-0">
         <ul className="flex space-x-6">
           <li>
             <a href="#nosotros" className="hover:text-gray-400">

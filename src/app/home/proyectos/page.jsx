@@ -11,11 +11,11 @@ import Link from "next/link";
 
 const ProjectsPage = () => {
   return (
-    <div className="p-20 bg-background-gradient">
-      <h1 className="font-medium text-md leading-[35.2px] text-center mt-14">
+    <div className="p-2 md:p-20 bg-background-gradient">
+      <h1 className="font-medium text-md leading-[35.2px] text-center mt-28 md:mt-14">
         Nuestros Trabajos
       </h1>
-      <div className="grid grid-cols-2 gap-12 mt-12 ">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-12 ">
         <div className=" relative h-full rounded-[10px]">
           <Image src={hopImg} alt="tribe" className="w-full rounded-[10px]" />
           <div className="bg-gradient-to-r from-[#B750AD60] to-[#7CA3D160] absolute bottom-0 w-full backdrop-blur-sm text-white p-3 rounded-[10px] ">

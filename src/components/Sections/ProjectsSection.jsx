@@ -2,19 +2,19 @@ import Button from "../Button/Button";
 
 const ProjectCard = ({ title, subtitle, description, children }) => {
   return (
-    <div className="flex flex-col md:flex-row px-2 md:px-20 h-full">
-      <div className="flex md:w-[75%]">{children}</div>
-      <div className="flex flex-col py-10 md:gap-[12px] md:w-[30%]">
-        <p className="text-violet text-xxs md:text-xs leading-[20.8px] font-medium">
+    <div className="flex flex-col lg:flex-row px-2 lg:px-20 w-full h-full">
+      <div className="flex w-full lg:w-[75%]">{children}</div>
+      <div className="flex flex-col py-10 lg:gap-[12px] lg:w-[30%]">
+        <p className="text-violet text-xxs lg:text-xs leading-[20.8px] font-medium">
           Nuestros trabajos
         </p>
-        <h1 className="text-lg md:text-xxl font-semibold leading-[88px]">
+        <h1 className="text-lg lg:text-xxl font-semibold lg:leading-[88px]">
           {title}
         </h1>
-        <p className="font-light leading-[32px] text-sm md:text-md">
+        <p className="font-light lg:leading-[32px] text-sm lg:text-md">
           {subtitle}
         </p>
-        <p className="text-xxs md:text-sm font-light leading-[24px] mt-4">
+        <p className="text-xxs lg:text-sm font-light lg:leading-[24px] mt-4">
           {description}
         </p>
       </div>

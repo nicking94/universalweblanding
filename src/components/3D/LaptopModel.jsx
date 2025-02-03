@@ -16,7 +16,7 @@ const LaptopModel = () => {
       <button
         onClick={toggleOpen}
         className={`bg-violet text-white px-3 py-2 rounded absolute left-1/2 transform -translate-x-1/2 ${
-          isOpen ? "top-[43%] md:top-[22%]" : "top-[63%] md:top-[77%]"
+          isOpen ? "top-[43%] lg:top-[22%]" : "top-[63%] lg:top-[77%]"
         } transition-all duration-500 ease-in-out p-2 text-base cursor-pointer z-10`}
       >
         {isOpen ? "Cerrar" : "Click Aquí"}
