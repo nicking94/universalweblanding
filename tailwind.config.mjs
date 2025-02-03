@@ -16,7 +16,6 @@ export default {
         xl: "4rem",
         xxl: "5rem",
         xxxl: "18.676rem",
-        
       },
       colors: {
         textGray: "#A19E9E",

@@ -1,5 +1,4 @@
 import React, { useEffect, useState, useRef } from "react";
-import ClientsCard from "../Cards/ClientsCard";
 import ClientsSlider from "../Slider/ClientsSlider";
 
 const ClientsSection = ({
@@ -79,36 +78,45 @@ const ClientsSection = ({
   }, []);
 
   return (
-    <div ref={sectionRef} className="flex h-full">
-      <div className={`${bg} ${width} px-20`}>
-        <div className="space-y-8 -mt-24 ">
-          <div className="flex flex-col items-center">
-            <span className="text-violet text-xxxl font-semibold">{`+${clientCount}`}</span>
-            <p className="text-xxl leading-[58px] -mt-20 font-semibold">
+    <div
+      ref={sectionRef}
+      className="flex flex-col md:flex-row h-full  px-2 md:px-20"
+    >
+      <div className={`${bg} w-full md:${width} `}>
+        <div className=" flex flex-row md:flex-col space-y-8 -mt-24 space-x-8 md:space-x-0 justify-center md:justify-start ">
+          <div className="flex flex-col md:items-center justify-center md:justify-start py-10 md:py-0">
+            <span className="text-violet text-[8rem] md:text-xxxl font-semibold">{`+${clientCount}`}</span>
+            <p className="text-lg md:text-xxl leading-[58px] -mt-14 md:-mt-20 font-semibold text-center">
               Clientes
             </p>
           </div>
-          <div className="flex flex-col items-center">
-            <span className="text-violet text-[8.6rem] font-semibold">{`+${projectCount}`}</span>
-            <p className="text-lg leading-[58px] -mt-10 font-semibold">
-              Proyectos
-            </p>
-          </div>
-          <div className="flex flex-col items-center">
-            <span className="text-violet text-[8.6rem] font-semibold">
-              {thingCount}
-            </span>
-            <p className="text-lg leading-[58px] -mt-10 font-semibold">Cosas</p>
+          <div className="flex flex-col py-10 md:py-0">
+            <div className="flex flex-col items-center">
+              <span className="text-violet text-xl md:text-[8.6rem] font-semibold">{`+${projectCount}`}</span>
+              <p className="text-sm md:text-lg leading-[58px] -mt-10 font-semibold text-center">
+                Proyectos
+              </p>
+            </div>
+            <div className="flex flex-col items-center">
+              <span className="text-violet text-xl md:text-[8.6rem] font-semibold">
+                {thingCount}
+              </span>
+              <p className="text-sm md:text-lg leading-[58px] -mt-10 font-semibold text-center">
+                Cosas
+              </p>
+            </div>
           </div>
         </div>
       </div>
 
-      <div className={`${bg} flex flex-col ${width2} justify-center px-20`}>
-        <p className="text-violet text-xs leading-[20.8px] font-medium">
+      <div className={`${bg} flex flex-col w-full md:${width2} justify-center`}>
+        <p className="text-violet text-xxs md:text-xs md:leading-[20.8px] font-medium">
           {header}
         </p>
-        <h1 className="text-xl font-semibold leading-[70.4px]">{title}</h1>
-        <p className="text-sm font-light leading-[24px] mt-5 mb-10">
+        <h1 className="text-lg md:text-xl font-semibold md:leading-[70.4px]">
+          {title}
+        </h1>
+        <p className="text-xxs md:text-sm font-light md:leading-[24px] mt-5 mb-10">
           {description}
         </p>
         <div>

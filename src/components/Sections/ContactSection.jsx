@@ -7,17 +7,21 @@ const ContactSection = ({
   bg = "bg-white",
 }) => {
   return (
-    <div className="flex gap-[64px] h-full py-10">
+    <div className="flex flex-col md:flex-row md:gap-[64px] h-full py-10">
       <div
-        className={`${bg} flex flex-col ${width} justify-center px-20 py-10  `}
+        className={`${bg} flex flex-col w-full md:${width} justify-center px-2 md:px-20 md:py-10  `}
       >
-        <h1 className="text-xl font-semibold leading-[70.4px] ">{title}</h1>
-        <p className="text-sm font-light leading-[24px] mt-5 mb-10">
+        <h1 className="text-lg md:text-xl font-semibold md:leading-[70.4px]">
+          {title}
+        </h1>
+        <p className="text-xxs md:text-sm font-light md:leading-[24px] mt-5 mb-10">
           {description}
         </p>
       </div>
 
-      <div className={` flex justify-center items-center  ${width2}`}>
+      <div
+        className={` flex justify-center md:items-center w-full md:${width2}`}
+      >
         {children}
       </div>
     </div>

@@ -52,30 +52,8 @@ body {
   }
 }
 
-@keyframes backgroundGradient {
-  0% {
-    background-position: 0% 0%;
-  }
-  50% {
-    background-position: 100% 100%;
-  }
-  100% {
-    background-position: 0% 0%;
-  }
-}
-
 .bg-background-gradient {
-  background: linear-gradient(
-    80deg,
-    #feefff,
-    #f2deff,
-    #f0ebff,
-    #feeaff,
-    #fde1ff,
-    #ffe7ff
-  );
-  background-size: 400% 400%;
-  animation: backgroundGradient 6s ease infinite;
+  background-color: #FAF0F9;
 }
 
 @keyframes slide-left {
@@ -89,5 +67,6 @@ body {
 }
 
 .animate-slide-left {
-  animation: slide-left calc(30s / 2) linear infinite;
+  animation: slide-left calc(25s / 2) linear infinite;
 }
+

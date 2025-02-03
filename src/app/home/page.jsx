@@ -103,30 +103,25 @@ export default function HomePage() {
       <section
         id="slider"
         data-aos="fade"
-        className="flex items-center bg-background-gradient py-20 px-2"
+        className="flex flex-col md:flex-row md:items-center bg-background-gradient "
       >
         <Slider />
       </section>
 
       <section id="services" data-aos="fade" data-aos-duration="3000">
         <ServicesCard
-          width="w-[50%]"
-          width2="w-[50%]"
-          bg="bg-gray"
           header="Nuestros servicios"
           title="Tenemos todo lo necesario para tu negocio."
           description="Ofrecemos una amplia gama de servicios diseñados para impulsar su transformación digital, optimizar tus procesos y maximizar tu potencial."
-        >
-          Clip de rotato
-        </ServicesCard>
+        ></ServicesCard>
       </section>
       <section id="tools" data-aos="fade-up">
         <div className="py-10">
-          <div className="px-20">
-            <p className="text-violet text-xs leading-[20.8px] font-medium">
+          <div className=" px-2 md:px-20">
+            <p className="text-violet text-xxs md:text-xs md:leading-[20.8px] font-medium">
               Nuestras herramientas
             </p>
-            <h1 className="font-semibold text-xl leading-[70px]">
+            <h1 className="font-semibold text-lg md:text-xl md:leading-[70px]">
               Trabajamos con las mejores tecnologías del mercado:
             </h1>
           </div>
@@ -147,7 +142,7 @@ export default function HomePage() {
         id="services"
         data-aos="fade"
         data-aos-duration="3000"
-        className="bg-background-gradient flex items-center"
+        className="bg-background-gradient flex flex-col md:flex-row md:items-center"
       >
         <ContactSection
           width="w-[55%]"
