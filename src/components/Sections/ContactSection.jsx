@@ -9,7 +9,7 @@ const ContactSection = ({
   return (
     <div className="flex flex-col lg:flex-row lg:gap-[64px] h-full py-10">
       <div
-        className={`${bg} flex flex-col w-full lg:${width} justify-center px-2 lg:px-20 lg:py-10  `}
+        className={`${bg} flex flex-col w-full lg:${width} justify-center px-4 lg:px-20 lg:py-10  `}
       >
         <h1 className="text-lg lg:text-xl font-semibold lg:leading-[70.4px]">
           {title}

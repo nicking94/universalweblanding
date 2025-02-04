@@ -24,7 +24,7 @@ export default function HomePage() {
 
   useEffect(() => {
     AOS.init({
-      duration: 1500,
+      duration: 2000,
       easing: "ease-out-cubic",
       once: true,
     });
@@ -66,7 +66,7 @@ export default function HomePage() {
   return (
     <div className="w-full h-full">
       <section
-        id="hero" 
+        id="hero"
         data-aos="fade"
         className="min-h-[100vh] pointer-events-auto"
       >
@@ -117,7 +117,7 @@ export default function HomePage() {
       </section>
       <section id="tools" data-aos="fade-up">
         <div className="py-10">
-          <div className=" px-2 lg:px-20">
+          <div className=" px-4 lg:px-20">
             <p className="text-violet text-xxs lg:text-xs lg:leading-[20.8px] font-medium">
               Nuestras herramientas
             </p>

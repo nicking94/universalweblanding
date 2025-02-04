@@ -1,6 +1,6 @@
 const ClientsCard = () => {
   return (
-    <div className="flex flex-col w-full space-y-6 min-w-[17rem] p-2 lg:p-10">
+    <div className="flex flex-col w-full space-y-6 min-w-[17rem] p-4 lg:p-10">
       <div className="flex items-center gap-4">
         <div className="flex justify-center items-center bg-slate-200 rounded-full p-4 h-20 w-20">
           <p>img</p>

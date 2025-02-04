@@ -3,7 +3,7 @@ import Button from "../Button/Button";
 const ServicesCard = ({ header, title, description, children }) => {
   return (
     <div className="flex flex-col lg:flex-row lg:gap-[64px] h-full py-10 lg:py-20 ">
-      <div className="lg:w-1/2 flex flex-col justify-center px-2 lg:px-20 lg:py-10">
+      <div className="lg:w-1/2 flex flex-col justify-center px-4 lg:px-20 lg:py-10">
         <p className="text-violet text-xxs lg:text-xs lg:leading-[20.8px] font-medium">
           {header}
         </p>
@@ -15,7 +15,7 @@ const ServicesCard = ({ header, title, description, children }) => {
         </p>
       </div>
 
-      <div className={`flex items-center lg:w-1/2 px-2 lg:px-0`}>
+      <div className={`flex items-center lg:w-1/2 px-4 lg:px-0`}>
         <div className="space-y-8">
           <div className="flex items-center gap-4">
             <span className="text-violet text-xxs lg:text-xs font-medium">

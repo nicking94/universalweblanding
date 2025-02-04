@@ -79,9 +79,9 @@ const ClientsSection = ({
   return (
     <div
       ref={sectionRef}
-      className="flex flex-col lg:flex-row h-full px-2 lg:px-20"
+      className="flex flex-col lg:flex-row h-full px-4 lg:px-20"
     >
-      <div className={` w-full lg:${width} `}>
+      <div className={` w-full lg:${width} lg:px-10 `}>
         <div className=" flex flex-row lg:flex-col space-y-8 -mt-24 space-x-8 lg:space-x-0 justify-center lg:justify-start ">
           <div className="flex flex-col lg:items-center justify-center lg:justify-start py-10 lg:py-0">
             <span className="text-violet text-[8rem] lg:text-xxxl font-semibold">{`+${clientCount}`}</span>

@@ -18,7 +18,7 @@ const ContactForm = () => {
   const monthYear = `${currentYear}-${currentMonth}`;
 
   return (
-    <div className="flex flex-col w-full shadow-lg h-full lg:mr-36 px-2 lg:px-0">
+    <div className="flex flex-col w-full shadow-lg h-full lg:mr-36 px-4 lg:px-0">
       <div className="flex w-full">
         <button
           className={`p-3 w-1/2 text-center text-violet ${

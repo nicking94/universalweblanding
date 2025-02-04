@@ -11,7 +11,7 @@ import Link from "next/link";
 
 const ProjectsPage = () => {
   return (
-    <div className="p-2 md:p-20 bg-background-gradient">
+    <div className="p-4 md:p-20 bg-background-gradient">
       <h1 className="font-medium text-md leading-[35.2px] text-center mt-28 md:mt-14">
         Nuestros Trabajos
       </h1>
