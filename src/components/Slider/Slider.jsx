@@ -30,6 +30,7 @@ const Slider = () => {
       <button className="custom-next absolute right-4 top-1/2 -translate-y-1/2 z-10 text-white bg-violet/80 p-3 rounded-md ">
         <Image src={rightArrowIcon} alt="rightArrow" />
       </button>
+
       <Swiper
         data-aos="fade"
         data-aos-duration="2000"
@@ -67,7 +68,7 @@ const Slider = () => {
               autoPlay
               muted
               playsInline
-              className="w-full h-full object-cover"
+              className="w-full h-full  object-fill"
             />
           </ProjectCard>
         </SwiperSlide>
@@ -92,13 +93,12 @@ const Slider = () => {
               </>
             }
           >
-            
             <video
               src="/clips3D/moldesFacil.mp4"
               autoPlay
               muted
               playsInline
-              className="w-full h-full object-cover "
+              className="w-full h-full  object-fill"
             />
           </ProjectCard>
         </SwiperSlide>
@@ -127,7 +127,7 @@ const Slider = () => {
               autoPlay
               muted
               playsInline
-              className="w-full h-full object-cover"
+              className="w-full h-full  object-fill"
             />
           </ProjectCard>
         </SwiperSlide>
@@ -156,7 +156,7 @@ const Slider = () => {
               autoPlay
               muted
               playsInline
-              className="w-full h-full object-cover"
+              className="w-full h-full  object-fill"
             />
           </ProjectCard>
         </SwiperSlide>
@@ -185,7 +185,7 @@ const Slider = () => {
               autoPlay
               muted
               playsInline
-              className="w-full h-full object-cover"
+              className="w-full h-full  object-fill"
             />
           </ProjectCard>
         </SwiperSlide>
@@ -214,7 +214,7 @@ const Slider = () => {
               autoPlay
               muted
               playsInline
-              className="w-full h-full object-cover"
+              className="w-full h-full  object-fill"
             />
           </ProjectCard>
         </SwiperSlide>
@@ -243,7 +243,7 @@ const Slider = () => {
               autoPlay
               muted
               playsInline
-              className="w-full h-full object-cover"
+              className="w-full h-full  object-fill"
             />
           </ProjectCard>
         </SwiperSlide>

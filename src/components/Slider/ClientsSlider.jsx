@@ -26,9 +26,12 @@ const ClientsSlider = () => {
 
   return (
     <div className="relative w-full">
-      <button className="custom-next absolute right-4 top-1/2 -translate-y-1/2 z-10 text-white bg-violet/80 p-3 rounded-md ">
+      <div className=" pointer-events-none absolute top-0 right-0 w-[40%] h-full bg-gradient-to-l from-white to-transparent z-10"></div>
+
+      <button className="custom-next absolute right-4 top-1/2 -translate-y-1/2 z-20 text-white bg-violet/80 p-3 rounded-md ">
         <Image src={rightArrowIcon} alt="rightArrow" />
       </button>
+
       <Swiper
         spaceBetween={2}
         modules={[Navigation, Pagination, Autoplay]}
@@ -45,7 +48,6 @@ const ClientsSlider = () => {
         <SwiperSlide onClick={handleSlideClick}>
           <ClientsCard />
         </SwiperSlide>
-
         <SwiperSlide onClick={handleSlideClick}>
           <ClientsCard />
         </SwiperSlide>

@@ -70,3 +70,13 @@ body {
   animation: slide-left calc(25s / 2) linear infinite;
 }
 
+
+.swiper-pagination-bullet {
+  background-color: #AE39A3 !important; 
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #AE39A3 !important; 
+}
+
+
