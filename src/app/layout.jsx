@@ -3,6 +3,8 @@ import "./globals.css";
 import Navbar from "@/components/Navbar/Navbar";
 import CustomCursor from "@/components/Cursor/CustomCursor";
 import { Kanit } from "next/font/google";
+import Image from "next/image";
+import whatsappLogo from "../../public/images/whatsappLogo.svg";
 
 export const metadata = {
   title: "Novexis Consulting",
@@ -18,6 +20,15 @@ export default function RootLayout({ children }) {
   return (
     <html lang="es">
       <body className={`${kanit.variable} min-h-screen flex flex-col`}>
+        <div className="fixed bottom-[5%] left-[80%] lg:left-[96%] z-50">
+          <Image
+            className="cursor-pointer hover:scale-105 transition-all duration-300"
+            src={whatsappLogo}
+            alt="whatsappLogo"
+            width={50}
+            height={50}
+          />
+        </div>
         <CustomCursor />
         <Navbar />
         <main className="flex-grow">{children}</main>

@@ -1,22 +1,44 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import logo from "../../../public/images/logo.svg";
 import Image from "next/image";
+import { usePathname, useRouter } from "next/navigation";
 
 const Navbar = () => {
+  const pathname = usePathname();
+  const router = useRouter();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const handleNavigation = (path) => {
+    setIsMenuOpen(false);
+
+    if (path.startsWith("#")) {
+      setTimeout(() => {
+        const section = document.querySelector(path);
+        if (section) {
+          section.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 100);
+    } else {
+      router.push(path);
+    }
+  };
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
   const navLinks = [
-    { name: "Nosotros", path: "/nosotros" },
-    { name: "Proyectos", path: "/proyectos" },
-    { name: "Contáctanos", path: "#contact" },
+    { name: "Nosotros", path: "/home/nosotros" },
+    { name: "Proyectos", path: "/home/proyectos" },
   ];
+  if (pathname === "/home") {
+    navLinks.push({ name: "Contáctanos", path: "#contact" });
+  }
+  useEffect(() => {
+    setIsMenuOpen(false);
+  }, [pathname]);
 
   return (
     <header>
@@ -56,27 +78,16 @@ const Navbar = () => {
           <ul className="text-xs hidden lg:flex  lg:items-center lg:space-x-6">
             {navLinks.map((link, index) => (
               <li key={index}>
-                <Link href={link.path}>
-                  <button
-                    onClick={(e) => {
-                      e.preventDefault();
-                      setIsMenuOpen(false); // Cierra el menú móvil
-                      setTimeout(() => {
-                        const section = document.getElementById("contact");
-                        if (section) {
-                          section.scrollIntoView({ behavior: "smooth" });
-                        }
-                      }, 300); // Espera un poco para que el menú se cierre antes de hacer scroll
-                    }}
-                    className={`${
-                      link.name === "Contáctanos"
-                        ? "bg-violet px-3 text-white py-2 rounded hover:scale-105 transition-all duration-300"
-                        : "hover:scale-105 transition-all duration-300"
-                    }`}
-                  >
-                    {link.name}
-                  </button>
-                </Link>
+                <button
+                  onClick={() => handleNavigation(link.path)}
+                  className={`${
+                    link.path === "#contact"
+                      ? "bg-violet px-3 text-white py-2 rounded hover:scale-105 transition-all duration-300"
+                      : "hover:scale-105 transition-all duration-300"
+                  }`}
+                >
+                  {link.name}
+                </button>
               </li>
             ))}
           </ul>
