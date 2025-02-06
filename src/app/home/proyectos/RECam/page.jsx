@@ -24,7 +24,7 @@ const RecamPage = () => {
           Graba. Supervisa. Confía
         </p>
       </div>
-      <div className=" flex md:h-[35rem] mt-10 ">
+      <div className="flex md:h-[35rem] mt-10 ">
         <video
           src="/clips3D/sofoconProyecto1.mp4"
           autoPlay

@@ -27,7 +27,7 @@ const Slider = () => {
 
   return (
     <div className="relative w-full">
-      <button className="custom-next absolute right-4 top-1/2 -translate-y-1/2 z-10 text-white bg-violet/80 p-3 rounded-md ">
+      <button className="hidden md:flex custom-next absolute right-4  md:top-[92.5%] -translate-y-1/2 z-10 text-white bg-violet/80 p-3 rounded-md ">
         <Image src={rightArrowIcon} alt="rightArrow" />
       </button>
 
@@ -44,206 +44,80 @@ const Slider = () => {
         ref={swiperRef}
       >
         <SwiperSlide onClick={handleSlideClick}>
-          <ProjectCard
-            title="RECAM."
-            subtitle="Web App para grabar pantallas"
-            description={
-              <>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
-                aspernatur saepe mollitia pariatur voluptate! Aperiam illo
-                expedita nemo incidunt recusandae eos, eius provident
-                voluptatibus accusamus cumque, facere natus molestiae. Odit?{" "}
-                <br />
-                <br />
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Accusantium reprehenderit quia ducimus, corporis exercitationem
-                eos eius voluptatem excepturi debitis voluptates quasi,
-                necessitatibus cum perferendis repellat minus iste nobis ad
-                pariatur!
-              </>
-            }
-          >
+          <ProjectCard>
             <video
-              src="/clips3D/moldesFacil.mp4"
+              src="/clips3D/test1.mov"
               autoPlay
               muted
               playsInline
-              className="w-full h-full  object-fill"
+              className="w-full h-full object-fill"
             />
           </ProjectCard>
         </SwiperSlide>
 
         <SwiperSlide onClick={handleSlideClick}>
-          <ProjectCard
-            title="TRIBE"
-            subtitle="Web App red social"
-            description={
-              <>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
-                aspernatur saepe mollitia pariatur voluptate! Aperiam illo
-                expedita nemo incidunt recusandae eos, eius provident
-                voluptatibus accusamus cumque, facere natus molestiae. Odit?{" "}
-                <br />
-                <br />
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Accusantium reprehenderit quia ducimus, corporis exercitationem
-                eos eius voluptatem excepturi debitis voluptates quasi,
-                necessitatibus cum perferendis repellat minus iste nobis ad
-                pariatur!
-              </>
-            }
-          >
+          <ProjectCard>
             <video
-              src="/clips3D/moldesFacil.mp4"
+              src="/clips3D/test1.mov"
               autoPlay
               muted
               playsInline
-              className="w-full h-full  object-fill"
+              className="w-full h-full object-fill"
             />
           </ProjectCard>
         </SwiperSlide>
         <SwiperSlide onClick={handleSlideClick}>
-          <ProjectCard
-            title="SOFOCON"
-            subtitle="Web App red social"
-            description={
-              <>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
-                aspernatur saepe mollitia pariatur voluptate! Aperiam illo
-                expedita nemo incidunt recusandae eos, eius provident
-                voluptatibus accusamus cumque, facere natus molestiae. Odit?{" "}
-                <br />
-                <br />
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Accusantium reprehenderit quia ducimus, corporis exercitationem
-                eos eius voluptatem excepturi debitis voluptates quasi,
-                necessitatibus cum perferendis repellat minus iste nobis ad
-                pariatur!
-              </>
-            }
-          >
+          <ProjectCard>
             <video
-              src="/clips3D/moldesFacil.mp4"
+              src="/clips3D/test1.mov"
               autoPlay
               muted
               playsInline
-              className="w-full h-full  object-fill"
+              className="w-full h-full object-fill"
             />
           </ProjectCard>
         </SwiperSlide>
         <SwiperSlide onClick={handleSlideClick}>
-          <ProjectCard
-            title="ROXBARF"
-            subtitle="Web App red social"
-            description={
-              <>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
-                aspernatur saepe mollitia pariatur voluptate! Aperiam illo
-                expedita nemo incidunt recusandae eos, eius provident
-                voluptatibus accusamus cumque, facere natus molestiae. Odit?{" "}
-                <br />
-                <br />
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Accusantium reprehenderit quia ducimus, corporis exercitationem
-                eos eius voluptatem excepturi debitis voluptates quasi,
-                necessitatibus cum perferendis repellat minus iste nobis ad
-                pariatur!
-              </>
-            }
-          >
+          <ProjectCard>
             <video
-              src="/clips3D/moldesFacil.mp4"
+              src="/clips3D/test1.mov"
               autoPlay
               muted
               playsInline
-              className="w-full h-full  object-fill"
+              className="w-full h-full object-fill"
             />
           </ProjectCard>
         </SwiperSlide>
         <SwiperSlide onClick={handleSlideClick}>
-          <ProjectCard
-            title="MOLDES FÁCIL"
-            subtitle="Web App red social"
-            description={
-              <>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
-                aspernatur saepe mollitia pariatur voluptate! Aperiam illo
-                expedita nemo incidunt recusandae eos, eius provident
-                voluptatibus accusamus cumque, facere natus molestiae. Odit?{" "}
-                <br />
-                <br />
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Accusantium reprehenderit quia ducimus, corporis exercitationem
-                eos eius voluptatem excepturi debitis voluptates quasi,
-                necessitatibus cum perferendis repellat minus iste nobis ad
-                pariatur!
-              </>
-            }
-          >
+          <ProjectCard>
             <video
-              src="/clips3D/moldesFacil.mp4"
+              src="/clips3D/test1.mov"
               autoPlay
               muted
               playsInline
-              className="w-full h-full  object-fill"
+              className="w-full h-full object-fill"
             />
           </ProjectCard>
         </SwiperSlide>
         <SwiperSlide onClick={handleSlideClick}>
-          <ProjectCard
-            title="HOP"
-            subtitle="Web App red social"
-            description={
-              <>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
-                aspernatur saepe mollitia pariatur voluptate! Aperiam illo
-                expedita nemo incidunt recusandae eos, eius provident
-                voluptatibus accusamus cumque, facere natus molestiae. Odit?{" "}
-                <br />
-                <br />
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Accusantium reprehenderit quia ducimus, corporis exercitationem
-                eos eius voluptatem excepturi debitis voluptates quasi,
-                necessitatibus cum perferendis repellat minus iste nobis ad
-                pariatur!
-              </>
-            }
-          >
+          <ProjectCard>
             <video
-              src="/clips3D/moldesFacil.mp4"
+              src="/clips3D/test1.mov"
               autoPlay
               muted
               playsInline
-              className="w-full h-full  object-fill"
+              className="w-full h-full object-fill"
             />
           </ProjectCard>
         </SwiperSlide>
         <SwiperSlide onClick={handleSlideClick}>
-          <ProjectCard
-            title="AUDÍFONOS"
-            subtitle="Web App red social"
-            description={
-              <>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
-                aspernatur saepe mollitia pariatur voluptate! Aperiam illo
-                expedita nemo incidunt recusandae eos, eius provident
-                voluptatibus accusamus cumque, facere natus molestiae. Odit?{" "}
-                <br />
-                <br />
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Accusantium reprehenderit quia ducimus, corporis exercitationem
-                eos eius voluptatem excepturi debitis voluptates quasi,
-                necessitatibus cum perferendis repellat minus iste nobis ad
-                pariatur!
-              </>
-            }
-          >
+          <ProjectCard>
             <video
-              src="/clips3D/moldesFacil.mp4"
+              src="/clips3D/test1.mov"
               autoPlay
               muted
               playsInline
-              className="w-full h-full  object-fill"
+              className="w-full h-full object-fill"
             />
           </ProjectCard>
         </SwiperSlide>

@@ -12,6 +12,7 @@
     "@react-three/drei": "^10.0.0-rc.1",
     "@react-three/fiber": "^9.0.0-rc.5",
     "aos": "^2.3.4",
+    "motion": "^12.3.1",
     "next": "15.1.6",
     "react": "^19.0.0",
     "react-calendly": "^4.3.1",

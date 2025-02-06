@@ -1,7 +1,7 @@
 "use client";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import whatsappLogo from "../../../public/images/whatsappLogo.svg";
 import Slider from "@/components/Slider/Slider";
@@ -11,6 +11,8 @@ import toolsImage from "../../../public/images/ourToolsSection.svg";
 import ClientsSection from "@/components/Sections/ClientsSection";
 import ContactSection from "@/components/Sections/ContactSection";
 import ContactForm from "@/components/Form/ContactForm";
+import Button from "@/components/Button/Button";
+import { motion } from "framer-motion";
 
 export default function HomePage() {
   const words = ["idea", "plan"];
@@ -21,6 +23,19 @@ export default function HomePage() {
   const deletingSpeed = 250;
   const delayBetweenWords = 3000;
   const [showCursor, setShowCursor] = useState(true);
+  const [showHero2, setShowHero2] = useState(false);
+  const [animateContainer, setAnimateContainer] = useState(false);
+  const videoRef = useRef(null);
+
+  const handleAnimation = () => {
+    setTimeout(() => {
+      setAnimateContainer(true);
+      setTimeout(() => setShowHero2(true), 600);
+    }, 3000);
+    if (videoRef.current) {
+      videoRef.current.play();
+    }
+  };
 
   useEffect(() => {
     AOS.init({
@@ -64,13 +79,17 @@ export default function HomePage() {
   }, []);
 
   return (
-    <div className="w-full h-full">
-      <section
-        id="hero"
-        data-aos="fade"
-        className="min-h-[100vh] pointer-events-auto"
+    <div className="relative w-full h-full overflow-hidden">
+      {/* Hero 2 */}
+      <motion.section
+        id="hero2"
+        className="min-h-[100vh] pointer-events-auto bg-black text-white"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: showHero2 ? 1 : 0 }}
+        transition={{ duration: 1 }}
+        style={{ display: showHero2 ? "block" : "none" }}
       >
-        <div className="pt-10 flex flex-col items-center text-center">
+        <div className="min-h-[100vh] pt-10 flex flex-col justify-center px-20">
           <h1 className="px-4 pt-10 text-lg lg:text-xxl font-semibold">
             Convierte tu{" "}
             <span className="text-violet">
@@ -79,41 +98,93 @@ export default function HomePage() {
             </span>{" "}
             en software
           </h1>
-          <p className="px-4 text-xs lg:text-sm font-light text-center mb-10">
+          <p className="px-4 text-xs lg:text-sm font-light mb-10">
             Somos una empresa especializada en{" "}
             <span className="font-medium">soluciones de software a medida</span>{" "}
             que impulsan la innovación y eficiencia en su negocio.
           </p>
-          <div className="bg-slate-200 flex justify-center items-center w-full bg-gray-200 h-[41rem]">
-            video
+          <div className="flex items-center gap-4">
+            <Button text={"Ver proyectos"} />
+            <div className="flex">
+              <Image
+                className="rounded-full"
+                src={whatsappLogo}
+                alt="whatsapp logo"
+                width={30}
+              />
+              <Image
+                className="-ml-3 rounded-full"
+                src={whatsappLogo}
+                alt="whatsapp logo"
+                width={30}
+              />
+              <Image
+                className="-ml-3 rounded-full"
+                src={whatsappLogo}
+                alt="whatsapp logo"
+                width={30}
+              />
+            </div>
+            <p>+10 empresas ya han confiado en nosotros.</p>
           </div>
         </div>
-      </section>
+      </motion.section>
 
-      <div className="fixed bottom-[5%] left-[80%] lg:left-[96%] z-50">
-        <Image
-          className="cursor-pointer hover:scale-105 transition-all duration-300"
-          src={whatsappLogo}
-          alt="whatsappLogo"
-          width={50}
-          height={50}
-        />
-      </div>
+      {/* Hero 1 */}
+      {!showHero2 && (
+        <section id="hero1" className="min-h-[100vh] pointer-events-auto">
+          <div className="pt-10 flex flex-col items-center text-center">
+            <h1 className="px-4 pt-10 text-lg lg:text-xxl font-semibold">
+              Convierte tu{" "}
+              <span className="text-violet">
+                {displayedText}
+                {showCursor ? "| " : ""}
+              </span>{" "}
+              en software
+            </h1>
+            <p className="px-4 text-xs lg:text-sm font-light text-center mb-10">
+              Somos una empresa especializada en{" "}
+              <span className="font-medium">
+                soluciones de software a medida
+              </span>{" "}
+              que impulsan la innovación y eficiencia en su negocio.
+            </p>
+            <motion.div
+              className="relative flex w-full lg:h-[47rem] "
+              animate={animateContainer ? { scale: 3, opacity: 0 } : {}}
+              transition={{ duration: 1 }}
+            >
+              <video
+                ref={videoRef}
+                src="/clips3D/laptopHome.mp4"
+                muted
+                playsInline
+                className="w-full h-full object-fill rounded-[40px]"
+              />
+              <button
+                className="font-medium text-xs bg-violet text-white py-[0.75rem] px-[1.5rem] rounded-[8px] absolute right-[46%] top-[60%]"
+                onClick={handleAnimation}
+              >
+                Click aquí
+              </button>
+            </motion.div>
+          </div>
+        </section>
+      )}
 
       <section
         id="slider"
         data-aos="fade"
-        className="flex flex-col lg:flex-row lg:items-center bg-background-gradient "
+        className="flex flex-col lg:flex-row lg:items-center bg-background-gradient"
       >
         <Slider />
       </section>
-
       <section id="services" data-aos="fade" data-aos-duration="3000">
         <ServicesCard
           header="Nuestros servicios"
           title="Tenemos todo lo necesario para tu negocio."
           description="Ofrecemos una amplia gama de servicios diseñados para impulsar su transformación digital, optimizar tus procesos y maximizar tu potencial."
-        ></ServicesCard>
+        />
       </section>
       <section id="tools" data-aos="fade-up">
         <div className="py-10">
@@ -139,10 +210,10 @@ export default function HomePage() {
         />
       </section>
       <section
-        id="services"
+        id="contact"
         data-aos="fade"
         data-aos-duration="3000"
-        className="bg-background-gradient flex flex-col lg:flex-row lg:items-center"
+        className="bg-background-gradient flex flex-col lg:flex-row lg:items-center py-10"
       >
         <ContactSection
           width="w-[55%]"

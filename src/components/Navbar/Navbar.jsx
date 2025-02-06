@@ -15,7 +15,7 @@ const Navbar = () => {
   const navLinks = [
     { name: "Nosotros", path: "/nosotros" },
     { name: "Proyectos", path: "/proyectos" },
-    { name: "Contáctanos", path: "/contacto" },
+    { name: "Contáctanos", path: "#contact" },
   ];
 
   return (
@@ -58,6 +58,16 @@ const Navbar = () => {
               <li key={index}>
                 <Link href={link.path}>
                   <button
+                    onClick={(e) => {
+                      e.preventDefault();
+                      setIsMenuOpen(false); // Cierra el menú móvil
+                      setTimeout(() => {
+                        const section = document.getElementById("contact");
+                        if (section) {
+                          section.scrollIntoView({ behavior: "smooth" });
+                        }
+                      }, 300); // Espera un poco para que el menú se cierre antes de hacer scroll
+                    }}
                     className={`${
                       link.name === "Contáctanos"
                         ? "bg-violet px-3 text-white py-2 rounded hover:scale-105 transition-all duration-300"
