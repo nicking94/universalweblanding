@@ -4,8 +4,23 @@ import { useEffect, useState } from "react";
 const CustomCursor = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [isVisible, setIsVisible] = useState(true);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
+    const checkIfMobile = () => {
+      setIsMobile(window.matchMedia("(pointer: coarse)").matches);
+    };
+
+    checkIfMobile();
+    window.addEventListener("resize", checkIfMobile);
+
+    return () => {
+      window.removeEventListener("resize", checkIfMobile);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (isMobile) return;
     let animationFrameId;
 
     const moveCursor = (e) => {
@@ -29,18 +44,19 @@ const CustomCursor = () => {
       window.removeEventListener("mouseover", showCursor);
       if (animationFrameId) cancelAnimationFrame(animationFrameId);
     };
-  }, []);
+  }, [isMobile]);
+  if (isMobile) return null;
 
   return (
     <>
       <div
-        className={`cursor2 ${!isVisible ? "hide" : ""}`}
+        className={`cursor2 ${!isVisible ? "hidden" : ""}`}
         style={{
           transform: `translate(calc(${position.x}px - 20px), calc(${position.y}px - 20px))`,
         }}
       ></div>
       <div
-        className={`cursor1 ${!isVisible ? "hide" : ""}`}
+        className={`cursor1 ${!isVisible ? "hidden" : ""}`}
         style={{
           transform: `translate(calc(${position.x}px - 4px), calc(${position.y}px - 4px))`,
         }}

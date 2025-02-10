@@ -1,6 +1,6 @@
 import Image from "next/image";
-import image1 from "../../../../../public/images/projectsRecam1.svg";
-import image2 from "../../../../../public/images/projectsRecam2.svg";
+import image1 from "../../../../../public/images/projectsSofocon1.svg";
+import image2 from "../../../../../public/images/projectsSofocon2.svg";
 import boxIcon from "../../../../../public/icons/box.png";
 import mapIcon from "../../../../../public/icons/location.png";
 import carIcon from "../../../../../public/icons/carIcon.png";
@@ -15,13 +15,13 @@ const SofoconPage = () => {
     <div className="py-36 px-4 md:px-20 min-h-screen">
       <div className="flex flex-col items-center gap-[1rem]">
         <p className="font-medium text-xs border rounded-[7.75rem] min-w-[8rem] py-1.5 px-4 md:leading-[20.8px] text-center">
-          Landing Page
+          Dashboard & Mobile App
         </p>
         <h1 className="font-semibold text-lg md:text-xl md:leading-[52.8px]">
           SOFOCON
         </h1>
         <p className="text-violet font-medium text-sm md:leading-[24px]">
-          Graba. Supervisa. Confía
+          Sistema integral de gestión para empresas de extintores
         </p>
       </div>
       <div className=" flex md:h-[35rem] mt-10 ">
@@ -36,7 +36,7 @@ const SofoconPage = () => {
       <div className="grid grid-cols-2 md:grid-cols-4 p-4">
         <div className="flex flex-col items-center justify-center">
           <p className="font-semibold text-violet md:leading-[99.22px] text-lg md:text-xxl">
-            +100
+            +50
           </p>
           <p className="text-center font-medium md:leading-[24px] text-xxs md:text-sm">
             Features en el dashboard
@@ -47,7 +47,7 @@ const SofoconPage = () => {
             +200%
           </p>
           <p className="text-center font-medium md:leading-[24px] text-xxs md:text-sm">
-            Mejoras
+            Mejora en administración de la empresa
           </p>
         </div>
         <div className=" flex flex-col items-center justify-center">
@@ -60,20 +60,22 @@ const SofoconPage = () => {
         </div>
         <div className=" flex flex-col items-center justify-center">
           <p className="font-semibold text-violet md:leading-[99.22px] text-lg md:text-xxl">
-            +120
+            +120%
           </p>
           <p className="text-center font-medium md:leading-[24px] text-xxs md:text-sm">
-            Clientes satisfechos
+            Satisfacción del cliente
           </p>
         </div>
       </div>
       <div className="flex md:justify-center items-center py-6 md:py-20 md:px-32">
         <p className="italic text-sm leading-[34px] md:text-center text-textGray">
-          AUDÍFONOS. es una aplicación de escritorio y móvil que permite la
-          supervisión de exámenes en entornos remotos, otorgando a los docentes
-          la posibilidad monitorear en tiempo real la pantalla y cámara de sus
-          estudiantes durante el examen, garantizando una experiencia de
-          supervisión fluida y confiable.
+          Administración optimizada de la empresa con sistema cerrado, diseñado
+          para gestionar empleados, clientes, ventas y stock de productos en
+          tiempo real. <br /> <br /> App para vendedores que permite a los
+          vendedores gestionar pedidos de manera rápida y sencilla. Pueden
+          registrar nuevas órdenes, actualizar el estado de los clientes y
+          generar reportes desde cualquier lugar, asegurando un flujo de trabajo
+          ágil y eficiente.
         </p>
       </div>
       <div className="flex  flex-col gap-3">
@@ -91,13 +93,21 @@ const SofoconPage = () => {
               planificación estratégica.
             </p>
           </div>
-          <div className="flex md:justify-end md:items-end bg-violet rounded-[10px] p-2 md:pt-10 md:w-[60%]">
-            <Image src={image1} alt="audifonos1" />
+          <div className="flex md:justify-end md:items-end bg-violet rounded-[10px]  md:w-[60%]">
+            <Image
+              className="2xl:w-full 2xl:pl-4 2xl:pt-4"
+              src={image1}
+              alt="sofocon"
+            />
           </div>
         </div>
         <div className="flex flex-col-reverse md:flex-row gap-8 ">
-          <div className="flex md:justify-end md:items-end bg-violet rounded-[10px] p-2 md:pt-10 md:w-[60%]">
-            <Image src={image2} alt="audifonos1" />
+          <div className="flex md:justify-end md:items-end bg-violet rounded-[10px]  md:w-[60%]">
+            <Image
+              className="2xl:w-full 2xl:pl-4 2xl:pt-4"
+              src={image2}
+              alt="sofocon"
+            />
           </div>
           <div className="bg-backgroundGray rounded-[10px] p-10 md:w-[40%] ">
             <h3 className="font-medium text-violet text-lg leading-[52.8px]">
@@ -120,7 +130,7 @@ const SofoconPage = () => {
           <div className="space-y-8">
             <div className="gap-[10px] space-y-2">
               <div className="flex items-center gap-3">
-                <Image src={boxIcon} />
+                <Image src={boxIcon} alt="sofocon" />
                 <p className="font-medium text-sm leading-[24px]">
                   Control de stock y gestión de productos
                 </p>
@@ -134,7 +144,7 @@ const SofoconPage = () => {
             </div>
             <div className="gap-[10px] space-y-2">
               <div className="flex items-center gap-3">
-                <Image src={mapIcon} />
+                <Image src={mapIcon} alt="sofocon" />
                 <p className="font-medium text-sm leading-[24px]">
                   Localización en tiempo real de vendedores
                 </p>
@@ -148,7 +158,7 @@ const SofoconPage = () => {
             </div>
             <div className="gap-[10px] space-y-2">
               <div className="flex items-center gap-3">
-                <Image src={ticketIcon} />
+                <Image src={ticketIcon} alt="sofocon" />
                 <p className="font-medium text-sm leading-[24px]">
                   Automatización de la orden de compra
                 </p>
@@ -162,7 +172,7 @@ const SofoconPage = () => {
             </div>
             <div className="gap-[10px] space-y-2">
               <div className="flex items-center gap-3">
-                <Image src={carIcon} />
+                <Image src={carIcon} alt="sofocon" />
                 <p className="font-medium text-sm leading-[24px]">
                   Mejoras en la coordinación y comunicación interna
                 </p>
@@ -190,7 +200,7 @@ const SofoconPage = () => {
           Mobile app
         </p>
         <div className="flex md:gap-[60px] gap-4 ">
-          <div className="w-1/2 md:w-full flex flex-col md:flex-row">
+          <div className="w-1/2 md:w-full flex flex-col md:flex-row gap-4">
             <div className="md:w-1/2">
               <h3 className="font-medium text-violet text-lg leading-[39.6px] md:leading-[52.8px]">
                 Asignación y gestión de rutas de venta
@@ -211,7 +221,7 @@ const SofoconPage = () => {
       </div>
       <div className="bg-background-gradient  flex flex-col md:flex-row rounded-tl-[40px] rounded-bl-[40px] md:rounded-[40px] md:border-[5px] border-l-[5px] border-t-[5px] border-b-[5px] border-violet md:pl-10 -mr-4 ">
         <div className="md:w-1/2 flex flex-col justify-center px-4 md:px-0">
-          <h3 className="font-semibold text-xl leading-[70.4px]">AUDÍFONOS</h3>
+          <h3 className="font-semibold text-xl leading-[70.4px]">SOFOCON</h3>
           <p className="font-medium text-violet text-md leading-[35.2px] mb-10 md:mb-0">
             La herramienta para el negocio del futuro
           </p>

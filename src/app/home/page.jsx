@@ -89,7 +89,7 @@ export default function HomePage() {
         transition={{ duration: 1 }}
         style={{ display: showHero2 ? "block" : "none" }}
       >
-        <div className="min-h-[100vh] pt-10 flex flex-col justify-center px-20">
+        <div className="min-h-[100vh] md:pt-10 flex flex-col justify-center px-4 md:px-20">
           <h1 className="px-4 pt-10 text-lg lg:text-xxl font-semibold">
             Convierte tu{" "}
             <span className="text-violet">
@@ -103,7 +103,7 @@ export default function HomePage() {
             <span className="font-medium">soluciones de software a medida</span>{" "}
             que impulsan la innovación y eficiencia en su negocio.
           </p>
-          <div className="flex items-center gap-4">
+          <div className="flex flex-col md:flex-row md:items-center gap-4">
             <Button text={"Ver proyectos"} />
             <div className="flex">
               <Image

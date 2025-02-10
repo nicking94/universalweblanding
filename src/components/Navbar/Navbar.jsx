@@ -95,10 +95,16 @@ const Navbar = () => {
 
         {/* Menú móvil */}
         <div
-          className={`min-h-screen fixed inset-0 bg-violet/90  text-white flex flex-col justify-center items-center z-50 transition-transform duration-300 ${
+          className={`min-h-screen fixed inset-0 bg-white  text-black flex flex-col p-6  z-50 transition-transform duration-300 ${
             isMenuOpen ? "translate-x-0" : "translate-x-full"
           }`}
         >
+          <div className="text-lg font-bold">
+            <Link href="/">
+              <Image src={logo} alt="Logo" width={136} height={32} />
+            </Link>
+          </div>
+
           <button
             onClick={toggleMenu}
             className="absolute top-6 right-6 focus:outline-none"
@@ -119,19 +125,21 @@ const Navbar = () => {
               />
             </svg>
           </button>
-          <ul className="text-sm space-y-6 text-center">
-            {navLinks.map((link, index) => (
-              <li key={index}>
-                <Link
-                  href={link.path}
-                  onClick={toggleMenu}
-                  className="hover:scale-105 transition duration-300"
-                >
-                  {link.name}
-                </Link>
-              </li>
-            ))}
-          </ul>
+          <div className="flex items-center py-10">
+            <ul className="text-xs space-y-4 ">
+              {navLinks.map((link, index) => (
+                <li key={index}>
+                  <Link
+                    href={link.path}
+                    onClick={toggleMenu}
+                    className="hover:scale-105 transition duration-300 font-medium"
+                  >
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </nav>
     </header>

@@ -13,9 +13,9 @@ const ClientsSection = ({
   const [thingCount, setThingCount] = useState(0);
   const sectionRef = useRef(null);
 
-  const clientTarget = 15;
-  const projectTarget = 9;
-  const thingTarget = 45;
+  const clientTarget = 32;
+  const projectTarget = 46;
+  const thingTarget = 9;
 
   const startCounting = () => {
     const clientInterval = setInterval(() => {
@@ -27,7 +27,7 @@ const ClientsSection = ({
           return prev;
         }
       });
-    }, 100);
+    }, 150);
 
     const projectInterval = setInterval(() => {
       setProjectCount((prev) => {
@@ -49,7 +49,7 @@ const ClientsSection = ({
           return prev;
         }
       });
-    }, 100);
+    }, 300);
   };
 
   useEffect(() => {
@@ -101,7 +101,7 @@ const ClientsSection = ({
                 {thingCount}
               </span>
               <p className="text-sm lg:text-lg leading-[58px] -mt-10 font-semibold text-center">
-                Cosas
+                Proyectos en curso
               </p>
             </div>
           </div>

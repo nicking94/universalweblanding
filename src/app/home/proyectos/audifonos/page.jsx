@@ -120,7 +120,7 @@ const AudifonosPage = () => {
           <div className="space-y-8">
             <div className="gap-[10px] space-y-2">
               <div className="flex items-center gap-3">
-                <Image src={boxIcon} />
+                <Image src={boxIcon} alt="audifonos" />
                 <p className="font-medium text-sm leading-[24px]">
                   Control de stock y gestión de productos
                 </p>
@@ -134,7 +134,7 @@ const AudifonosPage = () => {
             </div>
             <div className="gap-[10px] space-y-2">
               <div className="flex items-center gap-3">
-                <Image src={mapIcon} />
+                <Image src={mapIcon} alt="audifonos" />
                 <p className="font-medium text-sm leading-[24px]">
                   Localización en tiempo real de vendedores
                 </p>
@@ -148,7 +148,7 @@ const AudifonosPage = () => {
             </div>
             <div className="gap-[10px] space-y-2">
               <div className="flex items-center gap-3">
-                <Image src={ticketIcon} />
+                <Image src={ticketIcon} alt="audifonos" />
                 <p className="font-medium text-sm leading-[24px]">
                   Automatización de la orden de compra
                 </p>
@@ -162,7 +162,7 @@ const AudifonosPage = () => {
             </div>
             <div className="gap-[10px] space-y-2">
               <div className="flex items-center gap-3">
-                <Image src={carIcon} />
+                <Image src={carIcon} alt="audifonos" />
                 <p className="font-medium text-sm leading-[24px]">
                   Mejoras en la coordinación y comunicación interna
                 </p>
@@ -179,11 +179,11 @@ const AudifonosPage = () => {
         </div>
         <div className="relative flex items-center justify-center md:w-1/2 text-white h-[20rem] md:h-auto mt-10 md:mt-0">
           <div className=" pointer-events-none absolute top-0 right-0 w-[15%] h-full bg-gradient-to-l from-[#FAF0F9] to-transparent z-10"></div>
-          <Image className="w-full h-full" src={sofoconImg} alt="sofocon" />
+          <Image className="w-full h-full" src={sofoconImg} alt="audifonos" />
         </div>
       </div>
       <div className="hidden md:flex  h-[40rem]">
-        <Image className="w-full h-full" src={sofoconImg2} alt="sofocon" />
+        <Image className="w-full h-full" src={sofoconImg2} alt="audifonos" />
       </div>
       <div className="flex flex-col gap-[16px] py-10 md:py-20">
         <p className="font-medium text-xs border rounded-[2.75rem] w-[8rem] py-1.5 px-4 leading-[20.8px] text-center">
@@ -205,7 +205,11 @@ const AudifonosPage = () => {
             </div>
           </div>
           <div className="w-1/2 flex md:hidden  -mr-10 ">
-            <Image className="w-full h-full" src={sofoconImg3} alt="sofocon" />
+            <Image
+              className="w-full h-full"
+              src={sofoconImg3}
+              alt="audifonos"
+            />
           </div>
         </div>
       </div>
