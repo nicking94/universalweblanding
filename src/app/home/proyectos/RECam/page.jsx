@@ -7,7 +7,7 @@ import messageIcon from "../../../../../public/icons/messages.png";
 import eyeIcon from "../../../../../public/icons/eye.png";
 import Button from "@/components/Button/Button";
 import sofoconImg from "../../../../../public/images/laptopProyectos.svg";
-import sofoconImg2 from "../../../../../public/images/sofoconProject2.svg";
+import sofoconImg2 from "../../../../../public/images/recamProject3.svg";
 import sofoconImg3 from "../../../../../public/images/sofoconProject3.svg";
 
 const RecamPage = () => {

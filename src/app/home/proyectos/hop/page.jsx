@@ -1,13 +1,13 @@
 import Image from "next/image";
-import image1 from "../../../../../public/images/projectsMoldes1.svg";
-import image2 from "../../../../../public/images/projectsMoldes2.svg";
+import image1 from "../../../../../public/images/hopProject1.svg";
+import image2 from "../../../../../public/images/hopProject2.svg";
 import boxIcon from "../../../../../public/icons/box.png";
 import mapIcon from "../../../../../public/icons/location.png";
 import carIcon from "../../../../../public/icons/carIcon.png";
 import ticketIcon from "../../../../../public/icons/ticket.png";
 import Button from "@/components/Button/Button";
 import sofoconImg from "../../../../../public/images/laptopProyectos.svg";
-import sofoconImg2 from "../../../../../public/images/sofoconProject2.svg";
+import sofoconImg2 from "../../../../../public/images/hopProject3.svg";
 import sofoconImg3 from "../../../../../public/images/sofoconProject3.svg";
 
 const HopPage = () => {
@@ -96,7 +96,7 @@ const HopPage = () => {
             <Image
               className="2xl:w-full 2xl:pl-4 2xl:pt-4"
               src={image1}
-              alt="moldes"
+              alt="hop"
             />
           </div>
         </div>
@@ -105,7 +105,7 @@ const HopPage = () => {
             <Image
               className="2xl:w-full 2xl:pl-4 2xl:pt-4"
               src={image2}
-              alt="moldes"
+              alt="hop"
             />
           </div>
           <div className="bg-backgroundGray rounded-[10px] p-10 md:w-[40%] ">
@@ -210,7 +210,7 @@ const HopPage = () => {
             </div>
           </div>
           <div className="w-1/2 flex md:hidden  -mr-10 ">
-            <Image className="w-full h-full" src={sofoconImg3} alt="hop"/>
+            <Image className="w-full h-full" src={sofoconImg3} alt="hop" />
           </div>
         </div>
       </div>

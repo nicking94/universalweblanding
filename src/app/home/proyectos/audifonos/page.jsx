@@ -1,13 +1,13 @@
 import Image from "next/image";
-import image1 from "../../../../../public/images/projectsRecam1.svg";
-import image2 from "../../../../../public/images/projectsRecam2.svg";
+import image1 from "../../../../../public/images/audifonosProject1.svg";
+import image2 from "../../../../../public/images/audifonosProject2.svg";
 import boxIcon from "../../../../../public/icons/box.png";
 import mapIcon from "../../../../../public/icons/location.png";
 import carIcon from "../../../../../public/icons/carIcon.png";
 import ticketIcon from "../../../../../public/icons/ticket.png";
 import Button from "@/components/Button/Button";
 import sofoconImg from "../../../../../public/images/laptopProyectos.svg";
-import sofoconImg2 from "../../../../../public/images/sofoconProject2.svg";
+import sofoconImg2 from "../../../../../public/images/audifonosProject3.svg";
 import sofoconImg3 from "../../../../../public/images/sofoconProject3.svg";
 
 const AudifonosPage = () => {
@@ -96,7 +96,7 @@ const AudifonosPage = () => {
           </div>
         </div>
         <div className="flex flex-col-reverse md:flex-row gap-8 ">
-          <div className="flex md:justify-end md:items-end bg-violet rounded-[10px] p-2 md:pt-10 md:w-[60%]">
+          <div className="flex justify-center bg-violet rounded-[10px] p-2 md:pt-10 md:w-[60%]">
             <Image src={image2} alt="audifonos1" />
           </div>
           <div className="bg-backgroundGray rounded-[10px] p-10 md:w-[40%] ">
@@ -182,7 +182,7 @@ const AudifonosPage = () => {
           <Image className="w-full h-full" src={sofoconImg} alt="audifonos" />
         </div>
       </div>
-      <div className="hidden md:flex  h-[40rem]">
+      <div className="hidden md:flex h-[40rem]">
         <Image className="w-full h-full" src={sofoconImg2} alt="audifonos" />
       </div>
       <div className="flex flex-col gap-[16px] py-10 md:py-20">

@@ -29,13 +29,15 @@ export default function RootLayout({ children }) {
             height={50}
           />
         </div>
-        <video
-          className="cursor-pointer  hidden md:block fixed bottom-[3%] left-[20%] lg:left-[65%] z-50"
-          src="/clips3D/chat.webm"
-          muted
-          loop
-          autoPlay
-        ></video>
+        {/* <div className=" cursor-pointer hidden md:block fixed bottom-[3%] left-[20%] lg:left-[65%] z-50">
+          <video
+            className="w-30 h-30"
+            src="/clips3D/chat.webm"
+            muted
+            loop
+            autoPlay
+          ></video>
+        </div> */}
         <CustomCursor />
         <Navbar />
         <main className="flex-grow">{children}</main>

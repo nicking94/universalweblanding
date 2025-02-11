@@ -1,13 +1,13 @@
 import Image from "next/image";
-import image1 from "../../../../../public/images/projectsRecam1.svg";
-import image2 from "../../../../../public/images/projectsRecam2.svg";
+import image1 from "../../../../../public/images/tribeProject1.svg";
+import image2 from "../../../../../public/images/tribeProject2.svg";
 import boxIcon from "../../../../../public/icons/box.png";
 import mapIcon from "../../../../../public/icons/location.png";
 import carIcon from "../../../../../public/icons/carIcon.png";
 import ticketIcon from "../../../../../public/icons/ticket.png";
 import Button from "@/components/Button/Button";
 import sofoconImg from "../../../../../public/images/laptopProyectos.svg";
-import sofoconImg2 from "../../../../../public/images/sofoconProject2.svg";
+import sofoconImg2 from "../../../../../public/images/tribeProject3.svg";
 import sofoconImg3 from "../../../../../public/images/sofoconProject3.svg";
 
 const TribePage = () => {

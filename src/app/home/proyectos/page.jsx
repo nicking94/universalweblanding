@@ -48,7 +48,7 @@ const ProjectsPage = () => {
               <p className="text-xs font-light leading-[20px]">
                 Software de administración de empresas y app de ventas
               </p>
-              <Link href="/home/proyectos/moldes-facil">
+              <Link href="/home/proyectos/moldesFacil">
                 <Image
                   src={arrowIcon}
                   alt="moldesFacil"

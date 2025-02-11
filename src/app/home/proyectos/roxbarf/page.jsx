@@ -1,13 +1,13 @@
 import Image from "next/image";
-import image1 from "../../../../../public/images/projectsRecam1.svg";
-import image2 from "../../../../../public/images/projectsRecam2.svg";
+import image1 from "../../../../../public/images/roxBarfProject1.svg";
+import image2 from "../../../../../public/images/roxBarfProject2.svg";
 import boxIcon from "../../../../../public/icons/box.png";
 import mapIcon from "../../../../../public/icons/location.png";
 import carIcon from "../../../../../public/icons/carIcon.png";
 import ticketIcon from "../../../../../public/icons/ticket.png";
 import Button from "@/components/Button/Button";
 import sofoconImg from "../../../../../public/images/laptopProyectos.svg";
-import sofoconImg2 from "../../../../../public/images/sofoconProject2.svg";
+import sofoconImg2 from "../../../../../public/images/roxBarfProject3.svg";
 import sofoconImg3 from "../../../../../public/images/sofoconProject3.svg";
 
 const RoxbarfPage = () => {
@@ -96,7 +96,7 @@ const RoxbarfPage = () => {
           </div>
         </div>
         <div className="flex flex-col-reverse md:flex-row gap-8 ">
-          <div className="flex md:justify-end md:items-end bg-violet rounded-[10px] p-2 md:pt-10 md:w-[60%]">
+          <div className="flex justify-center bg-violet rounded-[10px] p-2 md:pt-10 md:w-[60%]">
             <Image src={image2} alt="roxbarf" />
           </div>
           <div className="bg-backgroundGray rounded-[10px] p-10 md:w-[40%] ">
@@ -134,7 +134,7 @@ const RoxbarfPage = () => {
             </div>
             <div className="gap-[10px] space-y-2">
               <div className="flex items-center gap-3">
-                <Image src={mapIcon}  alt="roxbarf" />
+                <Image src={mapIcon} alt="roxbarf" />
                 <p className="font-medium text-sm leading-[24px]">
                   Localización en tiempo real de vendedores
                 </p>
@@ -148,7 +148,7 @@ const RoxbarfPage = () => {
             </div>
             <div className="gap-[10px] space-y-2">
               <div className="flex items-center gap-3">
-                <Image src={ticketIcon}  alt="roxbarf" />
+                <Image src={ticketIcon} alt="roxbarf" />
                 <p className="font-medium text-sm leading-[24px]">
                   Automatización de la orden de compra
                 </p>
@@ -162,7 +162,7 @@ const RoxbarfPage = () => {
             </div>
             <div className="gap-[10px] space-y-2">
               <div className="flex items-center gap-3">
-                <Image src={carIcon}  alt="roxbarf" />
+                <Image src={carIcon} alt="roxbarf" />
                 <p className="font-medium text-sm leading-[24px]">
                   Mejoras en la coordinación y comunicación interna
                 </p>
@@ -179,11 +179,11 @@ const RoxbarfPage = () => {
         </div>
         <div className="relative flex items-center justify-center md:w-1/2 text-white h-[20rem] md:h-auto mt-10 md:mt-0">
           <div className=" pointer-events-none absolute top-0 right-0 w-[15%] h-full bg-gradient-to-l from-[#FAF0F9] to-transparent z-10"></div>
-          <Image className="w-full h-full" src={sofoconImg}  alt="roxbarf"  />
+          <Image className="w-full h-full" src={sofoconImg} alt="roxbarf" />
         </div>
       </div>
       <div className="hidden md:flex  h-[40rem]">
-        <Image className="w-full h-full" src={sofoconImg2}  alt="roxbarf"  />
+        <Image className="w-full h-full" src={sofoconImg2} alt="roxbarf" />
       </div>
       <div className="flex flex-col gap-[16px] py-10 md:py-20">
         <p className="font-medium text-xs border rounded-[2.75rem] w-[8rem] py-1.5 px-4 leading-[20.8px] text-center">
@@ -205,7 +205,7 @@ const RoxbarfPage = () => {
             </div>
           </div>
           <div className="w-1/2 flex md:hidden  -mr-10 ">
-            <Image className="w-full h-full" src={sofoconImg3}  alt="roxbarf" />
+            <Image className="w-full h-full" src={sofoconImg3} alt="roxbarf" />
           </div>
         </div>
       </div>
