@@ -1,12 +1,12 @@
 import Image from "next/image";
 import image1 from "../../../../../public/images/audifonosProject1.svg";
 import image2 from "../../../../../public/images/audifonosProject2.svg";
-import boxIcon from "../../../../../public/icons/box.png";
-import mapIcon from "../../../../../public/icons/location.png";
-import carIcon from "../../../../../public/icons/carIcon.png";
-import ticketIcon from "../../../../../public/icons/ticket.png";
+import menuIcon from "../../../../../public/icons/menu.png";
+import mapIcon from "../../../../../public/icons/map.png";
+import userIcon from "../../../../../public/icons/user.png";
+import messageIcon from "../../../../../public/icons/messages2.png";
 import Button from "@/components/Button/Button";
-import sofoconImg from "../../../../../public/images/laptopProyectos.svg";
+import sofoconImg from "../../../../../public/images/audifonosImg.svg";
 import sofoconImg2 from "../../../../../public/images/audifonosProject3.svg";
 import sofoconImg3 from "../../../../../public/images/sofoconProject3.svg";
 
@@ -24,13 +24,13 @@ const AudifonosPage = () => {
           Graba. Supervisa. Confía
         </p>
       </div>
-      <div className=" flex md:h-[35rem] mt-10 ">
+      <div className="flex w-full lg:h-[47rem] mt-10">
         <video
-          src="/clips3D/sofoconProyecto1.mp4"
+          src="/clips3D/audifonosVideo1.mp4"
           autoPlay
           muted
           playsInline
-          className="w-full h-full object-fill rounded-[40px]"
+          className="w-full h-full object-cover rounded-[40px]"
         />
       </div>
       <div className="grid grid-cols-2 md:grid-cols-4 p-4">
@@ -69,27 +69,33 @@ const AudifonosPage = () => {
       </div>
       <div className="flex md:justify-center items-center py-6 md:py-20 md:px-32">
         <p className="italic text-sm leading-[34px] md:text-center text-textGray">
-          AUDÍFONOS. es una aplicación de escritorio y móvil que permite la
-          supervisión de exámenes en entornos remotos, otorgando a los docentes
-          la posibilidad monitorear en tiempo real la pantalla y cámara de sus
-          estudiantes durante el examen, garantizando una experiencia de
-          supervisión fluida y confiable.
+          Audifonos.org es un sitio web especializado en centros auditivos y
+          audífonos, diseñado para ayudar a los usuarios a encontrar, comparar y
+          comprar los mejores productos según sus necesidades. El sitio combina
+          reseñas detalladas, guías de compra, listados organizados, un mapa
+          interactivo de centros auditivos y un blog informativo para ofrecer
+          una experiencia completa.
         </p>
       </div>
       <div className="flex  flex-col gap-3">
         <p className="font-medium text-xs border rounded-[2.75rem] w-[8rem] py-1.5 px-4 leading-[20.8px] text-center">
-          Dashboard
+          Mobile App
         </p>
         <div className="flex flex-col md:flex-row gap-8 ">
           <div className="bg-backgroundGray rounded-[10px] p-10 md:w-[40%] ">
             <h3 className="font-medium text-violet text-lg leading-[52.8px]">
-              Análisis de métricas de ventas e inventario
+              Reseñas y Comparativas
             </h3>
-            <p className="text-violet font-light leading-[44px] text-xs">
-              Descubrirás informes claros y detallados, tanto mensuales como
-              anuales, que te facilitarán la toma de decisiones informadas y la
-              planificación estratégica.
-            </p>
+            <ul className="text-violet font-light leading-[44px] text-xs list-disc">
+              <li>
+                Reseñas detalladas por usuarios reales sobre los centros
+                auditivos
+              </li>
+              <li>
+                Comparativas entre diferentes productos para facilitar la
+                elección.
+              </li>
+            </ul>
           </div>
           <div className="flex md:justify-end md:items-end bg-violet rounded-[10px] p-2 md:pt-10 md:w-[60%]">
             <Image src={image1} alt="audifonos1" />
@@ -101,12 +107,13 @@ const AudifonosPage = () => {
           </div>
           <div className="bg-backgroundGray rounded-[10px] p-10 md:w-[40%] ">
             <h3 className="font-medium text-violet text-lg leading-[52.8px]">
-              Gestión y administración de personal
+              Mapa Interactivo de Centros
             </h3>
             <p className="text-violet font-light leading-[44px] text-xs">
-              Asignación y modificación rápida de roles y permisos, garantizando
-              que cada empleado sólo tenga acceso a la información necesaria,
-              mejorando la seguridad y la organización.
+               Mapa interactivo que muestra los centros y sus ubicaciones.
+              Búsqueda por ubicación y filtros por marca o tipo de auricular.
+              Información detallada de centros, como direcciones, horarios y
+              especialistas.
             </p>
           </div>
         </div>
@@ -120,60 +127,65 @@ const AudifonosPage = () => {
           <div className="space-y-8">
             <div className="gap-[10px] space-y-2">
               <div className="flex items-center gap-3">
-                <Image src={boxIcon} alt="audifonos" />
+                <Image src={menuIcon} alt="audifonos" />
                 <p className="font-medium text-sm leading-[24px]">
-                  Control de stock y gestión de productos
+                  Listado de Centros Auditivos
                 </p>
               </div>
 
-              <p className="px-10 md:px-16 text-xs font-light leading-[20.8px] ">
-                Permite una gestión precisa del inventario, garantizando que
-                siempre haya suficientes productos y que se gestionen
-                adecuadamente para evitar errores en la distribución.
-              </p>
+              <ul className="list-disc px-10 md:px-16 text-xs font-light leading-[20.8px] ">
+                <li>Listado organizado de centros.</li>
+                <li>
+                  Filtros y opciones de ordenamiento para una búsqueda
+                  personalizada.
+                </li>
+                <li>Acceso directo a reseñas.</li>
+              </ul>
             </div>
             <div className="gap-[10px] space-y-2">
               <div className="flex items-center gap-3">
                 <Image src={mapIcon} alt="audifonos" />
                 <p className="font-medium text-sm leading-[24px]">
-                  Localización en tiempo real de vendedores
+                  Guías de Compra
                 </p>
               </div>
 
               <p className="px-10 md:px-16 text-xs font-light leading-[20.8px] ">
-                Ofrece la ubicación en tiempo real de los proveedores, lo que
-                facilita el seguimiento de su progreso en las rutas y el ajuste
-                de la logística según sea necesario.
+                Guías completas que cubren aspectos como calidad de sonido,
+                comodidad, duración de la batería y relación calidad-precio.
               </p>
             </div>
             <div className="gap-[10px] space-y-2">
               <div className="flex items-center gap-3">
-                <Image src={ticketIcon} alt="audifonos" />
-                <p className="font-medium text-sm leading-[24px]">
-                  Automatización de la orden de compra
-                </p>
+                <Image src={messageIcon} alt="audifonos" />
+                <p className="font-medium text-sm leading-[24px]">Blog</p>
               </div>
 
-              <p className="px-10 md:px-16 text-xs font-light leading-[20.8px] ">
-                La digitalización y automatización de las órdenes de compra
-                mejora la eficiencia, reduce el error humano y acelera el flujo
-                de trabajo desde la solicitud hasta la entrega.
-              </p>
+              <ul className="list-disc px-10 md:px-16 text-xs font-light leading-[20.8px] ">
+                <li>
+                  Artículos informativos sobre tendencias, noticias y
+                  lanzamientos en el mundo de los auriculares.
+                </li>
+                <li>
+                  Consejos prácticos para optimizar el uso y mantenimiento de
+                  los dispositivos.
+                </li>
+                <li> Comparativas, guías y análisis profundos de productos.</li>
+              </ul>
             </div>
             <div className="gap-[10px] space-y-2">
               <div className="flex items-center gap-3">
-                <Image src={carIcon} alt="audifonos" />
+                <Image src={userIcon} alt="audifonos" />
                 <p className="font-medium text-sm leading-[24px]">
                   Mejoras en la coordinación y comunicación interna
                 </p>
               </div>
-
-              <p className="px-10 md:px-16 text-xs font-light leading-[20.8px] ">
-                Un tablero de control centralizado facilita la transparencia y
-                el acceso a información actualizada, lo que mejora la
-                coordinación entre equipos y departamentos, optimizando el flujo
-                de trabajo.
-              </p>
+              <ul className="list-disc px-10 md:px-16 text-xs font-light leading-[20.8px] ">
+                <li>
+                  Sugerencias de auriculares basadas en las necesidades y
+                  preferencias del usuario.
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -193,14 +205,13 @@ const AudifonosPage = () => {
           <div className="w-1/2 md:w-full flex flex-col md:flex-row">
             <div className="md:w-1/2">
               <h3 className="font-medium text-violet text-lg leading-[39.6px] md:leading-[52.8px]">
-                Asignación y gestión de rutas de venta
+                Diseño Responsive
               </h3>
             </div>
             <div className="md:w-1/2">
               <p className="font-light text-sm md:text-md leading-[35.2px] text-grayDark">
-                Fácil creación y delegación de rutas optimizadas para
-                vendedores, garantizando que cada vendedor tenga una ruta clara
-                y eficiente.
+                Sitio optimizado para su uso en dispositivos móviles, tablets y
+                computadoras.
               </p>
             </div>
           </div>
@@ -214,19 +225,21 @@ const AudifonosPage = () => {
         </div>
       </div>
       <div className="bg-background-gradient  flex flex-col md:flex-row rounded-tl-[40px] rounded-bl-[40px] md:rounded-[40px] md:border-[5px] border-l-[5px] border-t-[5px] border-b-[5px] border-violet md:pl-10 -mr-4 ">
-        <div className="md:w-1/2 flex flex-col justify-center px-4 md:px-0">
-          <h3 className="font-semibold text-xl leading-[70.4px]">AUDÍFONOS</h3>
-          <p className="font-medium text-violet text-md leading-[35.2px] mb-10 md:mb-0">
-            La herramienta para el negocio del futuro
+        <div className="  md:w-1/2 flex flex-col justify-center px-4 md:px-20">
+          <h3 className="font-semibold text-[4rem] md:text-[8rem] leading-[80px] md:leading-[140.4px] mb-4">
+            AUDÍFONOS
+          </h3>
+          <p className="font-medium text-violet text-start text-[2rem] md:text-[3rem] leading-[55.2px] mb-10 md:mb-0">
+            La herramienta para el <br /> negocio del futuro
           </p>
         </div>
-        <div className="md:w-1/2 h-[30rem] flex  rounded-[40px] ">
+        <div className="md:w-1/2 flex rounded-[40px]">
           <video
-            src="/clips3D/sofoconProyecto2.mp4"
+            src="/clips3D/audifonosVideo2.mp4"
             autoPlay
             muted
             playsInline
-            className="w-full h-full object-fill rounded-l-[40px] md:rounded-[40px]"
+            className="w-full h-full object-cover rounded-l-[40px] md:rounded-[40px]"
           />
         </div>
       </div>
@@ -234,7 +247,7 @@ const AudifonosPage = () => {
         <h1 className=" font-light text-lg leading-[52.8px] text-center md:text-start">
           ¿Tienes alguna consulta?
         </h1>
-        <Button text={"Contactanos"} />
+        <Button text={"Contáctanos"} />
       </div>
     </div>
   );

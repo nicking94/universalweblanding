@@ -6,8 +6,8 @@ import categoryIcon from "../../../../../public/icons/category.png";
 import messageIcon from "../../../../../public/icons/messages.png";
 import eyeIcon from "../../../../../public/icons/eye.png";
 import Button from "@/components/Button/Button";
-import sofoconImg from "../../../../../public/images/laptopProyectos.svg";
-import sofoconImg2 from "../../../../../public/images/recamProject3.svg";
+import sofoconImg from "../../../../../public/images/recamImg.svg";
+import sofoconImg2 from "../../../../../public/images/recamImg2.svg";
 import sofoconImg3 from "../../../../../public/images/sofoconProject3.svg";
 
 const RecamPage = () => {
@@ -24,13 +24,13 @@ const RecamPage = () => {
           Graba. Supervisa. Confía.
         </p>
       </div>
-      <div className=" flex md:h-[35rem] mt-10 ">
+      <div className="flex w-full lg:h-[47rem] mt-10">
         <video
-          src="/clips3D/sofoconProyecto1.mp4"
+          src="/clips3D/recamVideo1.mp4"
           autoPlay
           muted
           playsInline
-          className="w-full h-full object-fill rounded-[40px]"
+          className="w-full h-full object-cover rounded-[40px]"
         />
       </div>
       <div className="grid grid-cols-2 md:grid-cols-4 p-4">
@@ -217,9 +217,9 @@ const RecamPage = () => {
             Tecnología al servicio de la educación. 
           </p>
         </div>
-        <div className="md:w-1/2 h-[30rem] flex  rounded-[40px] ">
+        <div className="md:w-1/2 flex  rounded-[40px] ">
           <video
-            src="/clips3D/sofoconProyecto2.mp4"
+            src="/clips3D/recamVideo2.mp4"
             autoPlay
             muted
             playsInline
@@ -231,7 +231,7 @@ const RecamPage = () => {
         <h1 className=" font-light text-lg leading-[52.8px] text-center md:text-start">
           ¿Tienes alguna consulta?
         </h1>
-        <Button text={"Contactanos"} />
+        <Button text={"Contáctanos"} />
       </div>
     </div>
   );

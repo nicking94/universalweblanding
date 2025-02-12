@@ -1,12 +1,12 @@
 import Image from "next/image";
 import image1 from "../../../../../public/images/roxBarfProject1.svg";
 import image2 from "../../../../../public/images/roxBarfProject2.svg";
-import boxIcon from "../../../../../public/icons/box.png";
-import mapIcon from "../../../../../public/icons/location.png";
-import carIcon from "../../../../../public/icons/carIcon.png";
-import ticketIcon from "../../../../../public/icons/ticket.png";
+import dangerIcon from "../../../../../public/icons/danger.png";
+import heartIcon from "../../../../../public/icons/heart.png";
+import filterIcon from "../../../../../public/icons/filter.png";
+import bagIcon from "../../../../../public/icons/bag2.png";
 import Button from "@/components/Button/Button";
-import sofoconImg from "../../../../../public/images/laptopProyectos.svg";
+import sofoconImg from "../../../../../public/images/roxbarfImg.svg";
 import sofoconImg2 from "../../../../../public/images/roxBarfProject3.svg";
 import sofoconImg3 from "../../../../../public/images/sofoconProject3.svg";
 
@@ -24,13 +24,13 @@ const RoxbarfPage = () => {
           Graba. Supervisa. Confía
         </p>
       </div>
-      <div className=" flex md:h-[35rem] mt-10 ">
+      <div className="flex w-full lg:h-[47rem] mt-10">
         <video
-          src="/clips3D/sofoconProyecto1.mp4"
+          src="/clips3D/roxbarfVideo1.mp4"
           autoPlay
           muted
           playsInline
-          className="w-full h-full object-fill rounded-[40px]"
+          className="w-full h-full object-cover rounded-[40px]"
         />
       </div>
       <div className="grid grid-cols-2 md:grid-cols-4 p-4">
@@ -69,27 +69,33 @@ const RoxbarfPage = () => {
       </div>
       <div className="flex md:justify-center items-center py-6 md:py-20 md:px-32">
         <p className="italic text-sm leading-[34px] md:text-center text-textGray">
-          AUDÍFONOS. es una aplicación de escritorio y móvil que permite la
-          supervisión de exámenes en entornos remotos, otorgando a los docentes
-          la posibilidad monitorear en tiempo real la pantalla y cámara de sus
-          estudiantes durante el examen, garantizando una experiencia de
-          supervisión fluida y confiable.
+          Rox Barf está diseñada para facilitar la compra de productos y
+          servicios para mascotas, ofreciendo una experiencia personalizada y
+          conveniente para los dueños de animales. Su objetivo es centralizar
+          todo lo relacionado con el cuidado de las mascotas, desde la compra de
+          alimentos y accesorios hasta la programación de servicios
+          veterinarios.
         </p>
       </div>
       <div className="flex  flex-col gap-3">
         <p className="font-medium text-xs border rounded-[2.75rem] w-[8rem] py-1.5 px-4 leading-[20.8px] text-center">
-          Dashboard
+          Mobile App
         </p>
         <div className="flex flex-col md:flex-row gap-8 ">
           <div className="bg-backgroundGray rounded-[10px] p-10 md:w-[40%] ">
             <h3 className="font-medium text-violet text-lg leading-[52.8px]">
-              Análisis de métricas de ventas e inventario
+              Venta de Productos
             </h3>
-            <p className="text-violet font-light leading-[44px] text-xs">
-              Descubrirás informes claros y detallados, tanto mensuales como
-              anuales, que te facilitarán la toma de decisiones informadas y la
-              planificación estratégica.
-            </p>
+            <ul className="text-violet font-light leading-[44px] text-xs list-disc">
+              <li>
+                Amplio catálogo de productos para mascotas, incluyendo
+                alimentos, correas, caniles, juguetes, y más.
+              </li>
+              <li>
+                Búsqueda y filtrado por tipo de mascota, marca, categoría o
+                necesidad específica.
+              </li>
+            </ul>
           </div>
           <div className="flex md:justify-end md:items-end bg-violet rounded-[10px] p-2 md:pt-10 md:w-[60%]">
             <Image src={image1} alt="roxbarf" />
@@ -101,13 +107,17 @@ const RoxbarfPage = () => {
           </div>
           <div className="bg-backgroundGray rounded-[10px] p-10 md:w-[40%] ">
             <h3 className="font-medium text-violet text-lg leading-[52.8px]">
-              Gestión y administración de personal
+              Servicios Veterinarios
             </h3>
-            <p className="text-violet font-light leading-[44px] text-xs">
-              Asignación y modificación rápida de roles y permisos, garantizando
-              que cada empleado sólo tenga acceso a la información necesaria,
-              mejorando la seguridad y la organización.
-            </p>
+            <ul className="text-violet font-light leading-[44px] text-xs list-disc">
+              <li>
+                Agendamiento de citas veterinarias directamente desde la app.
+              </li>
+              <li>
+                Recordatorios para vacunas, desparasitación y chequeos
+                regulares.
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -120,60 +130,75 @@ const RoxbarfPage = () => {
           <div className="space-y-8">
             <div className="gap-[10px] space-y-2">
               <div className="flex items-center gap-3">
-                <Image src={boxIcon} alt="roxbarf" />
+                <Image src={dangerIcon} alt="roxbarf" />
                 <p className="font-medium text-sm leading-[24px]">
-                  Control de stock y gestión de productos
+                  Sistema de Fidelidad
                 </p>
               </div>
 
-              <p className="px-10 md:px-16 text-xs font-light leading-[20.8px] ">
-                Permite una gestión precisa del inventario, garantizando que
-                siempre haya suficientes productos y que se gestionen
-                adecuadamente para evitar errores en la distribución.
-              </p>
+              <ul className="list-disc px-10 md:px-16 text-xs font-light leading-[20.8px] ">
+                <li>Acumulación de puntos por cada compra realizada.</li>
+                <li>
+                  Canje de puntos por descuentos, productos gratuitos o
+                  servicios especiales.
+                </li>
+              </ul>
             </div>
             <div className="gap-[10px] space-y-2">
               <div className="flex items-center gap-3">
-                <Image src={mapIcon} alt="roxbarf" />
+                <Image src={heartIcon} alt="roxbarf" />
                 <p className="font-medium text-sm leading-[24px]">
-                  Localización en tiempo real de vendedores
+                  Perfil de Mascotas
                 </p>
               </div>
 
-              <p className="px-10 md:px-16 text-xs font-light leading-[20.8px] ">
-                Ofrece la ubicación en tiempo real de los proveedores, lo que
-                facilita el seguimiento de su progreso en las rutas y el ajuste
-                de la logística según sea necesario.
-              </p>
+              <ul className="list-disc px-10 md:px-16 text-xs font-light leading-[20.8px] ">
+                <li>
+                  Creación de perfiles personalizados para cada mascota,
+                  incluyendo nombre, raza, edad, peso y necesidades específicas.
+                </li>
+                <li>
+                  Notificaciones personalizadas basadas en las necesidades de
+                  cada mascota, como:
+                  <br />
+                  -Recordatorios para comprar alimentos. <br />
+                  -Alertas para visitas al veterinario. <br />
+                  -Avisos sobre vacunas o tratamientos médicos. <br />
+                </li>
+              </ul>
             </div>
             <div className="gap-[10px] space-y-2">
               <div className="flex items-center gap-3">
-                <Image src={ticketIcon} alt="roxbarf" />
+                <Image src={filterIcon} alt="roxbarf" />
                 <p className="font-medium text-sm leading-[24px]">
-                  Automatización de la orden de compra
+                  Notificaciones Inteligentes
                 </p>
               </div>
-
-              <p className="px-10 md:px-16 text-xs font-light leading-[20.8px] ">
-                La digitalización y automatización de las órdenes de compra
-                mejora la eficiencia, reduce el error humano y acelera el flujo
-                de trabajo desde la solicitud hasta la entrega.
-              </p>
+              <ul className="list-disc px-10 md:px-16 text-xs font-light leading-[20.8px] ">
+                <li>
+                  Alertas personalizadas según el historial de compras y el
+                  perfil de la mascota.
+                </li>
+                <li>
+                  Sugerencias de productos o servicios basadas en las
+                  necesidades detectadas.
+                </li>
+              </ul>
             </div>
             <div className="gap-[10px] space-y-2">
               <div className="flex items-center gap-3">
-                <Image src={carIcon} alt="roxbarf" />
+                <Image src={bagIcon} alt="roxbarf" />
                 <p className="font-medium text-sm leading-[24px]">
-                  Mejoras en la coordinación y comunicación interna
+                  Historial de Compras y Servicios
                 </p>
               </div>
-
-              <p className="px-10 md:px-16 text-xs font-light leading-[20.8px] ">
-                Un tablero de control centralizado facilita la transparencia y
-                el acceso a información actualizada, lo que mejora la
-                coordinación entre equipos y departamentos, optimizando el flujo
-                de trabajo.
-              </p>
+              <ul className="list-disc px-10 md:px-16 text-xs font-light leading-[20.8px] ">
+                <li>Registro de todas las compras y servicios contratados.</li>
+                <li>
+                  Acceso rápido a pedidos recurrentes (como alimentos) para
+                  facilitar la recompra.
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -193,14 +218,14 @@ const RoxbarfPage = () => {
           <div className="w-1/2 md:w-full flex flex-col md:flex-row">
             <div className="md:w-1/2">
               <h3 className="font-medium text-violet text-lg leading-[39.6px] md:leading-[52.8px]">
-                Asignación y gestión de rutas de venta
+                Integración con Tiendas Físicas
               </h3>
             </div>
             <div className="md:w-1/2">
               <p className="font-light text-sm md:text-md leading-[35.2px] text-grayDark">
-                Fácil creación y delegación de rutas optimizadas para
-                vendedores, garantizando que cada vendedor tenga una ruta clara
-                y eficiente.
+                Opción para recoger productos en tiendas cercanas o recibirlos a
+                domicilio. Localización de veterinarias y tiendas asociadas
+                mediante un mapa integrado.
               </p>
             </div>
           </div>
@@ -210,19 +235,21 @@ const RoxbarfPage = () => {
         </div>
       </div>
       <div className="bg-background-gradient  flex flex-col md:flex-row rounded-tl-[40px] rounded-bl-[40px] md:rounded-[40px] md:border-[5px] border-l-[5px] border-t-[5px] border-b-[5px] border-violet md:pl-10 -mr-4 ">
-        <div className="md:w-1/2 flex flex-col justify-center px-4 md:px-0">
-          <h3 className="font-semibold text-xl leading-[70.4px]">AUDÍFONOS</h3>
-          <p className="font-medium text-violet text-md leading-[35.2px] mb-10 md:mb-0">
-            La herramienta para el negocio del futuro
+        <div className="  md:w-1/2 flex flex-col justify-center px-4 md:px-20">
+          <h3 className="font-semibold text-[4rem] md:text-[8rem] leading-[80px] md:leading-[140.4px] mb-4">
+            ROXBARF
+          </h3>
+          <p className="font-medium text-violet text-start text-[2rem] md:text-[3rem] leading-[55.2px] mb-10 md:mb-0">
+            La herramienta para el <br /> negocio del futuro
           </p>
         </div>
-        <div className="md:w-1/2 h-[30rem] flex  rounded-[40px] ">
+        <div className="md:w-1/2 flex rounded-[40px]">
           <video
-            src="/clips3D/sofoconProyecto2.mp4"
+            src="/clips3D/roxbarfVideo2.mp4"
             autoPlay
             muted
             playsInline
-            className="w-full h-full object-fill rounded-l-[40px] md:rounded-[40px]"
+            className="w-full h-full object-cover rounded-l-[40px] md:rounded-[40px]"
           />
         </div>
       </div>
@@ -230,7 +257,7 @@ const RoxbarfPage = () => {
         <h1 className=" font-light text-lg leading-[52.8px] text-center md:text-start">
           ¿Tienes alguna consulta?
         </h1>
-        <Button text={"Contactanos"} />
+        <Button text={"Contáctanos"} />
       </div>
     </div>
   );

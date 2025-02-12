@@ -6,7 +6,7 @@ import mapIcon from "../../../../../public/icons/location.png";
 import carIcon from "../../../../../public/icons/carIcon.png";
 import ticketIcon from "../../../../../public/icons/ticket.png";
 import Button from "@/components/Button/Button";
-import sofoconImg from "../../../../../public/images/laptopProyectos.svg";
+import sofoconImg from "../../../../../public/images/tribeImg.svg";
 import sofoconImg2 from "../../../../../public/images/tribeProject3.svg";
 import sofoconImg3 from "../../../../../public/images/sofoconProject3.svg";
 
@@ -24,13 +24,13 @@ const TribePage = () => {
           Graba. Supervisa. Confía
         </p>
       </div>
-      <div className=" flex md:h-[35rem] mt-10 ">
+      <div className="flex w-full lg:h-[47rem] mt-10">
         <video
-          src="/clips3D/sofoconProyecto1.mp4"
+          src="/clips3D/tribeVideo1.mp4"
           autoPlay
           muted
           playsInline
-          className="w-full h-full object-fill rounded-[40px]"
+          className="w-full h-full object-cover rounded-[40px]"
         />
       </div>
       <div className="grid grid-cols-2 md:grid-cols-4 p-4">
@@ -210,19 +210,21 @@ const TribePage = () => {
         </div>
       </div>
       <div className="bg-background-gradient  flex flex-col md:flex-row rounded-tl-[40px] rounded-bl-[40px] md:rounded-[40px] md:border-[5px] border-l-[5px] border-t-[5px] border-b-[5px] border-violet md:pl-10 -mr-4 ">
-        <div className="md:w-1/2 flex flex-col justify-center px-4 md:px-0">
-          <h3 className="font-semibold text-xl leading-[70.4px]">AUDÍFONOS</h3>
-          <p className="font-medium text-violet text-md leading-[35.2px] mb-10 md:mb-0">
-            La herramienta para el negocio del futuro
+        <div className="  md:w-1/2 flex flex-col justify-center px-4 md:px-20">
+          <h3 className="font-semibold text-[4rem] md:text-[8rem] leading-[80px] md:leading-[140.4px] mb-4">
+            TRIBE
+          </h3>
+          <p className="font-medium text-violet text-start text-[2rem] md:text-[3rem] leading-[55.2px] mb-10 md:mb-0">
+            La herramienta para el <br /> negocio del futuro
           </p>
         </div>
-        <div className="md:w-1/2 h-[30rem] flex  rounded-[40px] ">
+        <div className="md:w-1/2 flex rounded-[40px]">
           <video
-            src="/clips3D/sofoconProyecto2.mp4"
+            src="/clips3D/tribeVideo2.mp4"
             autoPlay
             muted
             playsInline
-            className="w-full h-full object-fill rounded-l-[40px] md:rounded-[40px]"
+            className="w-full h-full object-cover rounded-l-[40px] md:rounded-[40px]"
           />
         </div>
       </div>
@@ -230,7 +232,7 @@ const TribePage = () => {
         <h1 className=" font-light text-lg leading-[52.8px] text-center md:text-start">
           ¿Tienes alguna consulta?
         </h1>
-        <Button text={"Contactanos"} />
+        <Button text={"Contáctanos"} />
       </div>
     </div>
   );
