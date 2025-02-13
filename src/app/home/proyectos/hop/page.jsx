@@ -183,9 +183,13 @@ const HopPage = () => {
             </div>
           </div>
         </div>
-        <div className="relative flex items-center justify-center md:w-1/2 text-white h-[20rem] md:h-auto mt-10 md:mt-0">
+        <div className=" relative flex justify-center md:w-1/2 text-white h-[20rem] md:h-auto mt-10 md:mt-0">
           <div className=" pointer-events-none absolute top-0 right-0 w-[15%] h-full bg-gradient-to-l from-[#ffffff] to-transparent z-10"></div>
-          <Image className="w-full h-full" src={sofoconImg} alt="hop" />
+          <Image
+            className="w-[15rem] lg:w-[40rem] h-[27rem] lg:h-[40rem]"
+            src={sofoconImg}
+            alt="hop"
+          />
         </div>
       </div>
       <div className="hidden md:flex  h-[40rem]">

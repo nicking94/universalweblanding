@@ -22,16 +22,18 @@ export default function RootLayout({ children }) {
     <html lang="es">
       <body className={`${kanit.variable} min-h-screen flex flex-col`}>
         <div className="block lg:hidden fixed bottom-[5%] left-[86%] md:left-[90%] lg:left-[96%] z-50">
-          <Image
-            className="cursor-pointer hover:scale-105 transition-all duration-300"
-            src={whatsappLogo}
-            alt="whatsappLogo"
-            width={50}
-            height={50}
-          />
+          <Link href="https://wa.me/542616951550">
+            <Image
+              className="cursor-pointer hover:scale-105 transition-all duration-300"
+              src={whatsappLogo}
+              alt="whatsappLogo"
+              width={50}
+              height={50}
+            />
+          </Link>
         </div>
         <div className=" w-[300px] h-[300px]  hidden lg:flex fixed top-[89.8%] 2xl:top-[93.3%] left-[91.5%] 2xl:left-[94%] translate-x-[-50%] translate-y-[-50%] z-50">
-          <Link href="#">
+          <Link href="https://wa.me/542616951550">
             <video
               className="cursor-pointer"
               src="/clips3D/chat.webm"

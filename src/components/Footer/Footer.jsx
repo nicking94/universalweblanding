@@ -54,13 +54,22 @@ const Footer = () => {
       </nav>
 
       <div className="flex space-x-4 lg:mr-60">
-        <Link className="hover:scale-110 transition-all duration-300" href="#">
+        <Link
+          className="hover:scale-110 transition-all duration-300"
+          href="https://www.facebook.com/NovexisConsultingS.A.S/"
+        >
           <Image src={facebookLogo} alt="facebook" />
         </Link>
-        <Link className="hover:scale-110 transition-all duration-300" href="#">
+        <Link
+          className="hover:scale-110 transition-all duration-300"
+          href="https://www.instagram.com/novexisconsulting/"
+        >
           <Image src={instagramLogo} alt="facebook" />
         </Link>
-        <Link className="hover:scale-110 transition-all duration-300" href="#">
+        <Link
+          className="hover:scale-110 transition-all duration-300"
+          href="https://www.linkedin.com/company/novexis-consulting"
+        >
           <Image src={linkedinLogo} alt="facebook" />
         </Link>
       </div>

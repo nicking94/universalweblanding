@@ -46,20 +46,16 @@ const Slider = () => {
         <SwiperSlide onClick={handleSlideClick}>
           <ProjectCard
             title="MOLDES FÁCIL"
-            subtitle="Web App para grabar pantallas"
+            subtitle="Web de compra-venta de tejidos"
             description={
               <>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
-                aspernatur saepe mollitia pariatur voluptate! Aperiam illo
-                expedita nemo incidunt recusandae eos, eius provident
-                voluptatibus accusamus cumque, facere natus molestiae. Odit?{" "}
+                Tienda online de moldes de ropa, dirigida tanto a clientes
+                individuales: B2C como a negocios: B2B.
                 <br />
                 <br />
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Accusantium reprehenderit quia ducimus, corporis exercitationem
-                eos eius voluptatem excepturi debitis voluptates quasi,
-                necessitatibus cum perferendis repellat minus iste nobis ad
-                pariatur!
+                El objetivo fue proporcionar una experiencia de compra intuitiva
+                y eficiente, permitiendo a los usuarios adquirir moldes en
+                formato físico y digital.
               </>
             }
           >
@@ -81,17 +77,11 @@ const Slider = () => {
             subtitle="Web App para grabar pantallas"
             description={
               <>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
-                aspernatur saepe mollitia pariatur voluptate! Aperiam illo
-                expedita nemo incidunt recusandae eos, eius provident
-                voluptatibus accusamus cumque, facere natus molestiae. Odit?{" "}
-                <br />
-                <br />
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Accusantium reprehenderit quia ducimus, corporis exercitationem
-                eos eius voluptatem excepturi debitis voluptates quasi,
-                necessitatibus cum perferendis repellat minus iste nobis ad
-                pariatur!
+                Aplicación web de escritorio y móvil que permite la supervisión
+                de exámenes en entornos remotos, otorgando a los docentes la
+                posibilidad monitorear en tiempo real la pantalla y cámara de
+                sus estudiantes durante el examen, garantizando una experiencia
+                de supervisión fluida y confiable.
               </>
             }
           >
@@ -109,20 +99,18 @@ const Slider = () => {
         <SwiperSlide onClick={handleSlideClick}>
           <ProjectCard
             title="HOP"
-            subtitle="Web App para grabar pantallas"
+            subtitle="App móvil red social"
             description={
               <>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
-                aspernatur saepe mollitia pariatur voluptate! Aperiam illo
-                expedita nemo incidunt recusandae eos, eius provident
-                voluptatibus accusamus cumque, facere natus molestiae. Odit?{" "}
+                Aplicación de reserva de viajes diseñada para optimizar el
+                servicio de transporte en el sector hotelero, permitiendo que
+                recepcionistas y conductores aumenten sus ingresos de manera
+                segura y eficiente.
                 <br />
                 <br />
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Accusantium reprehenderit quia ducimus, corporis exercitationem
-                eos eius voluptatem excepturi debitis voluptates quasi,
-                necessitatibus cum perferendis repellat minus iste nobis ad
-                pariatur!
+                Facilita no solo la conexión entre hoteles y conductores, sino
+                que también impulsa el crecimiento económico de sus usuarios con
+                un sistema eficiente, transparente y rentable.
               </>
             }
           >
@@ -140,20 +128,18 @@ const Slider = () => {
         <SwiperSlide onClick={handleSlideClick}>
           <ProjectCard
             title="TRIBE"
-            subtitle="Web App para grabar pantallas"
+            subtitle="App móvil red social"
             description={
               <>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
-                aspernatur saepe mollitia pariatur voluptate! Aperiam illo
-                expedita nemo incidunt recusandae eos, eius provident
-                voluptatibus accusamus cumque, facere natus molestiae. Odit?{" "}
+                Aplicación de redes sociales que transforma la forma en que te
+                conectas. Con un mapa mundial interactivo, puedes descubrir
+                fácilmente personas, lugares y eventos que coincidan con tus
+                intereses.
                 <br />
                 <br />
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Accusantium reprehenderit quia ducimus, corporis exercitationem
-                eos eius voluptatem excepturi debitis voluptates quasi,
-                necessitatibus cum perferendis repellat minus iste nobis ad
-                pariatur!
+                El objetivo principal de esta app es fomentar la exploración del
+                mundo real y las conexiones virtuales, mejorando la interacción
+                social tanto local como global.
               </>
             }
           >

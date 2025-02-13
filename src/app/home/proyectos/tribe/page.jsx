@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import image1 from "../../../../../public/images/tribeProject1.svg";
 import image2 from "../../../../../public/images/tribeProject2.svg";
@@ -9,6 +10,7 @@ import Button from "@/components/Button/Button";
 import sofoconImg from "../../../../../public/images/tribeImg.svg";
 import sofoconImg2 from "../../../../../public/images/tribeProject3.svg";
 import sofoconImg3 from "../../../../../public/images/sofoconProject3.svg";
+import { useEffect, useRef, useState } from "react";
 
 const TribePage = () => {
   return (
@@ -89,12 +91,12 @@ const TribePage = () => {
               interactúa con una comunidad que siempre está en movimiento.
             </p>
           </div>
-          <div className="flex md:justify-end md:items-end bg-violet rounded-[10px] p-2 md:pt-10 md:w-[60%]">
+          <div className="overflow-hidden flex md:justify-end md:items-end bg-violet rounded-[10px] px-2 md:pt-10 md:w-[60%]">
             <Image src={image1} alt="tribe" />
           </div>
         </div>
         <div className="flex flex-col-reverse md:flex-row gap-8 ">
-          <div className="flex md:justify-end md:items-end bg-violet rounded-[10px] p-2 md:pt-10 md:w-[60%]">
+          <div className="flex md:justify-end md:items-end bg-violet rounded-[10px] px-2 md:pt-10 md:w-[60%]">
             <Image src={image2} alt="tribe" />
           </div>
           <div className="bg-backgroundGray rounded-[10px] p-10 md:w-[40%] ">
@@ -177,7 +179,11 @@ const TribePage = () => {
         </div>
         <div className="relative flex items-center justify-center md:w-1/2 text-white h-[20rem] md:h-auto mt-10 md:mt-0">
           <div className=" pointer-events-none absolute top-0 right-0 w-[15%] h-full bg-gradient-to-l from-[#ffffff] to-transparent z-10"></div>
-          <Image className="w-full h-full" src={sofoconImg} alt="tribe" />
+          <Image
+            className="w-[15rem] lg:w-[40rem] h-[27rem] lg:h-[40rem]"
+            src={sofoconImg}
+            alt="tribe"
+          />
         </div>
       </div>
       <div className="hidden md:flex  h-[40rem]">
