@@ -132,8 +132,8 @@ export default function HomePage() {
 
       {/* Hero 1 */}
       {!showHero2 && (
-        <section id="hero1" className="min-h-[100vh] pointer-events-auto">
-          <div className="pt-10 flex flex-col items-center text-center">
+        <section id="hero1" className="md:min-h-[100vh] pointer-events-auto">
+          <div className="pt-10 flex flex-col items-center text-center ">
             <h1 className="px-4 pt-10 text-lg lg:text-xxl font-semibold">
               Convierte tu{" "}
               <span className="text-violet">
@@ -150,7 +150,7 @@ export default function HomePage() {
               que impulsan la innovación y eficiencia en su negocio.
             </p>
             <motion.div
-              className="relative flex w-full lg:h-[47rem] "
+              className="relative flex flex-col w-full lg:h-[25rem] 2xl:h-[47rem] "
               animate={animateContainer ? { scale: 3, opacity: 0 } : {}}
               transition={{ duration: 1 }}
             >
@@ -159,14 +159,16 @@ export default function HomePage() {
                 src="/clips3D/laptopHome.mp4"
                 muted
                 playsInline
-                className="w-full h-full object-fill rounded-[40px]"
+                className="relative w-full h-full object-fill rounded-[40px]"
               />
-              <button
-                className="font-medium text-xs bg-violet text-white py-[0.75rem] px-[1.5rem] rounded-[8px] absolute right-[46%] top-[60%]"
-                onClick={handleAnimation}
-              >
-                Click aquí
-              </button>
+              <div className="absolute top-[50%] 2xl:top-[60%] w-full flex justify-center">
+                <button
+                  className="font-medium text-xs bg-violet text-white py-[0.75rem] px-[1.5rem] rounded-[8px] "
+                  onClick={handleAnimation}
+                >
+                  Click aquí
+                </button>
+              </div>
             </motion.div>
           </div>
         </section>

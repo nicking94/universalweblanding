@@ -203,7 +203,7 @@ const RoxbarfPage = () => {
           </div>
         </div>
         <div className="relative flex items-center justify-center md:w-1/2 text-white h-[20rem] md:h-auto mt-10 md:mt-0">
-          <div className=" pointer-events-none absolute top-0 right-0 w-[15%] h-full bg-gradient-to-l from-[#FAF0F9] to-transparent z-10"></div>
+          <div className=" pointer-events-none absolute top-0 right-0 w-[15%] h-full bg-gradient-to-l from-[#ffffff] to-transparent z-10"></div>
           <Image className="w-full h-full" src={sofoconImg} alt="roxbarf" />
         </div>
       </div>
@@ -215,7 +215,7 @@ const RoxbarfPage = () => {
           Mobile app
         </p>
         <div className="flex md:gap-[60px] gap-4 ">
-          <div className="w-1/2 md:w-full flex flex-col md:flex-row">
+          <div className="w-1/2 md:w-full flex flex-col md:flex-row md:space-x-4">
             <div className="md:w-1/2">
               <h3 className="font-medium text-violet text-lg leading-[39.6px] md:leading-[52.8px]">
                 Integración con Tiendas Físicas

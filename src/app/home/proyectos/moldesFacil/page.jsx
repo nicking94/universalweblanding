@@ -207,7 +207,7 @@ const MoldesFacilPage = () => {
           Dashboard
         </p>
         <div className="flex md:gap-[60px] gap-4 ">
-          <div className="w-1/2 md:w-full flex flex-col md:flex-row gap-4">
+          <div className="w-1/2 md:w-full flex flex-col md:flex-row md:space-x-4">
             <div className="md:w-1/2">
               <h3 className="font-medium text-violet text-lg leading-[39.6px] md:leading-[52.8px]">
                 Historial de Pedidos y Sistema de Notificaciones

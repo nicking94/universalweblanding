@@ -33,6 +33,11 @@ const Navbar = () => {
     { name: "Nosotros", path: "/home/nosotros" },
     { name: "Proyectos", path: "/home/proyectos" },
   ];
+
+  if (pathname !== "/" && pathname !== "/home") {
+    navLinks.unshift({ name: "Inicio", path: "/" });
+  }
+
   if (pathname === "/home") {
     navLinks.push({ name: "Contáctanos", path: "#contact" });
   }
