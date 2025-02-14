@@ -1,3 +1,7 @@
+"use client";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 import Image from "next/image";
 import image1 from "../../../../../public/images/projectsSofocon1.svg";
 import image2 from "../../../../../public/images/projectsSofocon2.svg";
@@ -9,8 +13,16 @@ import Button from "@/components/Button/Button";
 import sofoconImg from "../../../../../public/images/recamImg.svg";
 import sofoconImg2 from "../../../../../public/images/sofoconProject2.svg";
 import sofoconImg3 from "../../../../../public/images/sofoconProject3.svg";
+import Link from "next/link";
 
 const SofoconPage = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+      easing: "ease-out-cubic",
+      once: true,
+    });
+  }, []);
   return (
     <div className="py-36 px-4 md:px-20 min-h-screen">
       <div className="flex flex-col items-center gap-[1rem]">
@@ -67,7 +79,10 @@ const SofoconPage = () => {
           </p>
         </div>
       </div>
-      <div className="flex md:justify-center items-center py-6 md:py-20 md:px-32">
+      <div
+        data-aos="fade"
+        className="flex md:justify-center items-center py-6 md:py-20 md:px-32"
+      >
         <p className="italic text-sm leading-[34px] md:text-center text-textGray">
           Administración optimizada de la empresa con sistema cerrado, diseñado
           para gestionar empleados, clientes, ventas y stock de productos en
@@ -78,7 +93,7 @@ const SofoconPage = () => {
           ágil y eficiente.
         </p>
       </div>
-      <div className="flex  flex-col gap-3">
+      <div data-aos="fade" className="flex  flex-col gap-3">
         <p className="font-medium text-xs border rounded-[2.75rem] w-[8rem] py-1.5 px-4 leading-[20.8px] text-center">
           Dashboard
         </p>
@@ -122,7 +137,7 @@ const SofoconPage = () => {
         </div>
       </div>
 
-      <div className="flex flex-col md:flex-row py-10 md:py-20">
+      <div data-aos="fade" className="flex flex-col md:flex-row py-10 md:py-20">
         <div className="md:w-1/2">
           <p className="font-light text-textGray text-md mb-4">
             Más funcionalidades
@@ -192,10 +207,10 @@ const SofoconPage = () => {
           <Image className="w-full h-full" src={sofoconImg} alt="sofocon" />
         </div>
       </div>
-      <div className="hidden md:flex  h-[40rem]">
+      <div data-aos="fade" className="hidden md:flex  h-[40rem]">
         <Image className="w-full h-full" src={sofoconImg2} alt="sofocon" />
       </div>
-      <div className="flex flex-col gap-[16px] py-10 md:py-20">
+      <div data-aos="fade" className="flex flex-col gap-[16px] py-10 md:py-20">
         <p className="font-medium text-xs border rounded-[2.75rem] w-[8rem] py-1.5 px-4 leading-[20.8px] text-center">
           Mobile app
         </p>
@@ -219,7 +234,10 @@ const SofoconPage = () => {
           </div>
         </div>
       </div>
-      <div className="bg-background-gradient  flex flex-col md:flex-row rounded-tl-[40px] rounded-bl-[40px] md:rounded-[40px] md:border-[5px] border-l-[5px] border-t-[5px] border-b-[5px] border-violet md:pl-10 -mr-4 ">
+      <div
+        data-aos="fade"
+        className="bg-background-gradient  flex flex-col md:flex-row rounded-tl-[40px] rounded-bl-[40px] md:rounded-[40px] md:border-[5px] border-l-[5px] border-t-[5px] border-b-[5px] border-violet md:pl-10 -mr-4 "
+      >
         <div className="  md:w-1/2 flex flex-col justify-center px-4 md:px-20">
           <h3 className="font-semibold text-[4rem] md:text-[8rem] leading-[80px] md:leading-[140.4px] mb-4">
             SOFOCON
@@ -238,11 +256,16 @@ const SofoconPage = () => {
           />
         </div>
       </div>
-      <div className="pt-20 flex flex-col items-center space-y-10">
+      <div
+        data-aos="fade"
+        className="pt-20 flex flex-col items-center space-y-10"
+      >
         <h1 className=" font-light text-lg leading-[52.8px] text-center md:text-start">
           ¿Tienes alguna consulta?
         </h1>
-        <Button text={"Contáctanos"} />
+        <Link href="https://wa.me/542616951550">
+          <Button text={"Contáctanos"} />
+        </Link>
       </div>
     </div>
   );

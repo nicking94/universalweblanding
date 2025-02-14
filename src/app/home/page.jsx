@@ -177,7 +177,7 @@ export default function HomePage() {
       <section
         id="slider"
         data-aos="fade"
-        className="flex flex-col lg:flex-row lg:items-center bg-background-gradient"
+        className="flex flex-col lg:flex-row lg:items-center bg-background-gradient mb-10"
       >
         <Slider />
       </section>

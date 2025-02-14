@@ -26,7 +26,7 @@ const Slider = () => {
   };
 
   return (
-    <div className="relative w-full">
+    <div className="relative w-full  ">
       <button className="hidden md:flex custom-next absolute right-4  md:top-[92.5%] -translate-y-1/2 z-10 text-white bg-violet/80 p-3 rounded-md ">
         <Image src={rightArrowIcon} alt="rightArrow" />
       </button>
@@ -59,13 +59,13 @@ const Slider = () => {
               </>
             }
           >
-            <div className="flex w-full lg:h-[47rem] mt-10">
+            <div className="flex w-full min-h-[18.6rem] lg:h-[47rem] mt-10">
               <video
                 src="/clips3D/moldes.mp4"
                 autoPlay
                 muted
                 playsInline
-                className="w-full h-full object-fill rounded-[40px]"
+                className="w-full h-full object-fill md:rounded-[40px]"
               />
             </div>
           </ProjectCard>
@@ -85,13 +85,13 @@ const Slider = () => {
               </>
             }
           >
-            <div className="flex w-full lg:h-[47rem] mt-10">
+            <div className="flex w-full min-h-[18.6rem] lg:h-[47rem] mt-10">
               <video
                 src="/clips3D/recam.mp4"
                 autoPlay
                 muted
                 playsInline
-                className="w-full h-full object-fill rounded-[40px]"
+                className="w-full h-full object-fill md:rounded-[40px]"
               />
             </div>
           </ProjectCard>
@@ -114,13 +114,13 @@ const Slider = () => {
               </>
             }
           >
-            <div className="flex w-full lg:h-[47rem] mt-10">
+            <div className="flex w-full min-h-[18.6rem] lg:h-[47rem] mt-10">
               <video
                 src="/clips3D/hop.mp4"
                 autoPlay
                 muted
                 playsInline
-                className="w-full h-full object-fill rounded-[40px]"
+                className="w-full h-full object-fill md:rounded-[40px]"
               />
             </div>
           </ProjectCard>
@@ -143,13 +143,13 @@ const Slider = () => {
               </>
             }
           >
-            <div className="flex w-full lg:h-[47rem] mt-10">
+            <div className="flex w-full min-h-[18.6rem] lg:h-[47rem] mt-10">
               <video
                 src="/clips3D/tribe.mp4"
                 autoPlay
                 muted
                 playsInline
-                className="w-full h-full object-fill rounded-[40px]"
+                className="w-full h-full object-fill md:rounded-[40px]"
               />
             </div>
           </ProjectCard>

@@ -14,7 +14,7 @@ const ProjectCard = ({ title, subtitle, description, children }) => {
         <p className="font-light  lg:leading-[32px] text-sm lg:text-md">
           {subtitle}
         </p>
-        <p className="text-xxs lg:text-sm font-light lg:leading-[24px] lg:mt-4">
+        <p className="text-xxs lg:text-sm font-light lg:leading-[24px] lg:mt-4 pb-10 md:pb-0">
           {description}
         </p>
       </div>

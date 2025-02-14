@@ -32,11 +32,11 @@ const Footer = () => {
         </Link>
       </div>
 
-      <nav className="mb-4 lg:mb-0 ">
+      {/* <nav className="mb-4 lg:mb-0 ">
         <ul className="flex items-center space-x-6 hover:text-gray-400 ">
-          {/* <li className="hover:scale-105 transition duration-300">
+          <li className="hover:scale-105 transition duration-300">
             <Link href="/home/nosotros">Nosotros</Link>
-          </li> */}
+          </li>
           <li className="hover:scale-105 transition duration-300">
             <Link href="/home/proyectos">Proyectos</Link>
           </li>
@@ -51,24 +51,27 @@ const Footer = () => {
             </li>
           )}
         </ul>
-      </nav>
+      </nav> */}
 
-      <div className="flex space-x-4 lg:mr-60">
+      <div className="flex space-x-6 lg:mr-60">
         <Link
           className="hover:scale-110 transition-all duration-300"
           href="https://www.facebook.com/NovexisConsultingS.A.S/"
+          title="Facebook"
         >
           <Image src={facebookLogo} alt="facebook" />
         </Link>
         <Link
           className="hover:scale-110 transition-all duration-300"
           href="https://www.instagram.com/novexisconsulting/"
+          title="Instagram"
         >
           <Image src={instagramLogo} alt="facebook" />
         </Link>
         <Link
           className="hover:scale-110 transition-all duration-300"
           href="https://www.linkedin.com/company/novexis-consulting"
+          title="Linkedin"
         >
           <Image src={linkedinLogo} alt="facebook" />
         </Link>

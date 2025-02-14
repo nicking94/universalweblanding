@@ -1,3 +1,7 @@
+"use client";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 import Image from "next/image";
 import hopImg from "../../../../public/images/hopProject.svg";
 import arrowIcon from "../../../../public/images/buttonArrow.png";
@@ -10,13 +14,20 @@ import roxbarfImg from "../../../../public/images/roxbarfProject.svg";
 import Link from "next/link";
 
 const ProjectsPage = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+      easing: "ease-out-cubic",
+      once: true,
+    });
+  }, []);
   return (
     <div className="p-4 md:p-20 bg-background-gradient">
       <h1 className="font-medium text-md leading-[35.2px] text-center mt-28 md:mt-14">
         Nuestros Trabajos
       </h1>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-12 ">
-        <div className=" relative h-full rounded-[10px]">
+        <div data-aos="fade" className=" relative h-full rounded-[10px]">
           <Image src={hopImg} alt="tribe" className="w-full rounded-[10px]" />
           <div className="bg-gradient-to-r from-[#B750AD60] to-[#7CA3D160] absolute bottom-0 w-full backdrop-blur-sm text-white p-3 rounded-[10px] ">
             <p className="font-bold leading-[11.96px] text-[0.5rem]">2024</p>
@@ -35,7 +46,7 @@ const ProjectsPage = () => {
             </div>
           </div>
         </div>
-        <div className=" relative h-full rounded-[10px]">
+        <div data-aos="fade" className=" relative h-full rounded-[10px]">
           <Image
             src={moldesImg}
             alt="tribe"
@@ -58,7 +69,7 @@ const ProjectsPage = () => {
             </div>
           </div>
         </div>
-        <div className=" relative h-full rounded-[10px]">
+        <div data-aos="fade" className=" relative h-full rounded-[10px]">
           <Image
             src={audifonosImg}
             alt="tribe"
@@ -81,7 +92,7 @@ const ProjectsPage = () => {
             </div>
           </div>
         </div>
-        <div className=" relative h-full rounded-[10px]">
+        <div data-aos="fade" className=" relative h-full rounded-[10px]">
           <Image
             src={sofoconImg}
             alt="tribe"
@@ -104,7 +115,7 @@ const ProjectsPage = () => {
             </div>
           </div>
         </div>
-        <div className=" relative h-full rounded-[10px]">
+        <div data-aos="fade" className=" relative h-full rounded-[10px]">
           <Image src={recamImg} alt="tribe" className="w-full rounded-[10px]" />
           <div className="bg-gradient-to-r from-[#B750AD60] to-[#7CA3D160] absolute bottom-0 w-full backdrop-blur-sm text-white p-3 rounded-[10px] ">
             <p className="font-bold leading-[11.96px] text-[0.5rem]">2024</p>
@@ -123,7 +134,7 @@ const ProjectsPage = () => {
             </div>
           </div>
         </div>
-        <div className=" relative h-full rounded-[10px]">
+        <div data-aos="fade" className=" relative h-full rounded-[10px]">
           <Image src={tribeImg} alt="tribe" className="w-full rounded-[10px]" />
           <div className="bg-gradient-to-r from-[#B750AD60] to-[#7CA3D160] absolute bottom-0 w-full backdrop-blur-sm text-white p-3 rounded-[10px] ">
             <p className="font-bold leading-[11.96px] text-[0.5rem]">2024</p>
@@ -142,7 +153,7 @@ const ProjectsPage = () => {
             </div>
           </div>
         </div>
-        <div className=" relative h-full rounded-[10px]">
+        <div data-aos="fade" className=" relative h-full rounded-[10px]">
           <Image
             src={roxbarfImg}
             alt="tribe"

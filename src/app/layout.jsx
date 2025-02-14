@@ -17,6 +17,7 @@ const kanit = Kanit({
   weight: ["300", "400", "500", "600", "700"],
   variable: "--font-kanit",
 });
+
 export default function RootLayout({ children }) {
   return (
     <html lang="es">
