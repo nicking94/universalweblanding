@@ -78,7 +78,7 @@ const ContactForm = () => {
             <div className="flex pb-4 justify-center">
               <button
                 type="submit"
-                className="w-[15rem] bg-pink-600 text-white py-4 rounded-lg"
+                className="hover:scale-105 transition-all duration-300 w-[15rem] bg-pink-600 text-white py-4 rounded-lg"
               >
                 Enviar
               </button>

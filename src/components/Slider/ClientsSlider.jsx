@@ -8,6 +8,7 @@ import "swiper/css/autoplay";
 import ClientsCard from "../Cards/ClientsCard";
 import rightArrowIcon from "../../../public/icons/rightArrow.png";
 import Image from "next/image";
+import clientImg from "../../../public/images/hopClient.png";
 
 const ClientsSlider = () => {
   const swiperRef = useRef(null);
@@ -37,7 +38,7 @@ const ClientsSlider = () => {
         modules={[Navigation, Pagination, Autoplay]}
         breakpoints={{
           320: { slidesPerView: 1 },
-          768: { slidesPerView: 3 },
+          768: { slidesPerView: 2 },
         }}
         navigation={{ prevEl: ".custom-prev", nextEl: ".custom-next" }}
         pagination={{ clickable: true }}
@@ -46,19 +47,64 @@ const ClientsSlider = () => {
         ref={swiperRef}
       >
         <SwiperSlide onClick={handleSlideClick}>
-          <ClientsCard />
+          <ClientsCard
+            imageSrc={clientImg}
+            name={"José Oquendo"}
+            company={"Servicios de transporte Oti, SPA"}
+            review={
+              " Nuestra empresa necesitaba una solución Mobile personalizada con compromiso y eficiencia. Destacamos un diseño que captó nuestra visión y la transparencia administrativa que facilitó comprender aspectos técnicos. Aunque la comunicación puede mejorar, valoramos su interés en una relación comercial a largo plazo. Experiencia positiva y profesional."
+            }
+            website={"http://transporteoti.cl/"}
+            websiteText={"@transporteoti.cl"}
+          />
         </SwiperSlide>
         <SwiperSlide onClick={handleSlideClick}>
-          <ClientsCard />
+          <ClientsCard
+            imageSrc={clientImg}
+            name={"José Oquendo"}
+            company={"Servicios de transporte Oti, SPA"}
+            review={
+              " Nuestra empresa necesitaba una solución Mobile personalizada con compromiso y eficiencia. Destacamos un diseño que captó nuestra visión y la transparencia administrativa que facilitó comprender aspectos técnicos. Aunque la comunicación puede mejorar, valoramos su interés en una relación comercial a largo plazo. Experiencia positiva y profesional."
+            }
+            website={"http://transporteoti.cl/"}
+            websiteText={"@transporteoti.cl"}
+          />
         </SwiperSlide>
         <SwiperSlide onClick={handleSlideClick}>
-          <ClientsCard />
+          <ClientsCard
+            imageSrc={clientImg}
+            name={"José Oquendo"}
+            company={"Servicios de transporte Oti, SPA"}
+            review={
+              " Nuestra empresa necesitaba una solución Mobile personalizada con compromiso y eficiencia. Destacamos un diseño que captó nuestra visión y la transparencia administrativa que facilitó comprender aspectos técnicos. Aunque la comunicación puede mejorar, valoramos su interés en una relación comercial a largo plazo. Experiencia positiva y profesional."
+            }
+            website={"http://transporteoti.cl/"}
+            websiteText={"@transporteoti.cl"}
+          />
         </SwiperSlide>
         <SwiperSlide onClick={handleSlideClick}>
-          <ClientsCard />
+          <ClientsCard
+            imageSrc={clientImg}
+            name={"José Oquendo"}
+            company={"Servicios de transporte Oti, SPA"}
+            review={
+              " Nuestra empresa necesitaba una solución Mobile personalizada con compromiso y eficiencia. Destacamos un diseño que captó nuestra visión y la transparencia administrativa que facilitó comprender aspectos técnicos. Aunque la comunicación puede mejorar, valoramos su interés en una relación comercial a largo plazo. Experiencia positiva y profesional."
+            }
+            website={"http://transporteoti.cl/"}
+            websiteText={"@transporteoti.cl"}
+          />
         </SwiperSlide>
         <SwiperSlide onClick={handleSlideClick}>
-          <ClientsCard />
+          <ClientsCard
+            imageSrc={clientImg}
+            name={"José Oquendo"}
+            company={"Servicios de transporte Oti, SPA"}
+            review={
+              " Nuestra empresa necesitaba una solución Mobile personalizada con compromiso y eficiencia. Destacamos un diseño que captó nuestra visión y la transparencia administrativa que facilitó comprender aspectos técnicos. Aunque la comunicación puede mejorar, valoramos su interés en una relación comercial a largo plazo. Experiencia positiva y profesional."
+            }
+            website={"http://transporteoti.cl/"}
+            websiteText={"@transporteoti.cl"}
+          />
         </SwiperSlide>
       </Swiper>
     </div>

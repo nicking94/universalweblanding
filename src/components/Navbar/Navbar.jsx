@@ -30,7 +30,7 @@ const Navbar = () => {
   };
 
   const navLinks = [
-    { name: "Nosotros", path: "/home/nosotros" },
+    // { name: "Nosotros", path: "/home/nosotros" },
     { name: "Proyectos", path: "/home/proyectos" },
   ];
 

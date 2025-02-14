@@ -65,7 +65,19 @@ body {
     transform: translateX(-100%);
   }
 }
+@keyframes animate-slide-left {
+  from {
+    transform: translateX(0);
+  }
 
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-slide-left{
+  animation: animate-slide-left 10s linear infinite;
+}
 
 .swiper-pagination-bullet {
   background-color: #AE39A3 !important; 

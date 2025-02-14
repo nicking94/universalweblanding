@@ -34,9 +34,9 @@ const Footer = () => {
 
       <nav className="mb-4 lg:mb-0 ">
         <ul className="flex items-center space-x-6 hover:text-gray-400 ">
-          <li className="hover:scale-105 transition duration-300">
+          {/* <li className="hover:scale-105 transition duration-300">
             <Link href="/home/nosotros">Nosotros</Link>
-          </li>
+          </li> */}
           <li className="hover:scale-105 transition duration-300">
             <Link href="/home/proyectos">Proyectos</Link>
           </li>
