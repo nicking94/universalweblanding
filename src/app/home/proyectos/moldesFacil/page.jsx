@@ -14,7 +14,7 @@ import flashIcon from "../../../../../public/icons/flash.png";
 import Button from "@/components/Button/Button";
 import sofoconImg from "../../../../../public/images/moldesImg.svg";
 import sofoconImg2 from "../../../../../public/images/moldesProject3.svg";
-import sofoconImg3 from "../../../../../public/images/sofoconProject3.svg";
+import sofoconImg3 from "../../../../../public/images/moldesImg2.svg";
 import Link from "next/link";
 
 const MoldesFacilPage = () => {

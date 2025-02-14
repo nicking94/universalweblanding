@@ -10,9 +10,9 @@ import refreshIcon from "../../../../../public/icons/refresh.png";
 import bagIcon from "../../../../../public/icons/bag.png";
 import Button from "@/components/Button/Button";
 import sofoconImg from "../../../../../public/images/tribeImg.svg";
-import sofoconImg2 from "../../../../../public/images/tribeProject3.svg";
+import sofoconImg2 from "../../../../../public/images/tribeImg2.svg";
 import sofoconImg3 from "../../../../../public/images/tribeProject3.svg";
-import { useEffect, useRef, useState } from "react";
+import { useEffect } from "react";
 import Link from "next/link";
 
 const TribePage = () => {

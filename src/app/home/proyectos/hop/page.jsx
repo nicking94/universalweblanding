@@ -12,7 +12,7 @@ import ticketIcon from "../../../../../public/icons/ticket.png";
 import Button from "@/components/Button/Button";
 import sofoconImg from "../../../../../public/images/hopImg.svg";
 import sofoconImg2 from "../../../../../public/images/hopImg2.svg";
-import sofoconImg3 from "../../../../../public/images/sofoconProject3.svg";
+import sofoconImg3 from "../../../../../public/images/hopImg3.svg";
 import Link from "next/link";
 
 const HopPage = () => {

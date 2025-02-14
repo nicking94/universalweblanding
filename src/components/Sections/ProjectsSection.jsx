@@ -1,5 +1,3 @@
-import Button from "../Button/Button";
-
 const ProjectCard = ({ title, subtitle, description, children }) => {
   return (
     <div className="xl:relative flex flex-col lg:flex-row px-4 lg:px-0 w-full h-full ">

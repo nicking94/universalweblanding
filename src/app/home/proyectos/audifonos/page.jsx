@@ -9,7 +9,7 @@ import messageIcon from "../../../../../public/icons/messages2.png";
 import Button from "@/components/Button/Button";
 import sofoconImg from "../../../../../public/images/audifonosImg.svg";
 import sofoconImg2 from "../../../../../public/images/audifonosProject3.svg";
-import sofoconImg3 from "../../../../../public/images/sofoconProject3.svg";
+import sofoconImg3 from "../../../../../public/images/audifonosImg2.svg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";

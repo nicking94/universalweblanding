@@ -100,7 +100,7 @@ const ClientsSection = ({
               <span className="text-violet text-xl lg:text-[8.6rem] font-semibold">
                 {thingCount}
               </span>
-              <p className="text-sm lg:text-lg leading-[58px] -mt-10 font-semibold text-center">
+              <p className="text-sm lg:text-lg md:leading-[58px] -mt-6 md:-mt-10 font-semibold text-center">
                 Proyectos en curso
               </p>
             </div>

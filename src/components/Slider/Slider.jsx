@@ -59,7 +59,7 @@ const Slider = () => {
               </>
             }
           >
-            <div className="flex w-full min-h-[18.6rem] lg:h-[47rem] mt-10">
+            <div className="flex w-full min-h-[18.6rem] lg:lg:h-[33rem] 2xl:h-[47rem] mt-10">
               <video
                 src="/clips3D/moldes.mp4"
                 autoPlay
@@ -85,7 +85,7 @@ const Slider = () => {
               </>
             }
           >
-            <div className="flex w-full min-h-[18.6rem] lg:h-[47rem] mt-10">
+            <div className="flex w-full min-h-[18.6rem] lg:lg:h-[33rem] 2xl:h-[47rem] mt-10">
               <video
                 src="/clips3D/recam.mp4"
                 autoPlay
@@ -114,7 +114,7 @@ const Slider = () => {
               </>
             }
           >
-            <div className="flex w-full min-h-[18.6rem] lg:h-[47rem] mt-10">
+            <div className="flex w-full min-h-[18.6rem] lg:lg:h-[33rem] 2xl:h-[47rem] mt-10">
               <video
                 src="/clips3D/hop.mp4"
                 autoPlay
@@ -143,7 +143,7 @@ const Slider = () => {
               </>
             }
           >
-            <div className="flex w-full min-h-[18.6rem] lg:h-[47rem] mt-10">
+            <div className="flex w-full min-h-[18.6rem] lg:lg:h-[33rem] 2xl:h-[47rem] mt-10">
               <video
                 src="/clips3D/tribe.mp4"
                 autoPlay

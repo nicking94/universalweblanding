@@ -11,7 +11,7 @@ import filterIcon from "../../../../../public/icons/filter.png";
 import bagIcon from "../../../../../public/icons/bag2.png";
 import Button from "@/components/Button/Button";
 import sofoconImg from "../../../../../public/images/roxbarfImg.svg";
-import sofoconImg2 from "../../../../../public/images/roxBarfProject3.svg";
+import sofoconImg2 from "../../../../../public/images/roxbarfImg2.svg";
 import sofoconImg3 from "../../../../../public/images/roxbarfProject3.svg";
 import Link from "next/link";
 
