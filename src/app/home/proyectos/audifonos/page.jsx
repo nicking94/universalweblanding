@@ -12,10 +12,67 @@ import sofoconImg2 from "../../../../../public/images/audifonosProject3.svg";
 import sofoconImg3 from "../../../../../public/images/audifonosImg2.svg";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 
 const AudifonosPage = () => {
+  const sectionRef = useRef(null);
+  const [counts, setCounts] = useState({
+    features: 0,
+    improvements: 0,
+    efficiency: 0,
+    clients: 0,
+  });
+  const targets = {
+    features: 50,
+    improvements: 200,
+    efficiency: 90,
+    clients: 120,
+  };
+  let isCounting = false;
+  const intervals = {};
+
+  useEffect(() => {
+    const startCounting = () => {
+      if (isCounting) return;
+      isCounting = true;
+
+      Object.keys(targets).forEach((key) => {
+        intervals[key] = setInterval(() => {
+          setCounts((prev) => {
+            if (prev[key] < targets[key]) {
+              return { ...prev, [key]: prev[key] + 1 };
+            } else {
+              clearInterval(intervals[key]);
+              return prev;
+            }
+          });
+        }, 70);
+      });
+    };
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            startCounting();
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      Object.values(intervals).forEach(clearInterval);
+      observer.disconnect();
+    };
+  }, []);
+
   useEffect(() => {
     AOS.init({
       duration: 2000,
@@ -23,6 +80,7 @@ const AudifonosPage = () => {
       once: true,
     });
   }, []);
+
   return (
     <div className="py-36 px-4 md:px-20 min-h-screen">
       <div className="flex flex-col items-center gap-[1rem]">
@@ -45,10 +103,14 @@ const AudifonosPage = () => {
           className="w-full h-full object-cover rounded-[40px]"
         />
       </div>
-      <div data-aos="fade" className="grid grid-cols-2 md:grid-cols-4 p-4">
+      <div
+        ref={sectionRef}
+        data-aos="fade"
+        className="grid grid-cols-2 md:grid-cols-4 p-4"
+      >
         <div className="flex flex-col items-center justify-center">
           <p className="font-semibold text-violet md:leading-[99.22px] text-lg md:text-xxl">
-            +100
+            +{counts.features}
           </p>
           <p className="text-center font-medium md:leading-[24px] text-xxs md:text-sm">
             Features en el dashboard
@@ -56,7 +118,7 @@ const AudifonosPage = () => {
         </div>
         <div className=" flex flex-col items-center justify-center">
           <p className="font-semibold text-violet md:leading-[99.22px] text-lg md:text-xxl">
-            +200%
+            +{counts.improvements}%
           </p>
           <p className="text-center font-medium md:leading-[24px] text-xxs md:text-sm">
             Mejoras
@@ -64,7 +126,7 @@ const AudifonosPage = () => {
         </div>
         <div className=" flex flex-col items-center justify-center">
           <p className="font-semibold text-violet md:leading-[99.22px] text-lg md:text-xxl">
-            +90%
+            +{counts.efficiency}%
           </p>
           <p className="text-center font-medium md:leading-[24px] text-xxs md:text-sm">
             Mejora en eficacia de ventas
@@ -72,7 +134,7 @@ const AudifonosPage = () => {
         </div>
         <div className=" flex flex-col items-center justify-center">
           <p className="font-semibold text-violet md:leading-[99.22px] text-lg md:text-xxl">
-            +120
+            +{counts.clients}
           </p>
           <p className="text-center font-medium md:leading-[24px] text-xxs md:text-sm">
             Clientes satisfechos
