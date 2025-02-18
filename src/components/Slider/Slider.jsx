@@ -40,7 +40,8 @@ const Slider = () => {
         navigation={{ prevEl: ".custom-prev", nextEl: ".custom-next" }}
         pagination={{ clickable: true }}
         loop={true}
-        autoplay={{ delay: 4000 }}
+        autoplay={{ delay: 6000 }}
+        speed={1500}
         ref={swiperRef}
       >
         <SwiperSlide onClick={handleSlideClick}>

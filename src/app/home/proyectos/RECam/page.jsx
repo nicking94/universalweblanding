@@ -290,7 +290,9 @@ const RecamPage = () => {
         className="bg-background-gradient  flex flex-col md:flex-row rounded-tl-[40px] rounded-bl-[40px] md:rounded-[40px] md:border-[5px] border-l-[5px] border-t-[5px] border-b-[5px] border-violet md:pl-10 -mr-4 "
       >
         <div className="md:w-1/2 flex flex-col justify-center px-4 md:px-0">
-          <h3 className="font-semibold text-xl leading-[70.4px]">RECam</h3>
+          <h3 className="font-semibold text-[4rem] leading-[80px] md:leading-[140.4px]">
+            RECam
+          </h3>
           <p className="font-medium text-violet text-md leading-[35.2px] mb-10 md:mb-0">
             Tecnología al servicio de la educación. 
           </p>

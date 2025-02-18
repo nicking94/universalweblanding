@@ -13,9 +13,9 @@ export default {
         sm: "1.25rem",
         md: "2rem",
         lg: "2.5rem",
-        xl: "4rem",
-        xxl: "5rem",
-        xxxl: "18.676rem",
+        xl: "3rem",
+        xxl: "4rem",
+        xxxl: "15.676rem",
       },
       colors: {
         textGray: "#A19E9E",
