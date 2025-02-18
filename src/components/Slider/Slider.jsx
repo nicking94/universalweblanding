@@ -27,7 +27,7 @@ const Slider = () => {
 
   return (
     <div className="relative w-full  ">
-      <button className="hidden md:flex custom-next absolute right-4  md:top-[92.5%] -translate-y-1/2 z-10 text-white bg-violet/80 p-3 rounded-md ">
+      <button className="hidden md:flex custom-next absolute right-4  md:top-[50%] -translate-y-1/2 z-10 text-white bg-violet/80 p-3 rounded-md ">
         <Image src={rightArrowIcon} alt="rightArrow" />
       </button>
 

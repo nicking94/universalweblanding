@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
             />
           </Link>
         </div>
-        <div className=" w-[300px] h-[300px]  hidden lg:flex fixed top-[89.8%] 2xl:top-[93.3%] left-[91.5%] 2xl:left-[94%] translate-x-[-50%] translate-y-[-50%] z-50">
+        <div className=" w-[200px] h-[200px] 2xl:w-[250px] 2xl:h-[250px] hidden lg:flex fixed top-[93%] 2xl:top-[94.4%] left-[94%] 2xl:left-[95%] translate-x-[-50%] translate-y-[-50%] z-50">
           <Link href="https://wa.me/542616951550">
             <video
               className="cursor-pointer"

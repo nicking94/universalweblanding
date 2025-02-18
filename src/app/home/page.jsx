@@ -162,7 +162,7 @@ export default function HomePage() {
               />
               <div className="absolute top-[50%] lg:top-[63%] 2xl:top-[67%] w-full flex justify-center">
                 <button
-                  className="hover:scale-105 transition-all duration-300 font-medium text-xs bg-violet text-white py-[0.75rem] px-[1.5rem] rounded-[8px] "
+                  className="hover:scale-105 transition-all duration-300 font-medium text-xxs md:text-xs bg-violet text-white py-[0.55rem] md:py-[0.75rem] px-[1.3rem] md:px-[1.5rem] rounded-[8px] "
                   onClick={handleAnimation}
                 >
                   Click aquí
