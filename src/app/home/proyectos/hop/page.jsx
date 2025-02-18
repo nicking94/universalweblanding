@@ -94,7 +94,7 @@ const HopPage = () => {
       </div>
       <div className="flex w-full lg:h-[47rem] mt-10">
         <video
-          src="/clips3D/hopVideo1.mp4"
+          src="https://s3.novexisconsulting.xyz/novexis-web/hopVideo1.mp4"
           autoPlay
           muted
           playsInline
@@ -310,7 +310,7 @@ const HopPage = () => {
         </div>
         <div className="md:w-1/2 flex rounded-[40px]">
           <video
-            src="/clips3D/hopVideo2.mp4"
+            src="https://s3.novexisconsulting.xyz/novexis-web/hopVideo2.mp4"
             autoPlay
             muted
             playsInline

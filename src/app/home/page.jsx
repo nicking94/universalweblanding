@@ -4,6 +4,8 @@ import "aos/dist/aos.css";
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import whatsappLogo from "../../../public/images/whatsappLogo.svg";
+import hopClientImg from "../../../public/images/hopClient.png";
+import tribeClientImg from "../../../public/images/tribeClient.png";
 import Slider from "@/components/Slider/Slider";
 import ServicesCard from "@/components/Sections/ServicesSection";
 import Carrousel from "@/components/Carrousel/Carrousel";
@@ -13,6 +15,7 @@ import ContactSection from "@/components/Sections/ContactSection";
 import ContactForm from "@/components/Form/ContactForm";
 import Button from "@/components/Button/Button";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function HomePage() {
   const words = ["idea", "plan"];
@@ -104,28 +107,25 @@ export default function HomePage() {
             que impulsan la innovación y eficiencia en su negocio.
           </p>
           <div className="flex flex-col md:flex-row md:items-center gap-4">
-            <Button text={"Ver proyectos"} />
+            <Link href="/home/proyectos">
+              <Button text={"Ver proyectos"} />
+            </Link>
+
             <div className="flex">
               <Image
                 className="rounded-full"
-                src={whatsappLogo}
-                alt="whatsapp logo"
+                src={hopClientImg}
+                alt="hop"
                 width={30}
               />
               <Image
                 className="-ml-3 rounded-full"
-                src={whatsappLogo}
-                alt="whatsapp logo"
-                width={30}
-              />
-              <Image
-                className="-ml-3 rounded-full"
-                src={whatsappLogo}
-                alt="whatsapp logo"
+                src={tribeClientImg}
+                alt="tribe"
                 width={30}
               />
             </div>
-            <p>+10 empresas ya han confiado en nosotros.</p>
+            <p>+50 empresas ya han confiado en nosotros.</p>
           </div>
         </div>
       </motion.section>
@@ -156,7 +156,7 @@ export default function HomePage() {
             >
               <video
                 ref={videoRef}
-                src="/clips3D/laptopHome.mp4"
+                src="https://s3.novexisconsulting.xyz/novexis-web/laptopHome.mp4"
                 muted
                 playsInline
                 className=" relative w-full h-full lg:object-fill rounded-[40px]"

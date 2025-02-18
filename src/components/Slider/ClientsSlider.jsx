@@ -8,7 +8,8 @@ import "swiper/css/autoplay";
 import ClientsCard from "../Cards/ClientsCard";
 import rightArrowIcon from "../../../public/icons/rightArrow.png";
 import Image from "next/image";
-import clientImg from "../../../public/images/hopClient.png";
+import hopClientImg from "../../../public/images/hopClient.png";
+import tribeClientImg from "../../../public/images/tribeClient.png";
 
 const ClientsSlider = () => {
   const swiperRef = useRef(null);
@@ -48,7 +49,7 @@ const ClientsSlider = () => {
       >
         <SwiperSlide onClick={handleSlideClick}>
           <ClientsCard
-            imageSrc={clientImg}
+            imageSrc={hopClientImg}
             name={"José Oquendo"}
             company={"Servicios de transporte Oti, SPA"}
             review={
@@ -60,7 +61,18 @@ const ClientsSlider = () => {
         </SwiperSlide>
         <SwiperSlide onClick={handleSlideClick}>
           <ClientsCard
-            imageSrc={clientImg}
+            imageSrc={tribeClientImg}
+            name={"Tribe"}
+            company={"Servicios de transporte Oti, SPA"}
+            review={`Después de haber tenido una mala experiencia y haber perdido el entusiasmo para nuestro proyecto, hemos podido tener la suerte de conocer a Emiliano y su equipo de Novexis. Trabajando con ellos en el desarrollo de una app innovadora en el sector travel, hemos vuelto a tener las ganas y la ambición para seguir adelante. Todo el equipo mostró profesionalismo, creatividad y una gran capacidad para convertir nuestra visión en una aplicación intuitiva y funcional. Resolviendo dudas y preguntas en cualquier momento.
+La comunicación fue fluida y el resultado superó nuestras expectativas. ¡100% recomendados!`}
+            website={"www.tribeapp.es"}
+            websiteText={"www.tribeapp.es"}
+          />
+        </SwiperSlide>
+        <SwiperSlide onClick={handleSlideClick}>
+          <ClientsCard
+            imageSrc={hopClientImg}
             name={"José Oquendo"}
             company={"Servicios de transporte Oti, SPA"}
             review={
@@ -72,38 +84,13 @@ const ClientsSlider = () => {
         </SwiperSlide>
         <SwiperSlide onClick={handleSlideClick}>
           <ClientsCard
-            imageSrc={clientImg}
-            name={"José Oquendo"}
-            company={"Servicios de transporte Oti, SPA"}
-            review={
-              " Nuestra empresa necesitaba una solución Mobile personalizada con compromiso y eficiencia. Destacamos un diseño que captó nuestra visión y la transparencia administrativa que facilitó comprender aspectos técnicos. Aunque la comunicación puede mejorar, valoramos su interés en una relación comercial a largo plazo. Experiencia positiva y profesional."
-            }
-            website={"http://transporteoti.cl/"}
-            websiteText={"@transporteoti.cl"}
-          />
-        </SwiperSlide>
-        <SwiperSlide onClick={handleSlideClick}>
-          <ClientsCard
-            imageSrc={clientImg}
-            name={"José Oquendo"}
-            company={"Servicios de transporte Oti, SPA"}
-            review={
-              " Nuestra empresa necesitaba una solución Mobile personalizada con compromiso y eficiencia. Destacamos un diseño que captó nuestra visión y la transparencia administrativa que facilitó comprender aspectos técnicos. Aunque la comunicación puede mejorar, valoramos su interés en una relación comercial a largo plazo. Experiencia positiva y profesional."
-            }
-            website={"http://transporteoti.cl/"}
-            websiteText={"@transporteoti.cl"}
-          />
-        </SwiperSlide>
-        <SwiperSlide onClick={handleSlideClick}>
-          <ClientsCard
-            imageSrc={clientImg}
-            name={"José Oquendo"}
-            company={"Servicios de transporte Oti, SPA"}
-            review={
-              " Nuestra empresa necesitaba una solución Mobile personalizada con compromiso y eficiencia. Destacamos un diseño que captó nuestra visión y la transparencia administrativa que facilitó comprender aspectos técnicos. Aunque la comunicación puede mejorar, valoramos su interés en una relación comercial a largo plazo. Experiencia positiva y profesional."
-            }
-            website={"http://transporteoti.cl/"}
-            websiteText={"@transporteoti.cl"}
+            imageSrc={tribeClientImg}
+            name={"Tribe"}
+            company={"Red Social"}
+            review={`Después de haber tenido una mala experiencia y haber perdido el entusiasmo para nuestro proyecto, hemos podido tener la suerte de conocer a Emiliano y su equipo de Novexis. Trabajando con ellos en el desarrollo de una app innovadora en el sector travel, hemos vuelto a tener las ganas y la ambición para seguir adelante. Todo el equipo mostró profesionalismo, creatividad y una gran capacidad para convertir nuestra visión en una aplicación intuitiva y funcional. Resolviendo dudas y preguntas en cualquier momento.
+La comunicación fue fluida y el resultado superó nuestras expectativas. ¡100% recomendados!`}
+            website={"www.tribeapp.es"}
+            websiteText={"www.tribeapp.es"}
           />
         </SwiperSlide>
       </Swiper>

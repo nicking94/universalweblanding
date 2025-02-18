@@ -12,7 +12,7 @@ const ClientsCard = ({
 }) => {
   return (
     <div className="flex flex-col w-full space-y-6 min-w-[17rem] p-4 lg:p-10">
-      <div className="flex items-center gap-4">
+      <div className=" flex items-center gap-4">
         <div className="flex justify-center items-center h-20 w-20">
           <Image
             className="rounded-[100%] w-full h-full"
@@ -28,6 +28,7 @@ const ClientsCard = ({
       <div>
         <p className="text-xs font-light">{review}</p>
       </div>
+
       <div>
         <p className=" font-normal text-xs text-grayMedium">{name}</p>
         <Link

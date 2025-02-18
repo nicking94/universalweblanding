@@ -87,7 +87,7 @@ const RoxbarfPage = () => {
       </div>
       <div className="flex w-full lg:h-[47rem] mt-10">
         <video
-          src="/clips3D/roxbarfVideo1.mp4"
+          src="https://s3.novexisconsulting.xyz/novexis-web/roxbarfVideo1.mp4"
           autoPlay
           muted
           playsInline
@@ -320,7 +320,7 @@ const RoxbarfPage = () => {
         </div>
         <div className="md:w-1/2 flex rounded-[40px]">
           <video
-            src="/clips3D/roxbarfVideo2.mp4"
+            src="https://s3.novexisconsulting.xyz/novexis-web/roxbarfVideo2.mp4"
             autoPlay
             muted
             playsInline

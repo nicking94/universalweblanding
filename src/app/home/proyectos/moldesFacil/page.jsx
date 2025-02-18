@@ -96,7 +96,7 @@ const MoldesFacilPage = () => {
       </div>
       <div className="flex w-full h-[40rem] mt-10 ">
         <video
-          src="/clips3D/moldesVideo1.mp4"
+          src="https://s3.novexisconsulting.xyz/novexis-web/moldesVideo1.mp4"
           autoPlay
           muted
           playsInline
@@ -315,7 +315,7 @@ const MoldesFacilPage = () => {
         </div>
         <div className="flex w-full lg:h-[47rem] mt-10">
           <video
-            src="/clips3D/moldesVideo2.mp4"
+            src="https://s3.novexisconsulting.xyz/novexis-web/moldesVideo2.mp4"
             autoPlay
             muted
             playsInline

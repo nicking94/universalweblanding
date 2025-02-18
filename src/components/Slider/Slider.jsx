@@ -61,7 +61,7 @@ const Slider = () => {
           >
             <div className="flex w-full min-h-[18.6rem] lg:lg:h-[33rem] 2xl:h-[47rem] mt-10">
               <video
-                src="/clips3D/moldes.mp4"
+                src="https://s3.novexisconsulting.xyz/novexis-web/moldes.mp4"
                 autoPlay
                 muted
                 playsInline
@@ -87,7 +87,7 @@ const Slider = () => {
           >
             <div className="flex w-full min-h-[18.6rem] lg:lg:h-[33rem] 2xl:h-[47rem] mt-10">
               <video
-                src="/clips3D/recam.mp4"
+                src="https://s3.novexisconsulting.xyz/novexis-web/recam.mp4"
                 autoPlay
                 muted
                 playsInline
@@ -116,7 +116,7 @@ const Slider = () => {
           >
             <div className="flex w-full min-h-[18.6rem] lg:lg:h-[33rem] 2xl:h-[47rem] mt-10">
               <video
-                src="/clips3D/hop.mp4"
+                src="https://s3.novexisconsulting.xyz/novexis-web/hop.mp4"
                 autoPlay
                 muted
                 playsInline
@@ -145,7 +145,7 @@ const Slider = () => {
           >
             <div className="flex w-full min-h-[18.6rem] lg:lg:h-[33rem] 2xl:h-[47rem] mt-10">
               <video
-                src="/clips3D/tribe.mp4"
+                src="https://s3.novexisconsulting.xyz/novexis-web/tribe.mp4"
                 autoPlay
                 muted
                 playsInline

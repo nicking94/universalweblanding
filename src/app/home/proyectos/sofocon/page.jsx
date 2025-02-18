@@ -87,7 +87,7 @@ const SofoconPage = () => {
       </div>
       <div className="flex w-full lg:h-[47rem] mt-10">
         <video
-          src="/clips3D/sofoconProyecto1.mp4"
+          src="https://s3.novexisconsulting.xyz/novexis-web/sofoconProyecto1.mp4"
           autoPlay
           muted
           playsInline
@@ -301,7 +301,7 @@ const SofoconPage = () => {
         </div>
         <div className="md:w-1/2 flex rounded-[40px]">
           <video
-            src="/clips3D/sofoconVideo1.mp4"
+            src="https://s3.novexisconsulting.xyz/novexis-web/sofoconVideo1.mp4"
             autoPlay
             muted
             playsInline

@@ -96,7 +96,7 @@ const AudifonosPage = () => {
       </div>
       <div className="flex w-full lg:h-[47rem] mt-10">
         <video
-          src="/clips3D/audifonosVideo1.mp4"
+          src="https://s3.novexisconsulting.xyz/novexis-web/audifonosVideo1.mp4"
           autoPlay
           muted
           playsInline
@@ -315,7 +315,7 @@ const AudifonosPage = () => {
         </div>
         <div className="md:w-1/2 flex rounded-[40px]">
           <video
-            src="/clips3D/audifonosVideo2.mp4"
+            src="https://s3.novexisconsulting.xyz/novexis-web/audifonosVideo2.mp4"
             autoPlay
             muted
             playsInline
