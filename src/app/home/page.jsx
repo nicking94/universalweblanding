@@ -3,7 +3,6 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import whatsappLogo from "../../../public/images/whatsappLogo.svg";
 import hopClientImg from "../../../public/images/hopClient.png";
 import tribeClientImg from "../../../public/images/tribeClient.png";
 import Slider from "@/components/Slider/Slider";
