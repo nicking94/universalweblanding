@@ -331,7 +331,7 @@ const AudifonosPage = () => {
           ¿Tienes alguna consulta?
         </h1>
         <Link href="https://wa.me/542616951550">
-          <Button text={"Contáctanos"} />
+          <Button target="_blank" text={"Contáctanos"} />
         </Link>
       </div>
     </div>

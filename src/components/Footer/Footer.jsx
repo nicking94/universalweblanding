@@ -57,6 +57,7 @@ const Footer = () => {
         <Link
           className="hover:scale-110 transition-all duration-300"
           href="https://www.facebook.com/NovexisConsultingS.A.S/"
+          target="_blank"
           title="Facebook"
         >
           <Image src={facebookLogo} alt="facebook" />
@@ -64,6 +65,7 @@ const Footer = () => {
         <Link
           className="hover:scale-110 transition-all duration-300"
           href="https://www.instagram.com/novexisconsulting/"
+          target="_blank"
           title="Instagram"
         >
           <Image src={instagramLogo} alt="facebook" />
@@ -71,6 +73,7 @@ const Footer = () => {
         <Link
           className="hover:scale-110 transition-all duration-300"
           href="https://www.linkedin.com/company/novexis-consulting"
+          target="_blank"
           title="Linkedin"
         >
           <Image src={linkedinLogo} alt="facebook" />
