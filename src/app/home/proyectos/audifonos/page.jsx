@@ -82,7 +82,7 @@ const AudifonosPage = () => {
   }, []);
 
   return (
-    <div className="py-36 px-4 md:px-20 min-h-screen">
+    <div className="pt-36 pb-10 px-4 md:px-20 min-h-screen">
       <div className="flex flex-col items-center gap-[1rem]">
         <p className="font-medium text-xs border rounded-[7.75rem] min-w-[8rem] py-1.5 px-4 md:leading-[20.8px] text-center">
           Landing Page
@@ -325,7 +325,7 @@ const AudifonosPage = () => {
       </div>
       <div
         data-aos="fade"
-        className="pt-20 flex flex-col items-center space-y-10"
+        className=" pt-20 flex flex-col items-center space-y-10"
       >
         <h1 className=" font-light text-lg leading-[52.8px] text-center md:text-start">
           ¿Tienes alguna consulta?

@@ -80,7 +80,7 @@ const RecamPage = () => {
     });
   }, []);
   return (
-    <div className="py-36 px-4 md:px-20 min-h-screen">
+    <div className="pt-36 pb-10 px-4 md:px-20 min-h-screen">
       <div className="flex flex-col items-center gap-[1rem]">
         <p className="font-medium text-xs border rounded-[7.75rem] min-w-[8rem] py-1.5 px-4 md:leading-[20.8px] text-center">
           Web App
@@ -315,7 +315,7 @@ const RecamPage = () => {
           ¿Tienes alguna consulta?
         </h1>
         <Link href="https://wa.me/542616951550">
-        <Button target="_blank" text={"Contáctanos"} />
+          <Button target="_blank" text={"Contáctanos"} />
         </Link>
       </div>
     </div>

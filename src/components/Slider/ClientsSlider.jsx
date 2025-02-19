@@ -67,7 +67,7 @@ const ClientsSlider = () => {
             company={"Red social"}
             review={`Después de haber tenido una mala experiencia y haber perdido el entusiasmo para nuestro proyecto, hemos podido tener la suerte de conocer a Emiliano y su equipo de Novexis. Trabajando con ellos en el desarrollo de una app innovadora en el sector travel, hemos vuelto a tener las ganas y la ambición para seguir adelante. Todo el equipo mostró profesionalismo, creatividad y una gran capacidad para convertir nuestra visión en una aplicación intuitiva y funcional. Resolviendo dudas y preguntas en cualquier momento.
 La comunicación fue fluida y el resultado superó nuestras expectativas. ¡100% recomendados!`}
-            website={"http://www.tribeapp.es"}
+            website={"https://tribeapp.es/"}
             websiteText={"@tribeapp"}
           />
         </SwiperSlide>
@@ -90,7 +90,7 @@ La comunicación fue fluida y el resultado superó nuestras expectativas. ¡100%
             company={"Red Social"}
             review={`Después de haber tenido una mala experiencia y haber perdido el entusiasmo para nuestro proyecto, hemos podido tener la suerte de conocer a Emiliano y su equipo de Novexis. Trabajando con ellos en el desarrollo de una app innovadora en el sector travel, hemos vuelto a tener las ganas y la ambición para seguir adelante. Todo el equipo mostró profesionalismo, creatividad y una gran capacidad para convertir nuestra visión en una aplicación intuitiva y funcional. Resolviendo dudas y preguntas en cualquier momento.
 La comunicación fue fluida y el resultado superó nuestras expectativas. ¡100% recomendados!`}
-            website={"http://www.tribeapp.es"}
+            website={"https://tribeapp.es/"}
             websiteText={"@tribeapp"}
           />
         </SwiperSlide>
