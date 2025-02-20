@@ -82,7 +82,7 @@ const RoxbarfPage = () => {
           ROXBARF
         </h1>
         <p className="text-violet font-medium text-sm md:leading-[24px]">
-          Graba. Supervisa. Confía
+          La app para tu mejor amigo.
         </p>
       </div>
       <div className="flex w-full lg:h-[47rem] mt-10">

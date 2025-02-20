@@ -91,7 +91,7 @@ const AudifonosPage = () => {
           AUDIFONOS
         </h1>
         <p className="text-violet font-medium text-sm md:leading-[24px]">
-          Graba. Supervisa. Confía
+          Busca. Compara. Compra.
         </p>
       </div>
       <div className="flex w-full lg:h-[47rem] mt-10">
