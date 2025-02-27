@@ -5,6 +5,7 @@ import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import hopClientImg from "../../../public/images/hopClient.png";
 import tribeClientImg from "../../../public/images/tribeClient.png";
+import farmaciaClientImg from "../../../public/images/logoFarmacia.jpg";
 import Slider from "@/components/Slider/Slider";
 import ServicesCard from "@/components/Sections/ServicesSection";
 import Carrousel from "@/components/Carrousel/Carrousel";
@@ -120,6 +121,13 @@ export default function HomePage() {
               <Image
                 className="-ml-3 rounded-full"
                 src={tribeClientImg}
+                alt="tribe"
+                width={30}
+              />
+               
+                 <Image
+                className="-ml-3 rounded-full"
+                src={farmaciaClientImg}
                 alt="tribe"
                 width={30}
               />
