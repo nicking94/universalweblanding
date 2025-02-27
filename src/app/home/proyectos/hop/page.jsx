@@ -24,10 +24,10 @@ const HopPage = () => {
     clients: 0,
   });
   const targets = {
-    features: 50,
-    improvements: 200,
-    efficiency: 90,
-    clients: 120,
+    features: 80,
+    improvements: 40,
+    efficiency: 95,
+    clients: 92,
   };
   let isCounting = false;
   const intervals = {};
@@ -104,38 +104,38 @@ const HopPage = () => {
       <div
         ref={sectionRef}
         data-aos="fade"
-        className="grid grid-cols-2 md:grid-cols-4 p-4"
+        className="grid grid-cols-2 lg:grid-cols-4 md:p-4"
       >
         <div className="flex flex-col items-center justify-center">
           <p className="font-semibold text-violet md:leading-[99.22px] text-lg md:text-xxl">
-            +{counts.features}
+            {counts.features}%
           </p>
           <p className="text-center font-medium md:leading-[24px] text-xxs md:text-sm">
-            Features en el dashboard
+            Productividad
           </p>
         </div>
         <div className=" flex flex-col items-center justify-center">
           <p className="font-semibold text-violet md:leading-[99.22px] text-lg md:text-xxl">
-            +{counts.improvements}%
+            {counts.improvements}%
           </p>
           <p className="text-center font-medium md:leading-[24px] text-xxs md:text-sm">
-            Mejoras
+            Reducción en costos
           </p>
         </div>
         <div className=" flex flex-col items-center justify-center">
           <p className="font-semibold text-violet md:leading-[99.22px] text-lg md:text-xxl">
-            +{counts.efficiency}%
+            {counts.efficiency}%
           </p>
           <p className="text-center font-medium md:leading-[24px] text-xxs md:text-sm">
-            Mejora en eficacia de ventas
+            Satisfacción del cliente
           </p>
         </div>
         <div className=" flex flex-col items-center justify-center">
           <p className="font-semibold text-violet md:leading-[99.22px] text-lg md:text-xxl">
-            +{counts.clients}
+            {counts.clients}%
           </p>
           <p className="text-center font-medium md:leading-[24px] text-xxs md:text-sm">
-            Clientes satisfechos
+           Eficiencia en ventas
           </p>
         </div>
       </div>

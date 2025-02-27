@@ -15,7 +15,7 @@ const ClientsCard = ({
       <div className=" flex items-center gap-4">
         <div className=" flex justify-center items-center">
           <Image
-            className="rounded-[100%] w-20 h-20"
+            className="w-20 h-20 rounded-full"
             src={imageSrc}
             alt="client"
           />

@@ -26,10 +26,10 @@ const MoldesFacilPage = () => {
     clients: 0,
   });
   const targets = {
-    features: 50,
-    improvements: 200,
-    efficiency: 90,
-    clients: 120,
+    features: 100,
+    improvements: 20,
+    efficiency: 87,
+    clients: 100,
   };
   let isCounting = false;
   const intervals = {};
@@ -106,38 +106,38 @@ const MoldesFacilPage = () => {
       <div
         ref={sectionRef}
         data-aos="fade"
-        className="grid grid-cols-2 md:grid-cols-4 p-4"
+     className="grid grid-cols-2 lg:grid-cols-4 md:p-4"
       >
         <div className="flex flex-col items-center justify-center">
-          <p className="font-semibold text-violet md:leading-[99.22px] text-lg md:text-xxl">
-            +{counts.features}
+        <p className="font-semibold text-violet md:leading-[99.22px] text-lg md:text-xxl">
+            {counts.features}%
           </p>
           <p className="text-center font-medium md:leading-[24px] text-xxs md:text-sm">
-            Features en el dashboard
+            Productividad
           </p>
         </div>
         <div className=" flex flex-col items-center justify-center">
-          <p className="font-semibold text-violet md:leading-[99.22px] text-lg md:text-xxl">
-            +{counts.improvements}%
+        <p className="font-semibold text-violet md:leading-[99.22px] text-lg md:text-xxl">
+            {counts.improvements}%
           </p>
           <p className="text-center font-medium md:leading-[24px] text-xxs md:text-sm">
-            Mejoras
+            Reducción en costos
           </p>
         </div>
         <div className=" flex flex-col items-center justify-center">
-          <p className="font-semibold text-violet md:leading-[99.22px] text-lg md:text-xxl">
-            +{counts.efficiency}%
+        <p className="font-semibold text-violet md:leading-[99.22px] text-lg md:text-xxl">
+            {counts.efficiency}%
           </p>
           <p className="text-center font-medium md:leading-[24px] text-xxs md:text-sm">
-            Mejora en eficacia de ventas
+            Satisfacción del cliente
           </p>
         </div>
         <div className=" flex flex-col items-center justify-center">
-          <p className="font-semibold text-violet md:leading-[99.22px] text-lg md:text-xxl">
-            +{counts.clients}
+        <p className="font-semibold text-violet md:leading-[99.22px] text-lg md:text-xxl">
+            {counts.clients}%
           </p>
           <p className="text-center font-medium md:leading-[24px] text-xxs md:text-sm">
-            Clientes satisfechos
+           Eficiencia en ventas
           </p>
         </div>
       </div>
