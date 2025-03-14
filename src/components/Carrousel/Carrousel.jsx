@@ -30,7 +30,7 @@ const Carrousel = () => {
   ];
 
   return (
-    <div className="overflow-hidden relative w-full  ">
+    <div className="overflow-hidden relative w-full mt-10  ">
       <div className="flex animate-slide-left space-x-10 lg:space-x-56 p-4 lg:p-16">
         {logos.concat(logos).map((logo, index) => (
           <Image
@@ -39,7 +39,7 @@ const Carrousel = () => {
             alt={`Logo ${index + 1}`}
             width={350}
             height={350}
-            sizes="(max-width: 768px) 200px, 350px"
+            sizes="(max-width: 768px) 300px, 350px"
           />
         ))}
       </div>

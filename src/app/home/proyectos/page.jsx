@@ -3,14 +3,11 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Image from "next/image";
-import hopImg from "../../../../public/images/hopProject.svg";
-import arrowIcon from "../../../../public/images/buttonArrow.png";
-import moldesImg from "../../../../public/images/moldesProject.svg";
-import audifonosImg from "../../../../public/images/audifonosProject.svg";
-import sofoconImg from "../../../../public/images/sofoconProject.svg";
-import recamImg from "../../../../public/images/recamProject.svg";
-import tribeImg from "../../../../public/images/tribeProject.svg";
-import roxbarfImg from "../../../../public/images/roxbarfProject.svg";
+import { FaLocationArrow } from "react-icons/fa6";
+import diamanteImg from "../../../../public/images/projects/diamanteNatural.png";
+import drGulaImg from "../../../../public/images/projects/drGula.png";
+import grHousingImg from "../../../../public/images/projects/grHousing.png";
+import stHelenImg from "../../../../public/images/projects/stHelen.png";
 import Link from "next/link";
 
 const ProjectsPage = () => {
@@ -24,154 +21,111 @@ const ProjectsPage = () => {
   return (
     <div className="p-4 md:p-20 bg-background-gradient">
       <h1 className="font-medium text-md leading-[35.2px] text-center mt-28 md:mt-14">
-        Nuestros Trabajos
+        Explora nuestros Trabajos
       </h1>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-12 ">
-        <div data-aos="fade" className=" relative h-full rounded-[10px]">
-          <Image src={hopImg} alt="tribe" className="w-full rounded-[10px]" />
-          <div className="bg-gradient-to-r from-[#B750AD60] to-[#7CA3D160] absolute bottom-0 w-full backdrop-blur-sm text-white p-3 rounded-[10px] ">
-            <p className="font-bold leading-[11.96px] text-[0.5rem]">2024</p>
-            <h1 className="text-sm font-bold leading-[28px]">HOP</h1>
-            <div className="flex justify-between items-center">
-              <p className="text-xs font-light leading-[20px]">
-                Software de administración de empresas y app de ventas
-              </p>
-              <Link href="/home/proyectos/hop">
-                <Image
-                  src={arrowIcon}
-                  alt="hop"
-                  className="hover:scale-105 transition-all duration-300"
-                />
-              </Link>
-            </div>
-          </div>
-        </div>
-        <div data-aos="fade" className=" relative h-full rounded-[10px]">
+        <div
+          data-aos="fade"
+          className=" bg-gradient-to-br from-primaryBlue/70 to-black/60 relative h-full rounded-[10px]"
+        >
           <Image
-            src={moldesImg}
+            src={diamanteImg}
             alt="tribe"
             className="w-full rounded-[10px]"
           />
-          <div className="bg-gradient-to-r from-[#B750AD60] to-[#7CA3D160] absolute bottom-0 w-full backdrop-blur-sm text-white p-3 rounded-[10px] ">
+          <div className="bg-gradient-to-r from-black/60 to-primaryBlue/70 absolute bottom-0 w-full backdrop-blur-sm text-white p-3 rounded-[10px] ">
             <p className="font-bold leading-[11.96px] text-[0.5rem]">2024</p>
-            <h1 className="text-sm font-bold leading-[28px]">Moldes Fácil</h1>
+            <h1 className="text-sm font-bold leading-[28px]">
+              Diamante Natural
+            </h1>
             <div className="flex justify-between items-center">
-              <p className="text-xs font-light leading-[20px]">
-                Software de administración de empresas y app de ventas
-              </p>
-              <Link href="/home/proyectos/moldesFacil">
-                <Image
-                  src={arrowIcon}
-                  alt="moldesFacil"
-                  className="hover:scale-105 transition-all duration-300"
-                />
+              <p className="text-xs font-light leading-[20px]">E-commerce</p>
+              <Link
+                className="flex items-center justify-center gap-2 bg-primaryBlue py-1 px-4 rounded-md hover:scale-105 transition-all duration-300"
+                href="https://diamantenatural.com.ar/"
+                target="_blank"
+              >
+                <p className="text-xxs">Visita el sitio aquí</p>
+                <FaLocationArrow className=" w-8 h-8 p-1" />
               </Link>
             </div>
           </div>
         </div>
-        <div data-aos="fade" className=" relative h-full rounded-[10px]">
+        <div
+          data-aos="fade"
+          className=" bg-gradient-to-br from-primaryBlue/70 to-black/60 relative h-full rounded-[10px]"
+        >
           <Image
-            src={audifonosImg}
+            src={drGulaImg}
             alt="tribe"
             className="w-full rounded-[10px]"
           />
-          <div className="bg-gradient-to-r from-[#B750AD60] to-[#7CA3D160] absolute bottom-0 w-full backdrop-blur-sm text-white p-3 rounded-[10px] ">
+          <div className="bg-gradient-to-r from-black/60 to-primaryBlue/70  absolute bottom-0 w-full backdrop-blur-sm text-white p-3 rounded-[10px] ">
             <p className="font-bold leading-[11.96px] text-[0.5rem]">2024</p>
-            <h1 className="text-sm font-bold leading-[28px]">Audifonos</h1>
+            <h1 className="text-sm font-bold leading-[28px]">Dr. Gula</h1>
             <div className="flex justify-between items-center">
-              <p className="text-xs font-light leading-[20px]">
-                Software de administración de empresas y app de ventas
-              </p>
-              <Link href="/home/proyectos/audifonos">
-                <Image
-                  src={arrowIcon}
-                  alt="audifonos"
-                  className="hover:scale-105 transition-all duration-300"
-                />
+              <p className="text-xs font-light leading-[20px]">Landing page</p>
+              <Link
+                className="flex items-center justify-center gap-2 bg-primaryBlue py-1 px-4 rounded-md hover:scale-105 transition-all duration-300"
+                href="https://drgula.netlify.app/"
+                target="_blank"
+              >
+                <p className="text-xxs">Visita el sitio aquí</p>
+                <FaLocationArrow className="w-8 h-8 p-1" />
               </Link>
             </div>
           </div>
         </div>
-        <div data-aos="fade" className=" relative h-full rounded-[10px]">
+        <div
+          data-aos="fade"
+          className=" bg-gradient-to-br from-primaryBlue/70 to-black/60 relative h-full rounded-[10px]"
+        >
           <Image
-            src={sofoconImg}
+            src={grHousingImg}
             alt="tribe"
             className="w-full rounded-[10px]"
           />
-          <div className="bg-gradient-to-r from-[#B750AD60] to-[#7CA3D160] absolute bottom-0 w-full backdrop-blur-sm text-white p-3 rounded-[10px] ">
-            <p className="font-bold leading-[11.96px] text-[0.5rem]">2024</p>
-            <h1 className="text-sm font-bold leading-[28px]">Sofocon</h1>
+          <div className="bg-gradient-to-r from-black/60 to-primaryBlue/70  absolute bottom-0 w-full backdrop-blur-sm text-white p-3 rounded-[10px] ">
+            <p className="font-bold leading-[11.96px] text-[0.5rem]">2025</p>
+            <h1 className="text-sm font-bold leading-[28px]">Gr Housing</h1>
             <div className="flex justify-between items-center">
-              <p className="text-xs font-light leading-[20px]">
-                Software de administración de empresas y app de ventas
-              </p>
-              <Link href="/home/proyectos/sofocon">
-                <Image
-                  src={arrowIcon}
-                  alt="sofocon"
-                  className="hover:scale-105 transition-all duration-300"
-                />
+              <p className="text-xs font-light leading-[20px]">Landing page</p>
+              <Link
+                className="flex items-center justify-center gap-2 bg-primaryBlue py-1 px-4 rounded-md hover:scale-105 transition-all duration-300"
+                href="https://grhousing.com.ar/"
+                target="_blank"
+              >
+                <p className="text-xxs">Visita el sitio aquí</p>
+                <FaLocationArrow className="w-8 h-8 p-1" />
               </Link>
             </div>
           </div>
         </div>
-        <div data-aos="fade" className=" relative h-full rounded-[10px]">
-          <Image src={recamImg} alt="tribe" className="w-full rounded-[10px]" />
-          <div className="bg-gradient-to-r from-[#B750AD60] to-[#7CA3D160] absolute bottom-0 w-full backdrop-blur-sm text-white p-3 rounded-[10px] ">
-            <p className="font-bold leading-[11.96px] text-[0.5rem]">2024</p>
-            <h1 className="text-sm font-bold leading-[28px]">RECam</h1>
-            <div className="flex justify-between items-center">
-              <p className="text-xs font-light leading-[20px]">
-                Software de administración de empresas y app de ventas
-              </p>
-              <Link href="/home/proyectos/RECam">
-                <Image
-                  src={arrowIcon}
-                  alt="RECam"
-                  className="hover:scale-105 transition-all duration-300"
-                />
-              </Link>
-            </div>
-          </div>
-        </div>
-        <div data-aos="fade" className=" relative h-full rounded-[10px]">
-          <Image src={tribeImg} alt="tribe" className="w-full rounded-[10px]" />
-          <div className="bg-gradient-to-r from-[#B750AD60] to-[#7CA3D160] absolute bottom-0 w-full backdrop-blur-sm text-white p-3 rounded-[10px] ">
-            <p className="font-bold leading-[11.96px] text-[0.5rem]">2024</p>
-            <h1 className="text-sm font-bold leading-[28px]">Tribe</h1>
-            <div className="flex justify-between items-center">
-              <p className="text-xs font-light leading-[20px]">
-                Software de administración de empresas y app de ventas
-              </p>
-              <Link href="/home/proyectos/tribe">
-                <Image
-                  src={arrowIcon}
-                  alt="tribe"
-                  className="hover:scale-105 transition-all duration-300"
-                />
-              </Link>
-            </div>
-          </div>
-        </div>
-        <div data-aos="fade" className=" relative h-full rounded-[10px]">
+        <div
+          data-aos="fade"
+          className=" bg-gradient-to-br from-primaryBlue/70 to-black/60 relative h-full rounded-[10px]"
+        >
           <Image
-            src={roxbarfImg}
+            src={stHelenImg}
             alt="tribe"
             className="w-full rounded-[10px]"
           />
-          <div className="bg-gradient-to-r from-[#B750AD60] to-[#7CA3D160] absolute bottom-0 w-full backdrop-blur-sm text-white p-3 rounded-[10px] ">
+          <div className="bg-gradient-to-r from-black/60 to-primaryBlue/70  absolute bottom-0 w-full backdrop-blur-sm text-white p-3 rounded-[10px] ">
             <p className="font-bold leading-[11.96px] text-[0.5rem]">2024</p>
-            <h1 className="text-sm font-bold leading-[28px]">Roxbarf</h1>
+            <h1 className="text-sm font-bold leading-[28px]">
+              St. Helen Institute
+            </h1>
             <div className="flex justify-between items-center">
               <p className="text-xs font-light leading-[20px]">
-                Software de administración de empresas y app de ventas
+                Landing page & dashboard
               </p>
-              <Link href="/home/proyectos/roxbarf">
-                <Image
-                  src={arrowIcon}
-                  alt="roxbarf"
-                  className="hover:scale-105 transition-all duration-300"
-                />
+              <Link
+                className="flex items-center justify-center gap-2 bg-primaryBlue py-1 px-4 rounded-md hover:scale-105 transition-all duration-300"
+                href="https://sthelen-ingles.com.ar/"
+                target="_blank"
+              >
+                <p className="text-xxs">Visita el sitio aquí</p>
+                <FaLocationArrow className="w-8 h-8 p-1" />
               </Link>
             </div>
           </div>

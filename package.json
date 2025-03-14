@@ -1,5 +1,5 @@
 {
-  "name": "novexis_landing",
+  "name": "universal_web",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -19,6 +19,7 @@
     "react-calendly": "^4.3.1",
     "react-dom": "^19.0.0",
     "react-hook-form": "^7.54.2",
+    "react-icons": "^5.5.0",
     "swiper": "^11.2.1",
     "three": "^0.172.0"
   },

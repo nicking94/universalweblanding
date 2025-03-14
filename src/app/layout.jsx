@@ -1,29 +1,28 @@
 import Footer from "@/components/Footer/Footer";
 import "./globals.css";
 import Navbar from "@/components/Navbar/Navbar";
-import CustomCursor from "@/components/Cursor/CustomCursor";
-import { Kanit } from "next/font/google";
 import Image from "next/image";
 import whatsappLogo from "../../public/images/whatsappLogo.svg";
 import Link from "next/link";
+import { Roboto } from "next/font/google";
 
 export const metadata = {
-  title: "Novexis Consulting",
-  description: "Novexis consulting website",
+  title: "Universal Web",
+  description: "Universal web website",
 };
 
-const kanit = Kanit({
+const roboto = Roboto({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-  variable: "--font-kanit",
+  weight: ["100", "300", "400", "500", "700"],
+  variable: "--font-roboto",
 });
 
 export default function RootLayout({ children }) {
   return (
     <html lang="es">
-      <body className={`${kanit.variable} min-h-screen flex flex-col`}>
-        <div className="block lg:hidden fixed bottom-[5%] left-[86%] md:left-[90%] lg:left-[96%] z-50">
-          <Link href="https://wa.me/542616951550">
+      <body className={`${roboto.variable} min-h-screen flex flex-col`}>
+        <div className="fixed bottom-[5%] left-[86%] md:left-[90%] lg:left-[96%] z-50">
+          <Link href="https://wa.me/542613077147" target="_blank">
             <Image
               className="cursor-pointer hover:scale-105 transition-all duration-300"
               src={whatsappLogo}
@@ -33,18 +32,7 @@ export default function RootLayout({ children }) {
             />
           </Link>
         </div>
-        <div className=" w-[200px] h-[200px] 2xl:w-[250px] 2xl:h-[250px] hidden lg:flex fixed top-[93%] 2xl:top-[94.4%] left-[94%] 2xl:left-[95%] translate-x-[-50%] translate-y-[-50%] z-50">
-          <Link href="https://wa.me/542616951550">
-            <video
-              className="cursor-pointer"
-              src="/clips3D/chat.webm"
-              muted
-              loop
-              autoPlay
-            ></video>
-          </Link>
-        </div>
-        <CustomCursor />
+
         <Navbar />
         <main className="flex-grow">{children}</main>
         <Footer />

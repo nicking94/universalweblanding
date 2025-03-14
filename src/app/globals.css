@@ -3,14 +3,9 @@
 @tailwind utilities;
 
 :root {
-  --font-kanit: "Kanit", sans-serif;
-  --primary: #ae39a3;
+  --primary: #0891b2;
   --black-2: #000;
   --white: #fff;
-}
-
-body {
-  font-family: var(--font-kanit);
 }
 
 .cursor1 {
@@ -53,7 +48,9 @@ body {
 }
 
 .bg-background-gradient {
-  background-color: #FAF0F9;
+  background: linear-gradient(120deg, #ebfbff, #f9feff, #a2dfee, #ebfbff);
+  background-size: 200% 200%;
+  animation: waveBackground 10s ease-in infinite;
 }
 
 @keyframes slide-left {
@@ -74,17 +71,40 @@ body {
     transform: translateX(-100%);
   }
 }
+@keyframes waveBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 
-.animate-slide-left{
+.animate-slide-left {
   animation: animate-slide-left 10s linear infinite;
 }
 
 .swiper-pagination-bullet {
-  background-color: #AE39A3 !important; 
+  background-color: #0891b2 !important;
 }
 
 .swiper-pagination-bullet-active {
-  background-color: #AE39A3 !important; 
+  background-color: #0891b2 !important;
 }
 
-
+.gradiente {
+  background: linear-gradient(
+    to right top,
+    #0b1c28,
+    #0b1c28,
+    #0891b2,
+    #0b1c28,
+    #0b1c28
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

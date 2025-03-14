@@ -24,7 +24,8 @@ export default {
         grayMedium: "#545454",
         grayDark: "#595959",
         black: "#0F050E",
-        violet: "#AE39A3",
+        primaryBlue: "#0891B2",
+        secondaryBlue: "#EBFBFF"
       },
     },
   },

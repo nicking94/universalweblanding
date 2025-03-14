@@ -1,11 +1,11 @@
 import Link from "next/link";
 
 import Image from "next/image";
+import StarRating from "../StarRating/StarRating";
 
 const ClientsCard = ({
   imageSrc,
   name,
-  company,
   review,
   website,
   websiteText,
@@ -22,9 +22,10 @@ const ClientsCard = ({
         </div>
         <div>
           <p className="font-medium">{name}</p>
-          <p className="font-light">{company}</p>
+        
         </div>
       </div>
+      <StarRating rating={5} />
       <div>
         <p className="text-xs font-light">{review}</p>
       </div>

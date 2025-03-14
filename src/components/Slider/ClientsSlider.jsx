@@ -6,12 +6,13 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
 import ClientsCard from "../Cards/ClientsCard";
+import StarRating from "@/components/StarRating/StarRating"; 
 import rightArrowIcon from "../../../public/icons/rightArrow.png";
 import Image from "next/image";
-import hopClientImg from "../../../public/images/hopClient.png";
-import tribeClientImg from "../../../public/images/tribeClient.png";
-import sofoconClientImg from "../../../public/images/logoSofocon.svg";
-import farmaciaClientImg from "../../../public/images/logoFarmacia.jpg";
+import diamanteNaturalLogo from "../../../public/images/logos/diamanteNaturalLogo.svg"
+import drGulaLogo from "../../../public/images/logos/drGulaLogo.jpg"
+import iphoneMomentLogo from "../../../public/images/logos/iphoneMomentLogo.png"
+import stHelenLogo from "../../../public/images/logos/stHelenLogo.jpg"
 
 const ClientsSlider = () => {
   const swiperRef = useRef(null);
@@ -30,9 +31,9 @@ const ClientsSlider = () => {
 
   return (
     <div className="relative w-full">
-      <div className=" pointer-events-none absolute top-0 right-0 w-[40%] h-full bg-gradient-to-l from-white to-transparent z-10"></div>
+      <div className="pointer-events-none absolute top-0 right-0 w-[40%] h-full bg-gradient-to-l from-white to-transparent z-10"></div>
 
-      <button className="custom-next absolute right-4 top-1/2 -translate-y-1/2 z-20 text-white bg-violet/80 p-3 rounded-md ">
+      <button className="custom-next absolute right-4 top-1/2 -translate-y-1/2 z-20 text-white bg-primaryBlue/80 p-3 rounded-md ">
         <Image src={rightArrowIcon} alt="rightArrow" />
       </button>
 
@@ -41,7 +42,7 @@ const ClientsSlider = () => {
         modules={[Navigation, Pagination, Autoplay]}
         breakpoints={{
           320: { slidesPerView: 1 },
-          768: { slidesPerView: 1 },
+          768: { slidesPerView: 2 },
         }}
         navigation={{ prevEl: ".custom-prev", nextEl: ".custom-next" }}
         pagination={{ clickable: true }}
@@ -52,47 +53,51 @@ const ClientsSlider = () => {
       >
         <SwiperSlide onClick={handleSlideClick}>
           <ClientsCard
-            imageSrc={hopClientImg}
-            name={"José Oquendo"}
-            company={"Servicios de transporte Oti, SPA"}
-            review={
-              " Nuestra empresa necesitaba una solución Mobile personalizada con compromiso y eficiencia. Destacamos un diseño que captó nuestra visión y la transparencia administrativa que facilitó comprender aspectos técnicos. Aunque la comunicación puede mejorar, valoramos su interés en una relación comercial a largo plazo. Experiencia positiva y profesional."
-            }
-            website={"http://transporteoti.cl/"}
-            websiteText={"@transporteoti.cl"}
+            imageSrc={diamanteNaturalLogo}
+            name={"Diamante Natural"}
+      
+            review={"Queríamos llevar nuestra dietética al mundo digital con un eCommerce funcional y atractivo, y el equipo superó nuestras expectativas. Captaron nuestra visión a la perfección, ofreciendo un diseño intuitivo y una experiencia de compra fluida para nuestros clientes. Además, la comunicación fue clara en todo momento, lo que nos permitió comprender cada detalle del proceso. Profesionalismo, compromiso y eficiencia en cada etapa del desarrollo. ¡Altamente recomendados!"}
+            website={"https://diamantenatural.com.ar/"}
+            websiteText={"@Diamante_Natural"}
+            rating={5}
           />
         </SwiperSlide>
+
         <SwiperSlide onClick={handleSlideClick}>
           <ClientsCard
-            imageSrc={tribeClientImg}
-            name={"Tribe"}
-            company={"Red social"}
-            review={`Después de haber tenido una mala experiencia y haber perdido el entusiasmo para nuestro proyecto, hemos podido tener la suerte de conocer a Emiliano y su equipo de Novexis. Trabajando con ellos en el desarrollo de una app innovadora en el sector travel, hemos vuelto a tener las ganas y la ambición para seguir adelante. Todo el equipo mostró profesionalismo, creatividad y una gran capacidad para convertir nuestra visión en una aplicación intuitiva y funcional. Resolviendo dudas y preguntas en cualquier momento.
-La comunicación fue fluida y el resultado superó nuestras expectativas. ¡100% recomendados!`}
-            website={"https://tribeapp.es/"}
-            websiteText={"@tribeapp"}
+            imageSrc={drGulaLogo}
+            name={"Dr. Gula"}
+            review={"Mostraron un gran profesionalismo, creatividad y entendieron perfectamente nuestra visión, creando una página web intuitiva y atractiva. Estuvieron disponibles para resolver todas nuestras dudas en cualquier momento, y la comunicación fue excelente. El resultado final superó nuestras expectativas"}
+            website={"https://drgula.netlify.app/"}
+            websiteText={"@Dr_Gula"}
+            rating={5}
           />
+        
         </SwiperSlide>
-     
+
         <SwiperSlide onClick={handleSlideClick}>
           <ClientsCard
-            imageSrc={sofoconClientImg}
-            name={"Sofocón"}
-            company={"Materiales contra incendio"}
-            review={`Agradecemos a Novexis por el desarrollo de nuestra app y plataforma web de gestión de ventas. Desde el inicio, su comunicación impecable y trato humano hicieron el proceso fluído. Destacamos el profesionalismo de Emiliano, Jonas y Alicia, quienes captaron nuestras necesidades y entregaron una herramienta eficaz para optimizar ventas y procesos. Recomendamos a Novexis por su confiabilidad e innovación.`}
-            website={"https://generalfire.uy/login"}
-            websiteText={"@Sofocón"}
+            imageSrc={iphoneMomentLogo}
+            name={"Iphone Moment"}
+            review={"Agradecemos enormemente a Universal Web por el desarrollo de nuestro dashboard administrativo para la gestión de nuestra tienda Apple. Desde el comienzo, la comunicación fue clara y fluida, lo que hizo que todo el proceso fuera muy sencillo. Nicolás, Mauro y Randall, demostraron un alto nivel de profesionalismo al captar nuestras necesidades y entregar una herramienta eficiente que optimiza nuestras ventas y procesos. Sin duda, recomendamos a Universal Web por su confiabilidad, creatividad e innovación en cada proyecto."}
+            website={""}
+            websiteText={"@Iphone Moment"}
+            rating={5}
           />
+       
         </SwiperSlide>
+
         <SwiperSlide onClick={handleSlideClick}>
           <ClientsCard
-            imageSrc={farmaciaClientImg}
-            name={"Farmacia Crotti"}
-            company={"Insumos farmacéuticos"}
-            review={`La experiencia con Novexis fue gratificante y recomendable. Siempre a disposición de las consultas, dudas y predispuestos a asesorar. Cumpliendo con nuestras expectativas y llevando el proyecto, que es muy importante para nosotros, de manera profesional.`}
-            website={"https://generalfire.uy/login"}
-            websiteText={"@Farmacia Crotti"}
+            imageSrc={stHelenLogo}
+            name={"St. Helen Institute"}
+            
+            review={"La experiencia con Universal Web fue sumamente gratificante y recomendable. Estuvieron siempre disponibles para responder nuestras consultas, resolver dudas y brindar asesoramiento. El equipo cumplió con todas nuestras expectativas, llevando adelante el desarrollo de la landing page y el dashboard para nuestro instituto de inglés de manera profesional. Agradecemos su dedicación y compromiso en este proyecto tan importante para nosotros"}
+            website={"https://sthelen-ingles.com.ar/"}
+            websiteText={"@St.Helen"}
+            rating={5}
           />
+          
         </SwiperSlide>
       </Swiper>
     </div>
