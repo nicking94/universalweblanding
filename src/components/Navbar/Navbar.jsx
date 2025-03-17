@@ -29,10 +29,7 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const navLinks = [
-    // { name: "Nosotros", path: "/home/nosotros" },
-    { name: "Proyectos", path: "/home/proyectos" },
-  ];
+  const navLinks = [{ name: "Proyectos", path: "/home/proyectos" }];
 
   if (pathname !== "/" && pathname !== "/home") {
     navLinks.unshift({ name: "Inicio", path: "/" });
