@@ -18,18 +18,6 @@ export default function HomePage() {
   const deletingSpeed = 250;
   const delayBetweenWords = 3000;
   const [showCursor, setShowCursor] = useState(true);
-  const [animateContainer, setAnimateContainer] = useState(false);
-  const videoRef = useRef(null);
-
-  const handleAnimation = () => {
-    setTimeout(() => {
-      setAnimateContainer(true);
-      setTimeout(() => setShowHero2(true), 600);
-    }, 3000);
-    if (videoRef.current) {
-      videoRef.current.play();
-    }
-  };
 
   useEffect(() => {
     AOS.init({
@@ -78,7 +66,7 @@ export default function HomePage() {
         id="hero1"
         className=" bg-[url('/images/heroImg.jpg')] bg-cover bg-center bg-no-repeat md:min-h-[100vh] pointer-events-auto"
       >
-        <div className=" h-[90vh] lg:h-[100vh] flex flex-col items-center text-center ">
+        <div className="relative h-[100vh] flex flex-col items-center text-center ">
           <h1 className="mt-20 2xl:mt-28  px-4 pt-10 text-lg lg:text-xxl font-semibold ">
             Convierte tu{" "}
             <span className="gradiente">
@@ -93,7 +81,7 @@ export default function HomePage() {
             con tecnología de vanguardia para maximizar la eficiencia y la
             innovación en tu empresa.
           </p>
-          <div className="w-full mt-60">
+          <div className="w-full absolute top-[70%]">
             <button className="animate-pulse  bg-primaryBlue w-[15rem] text-sm transition-all duration-300 hover:scale-105 text-white py-4 px-6 rounded-[8px] hover:bg-primaryBlue/90">
               Conoce más
             </button>

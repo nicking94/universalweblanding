@@ -50,16 +50,12 @@ const Navbar = () => {
       <nav className="px-6 py-5 fixed top-0 left-0 w-full backdrop-blur-sm bg-white/30 z-50">
         <div className="flex justify-between items-center">
           <div className="flex items-center text-lg font-bold ">
-            <Link href="/" className="flex items-center gap-2"> 
+            <Link href="/" className="flex items-center gap-2">
               <Image src={logo} alt="Logo" width={40} height={40} />
-              <h1
-                class="font-abril gradiente text-[.7rem] md:text-[1.5rem] tracking-wide py-2 md:py-0"
-               
-              >
+              <h1 class=" gradiente text-[1rem] md:text-[1.5rem] tracking-wide py-2 md:py-0">
                 UNIVERSAL WEB
               </h1>
             </Link>
-           
           </div>
 
           <button onClick={toggleMenu} className="lg:hidden focus:outline-none">
@@ -112,8 +108,11 @@ const Navbar = () => {
           }`}
         >
           <div className="text-lg font-bold">
-            <Link href="/">
-              <Image src={logo} alt="Logo" width={136} height={32} />
+            <Link href="/" className="flex items-center gap-2">
+              <Image src={logo} alt="Logo" width={40} height={40} />
+              <h1 class=" gradiente text-[1rem] md:text-[1.5rem] tracking-wide py-2 md:py-0">
+                UNIVERSAL WEB
+              </h1>
             </Link>
           </div>
 
