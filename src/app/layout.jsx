@@ -9,6 +9,21 @@ import { Roboto } from "next/font/google";
 export const metadata = {
   title: "Universal Web",
   description: "Universal web website",
+  openGraph: {
+    title: "Universal Web",
+    description: "Universal web website",
+    url: "https://universalwebsite.vercel.app/home",
+    siteName: "Universal Web",
+    images: [
+      {
+        url: "https://tu-dominio.vercel.app/images/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Logo de Universal Web",
+      },
+    ],
+    type: "website",
+  },
 };
 
 const roboto = Roboto({
