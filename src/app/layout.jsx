@@ -16,7 +16,7 @@ export const metadata = {
     siteName: "Universal Web",
     images: [
       {
-        url: "https://tu-dominio.vercel.app/images/logo.png",
+        url: "https://universalwebsite.vercel.app/images/logo.png",
         width: 1200,
         height: 630,
         alt: "Logo de Universal Web",
