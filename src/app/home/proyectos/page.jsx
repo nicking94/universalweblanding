@@ -23,7 +23,7 @@ const ProjectsPage = () => {
       <h1 className="font-medium text-md leading-[35.2px] text-center mt-28 md:mt-14">
         Explora nuestros Trabajos
       </h1>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-12 ">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-12">
         <div
           data-aos="fade"
           className=" bg-gradient-to-br from-primaryBlue/70 to-black/60 relative h-full rounded-[10px]"
@@ -69,7 +69,7 @@ const ProjectsPage = () => {
               <p className="text-xs font-light leading-[20px]">Landing page</p>
               <div className="flex justify-end">
                 <Link
-                  className="flex items-center justify-center max-w-[14rem]  gap-2 bg-primaryBlue py-1 px-4 rounded-md hover:scale-105 transition-all duration-300"
+                  className="flex items-center justify-center max-w-[14rem] gap-2 bg-primaryBlue py-1 px-4 rounded-md hover:scale-105 transition-all duration-300"
                   href="https://drgula.netlify.app/"
                   target="_blank"
                 >
