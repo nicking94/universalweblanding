@@ -8,6 +8,7 @@ import Carrousel from "@/components/Carrousel/Carrousel";
 import ClientsSection from "@/components/Sections/ClientsSection";
 import ContactSection from "@/components/Sections/ContactSection";
 import ContactForm from "@/components/Form/ContactForm";
+import Link from "next/link";
 
 export default function HomePage() {
   const words = ["idea", "plan"];
@@ -82,9 +83,11 @@ export default function HomePage() {
             innovación en tu empresa.
           </p>
           <div className="w-full absolute top-[70%]">
-            <button className="animate-pulse  bg-primaryBlue w-[15rem] text-sm transition-all duration-300 hover:scale-105 text-white py-4 px-6 rounded-[8px] hover:bg-primaryBlue/90">
-              Conoce más
-            </button>
+            <Link href="https://wa.me/542613077147" target="_blank">
+              <button className="animate-pulse  bg-primaryBlue w-[15rem] text-sm transition-all duration-300 hover:scale-105 text-white py-4 px-6 rounded-[8px] hover:bg-primaryBlue/90">
+                Conoce más
+              </button>
+            </Link>
           </div>
         </div>
       </section>
