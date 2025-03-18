@@ -38,16 +38,18 @@ const ProjectsPage = () => {
             <h1 className="text-sm font-bold leading-[28px]">
               Diamante Natural
             </h1>
-            <div className="flex justify-between items-center">
+            <div className="flex flex-col md:flex-row md:justify-between md:items-center space-y-2 md:space-y-0">
               <p className="text-xs font-light leading-[20px]">E-commerce</p>
-              <Link
-                className="flex items-center justify-center gap-2 bg-primaryBlue py-1 px-4 rounded-md hover:scale-105 transition-all duration-300"
-                href="https://diamantenatural.com.ar/"
-                target="_blank"
-              >
-                <p className="text-xxs">Visita el sitio aquí</p>
-                <FaLocationArrow className=" w-8 h-8 p-1" />
-              </Link>
+              <div className="flex justify-end">
+                <Link
+                  className="flex items-center justify-center max-w-[14rem] gap-2 bg-primaryBlue py-1 px-4 rounded-md hover:scale-105 transition-all duration-300"
+                  href="https://diamantenatural.com.ar/"
+                  target="_blank"
+                >
+                  <p className="text-xxs">Visita el sitio aquí</p>
+                  <FaLocationArrow className=" w-8 h-8 p-1" />
+                </Link>
+              </div>
             </div>
           </div>
         </div>
@@ -63,16 +65,18 @@ const ProjectsPage = () => {
           <div className="bg-gradient-to-r from-black/60 to-primaryBlue/70  absolute bottom-0 w-full backdrop-blur-sm text-white p-3 rounded-[10px] ">
             <p className="font-bold leading-[11.96px] text-[0.5rem]">2024</p>
             <h1 className="text-sm font-bold leading-[28px]">Dr. Gula</h1>
-            <div className="flex justify-between items-center">
+            <div className="flex flex-col md:flex-row md:justify-between md:items-center space-y-2 md:space-y-0">
               <p className="text-xs font-light leading-[20px]">Landing page</p>
-              <Link
-                className="flex items-center justify-center gap-2 bg-primaryBlue py-1 px-4 rounded-md hover:scale-105 transition-all duration-300"
-                href="https://drgula.netlify.app/"
-                target="_blank"
-              >
-                <p className="text-xxs">Visita el sitio aquí</p>
-                <FaLocationArrow className="w-8 h-8 p-1" />
-              </Link>
+              <div className="flex justify-end">
+                <Link
+                  className="flex items-center justify-center max-w-[14rem]  gap-2 bg-primaryBlue py-1 px-4 rounded-md hover:scale-105 transition-all duration-300"
+                  href="https://drgula.netlify.app/"
+                  target="_blank"
+                >
+                  <p className="text-xxs">Visita el sitio aquí</p>
+                  <FaLocationArrow className="w-8 h-8 p-1" />
+                </Link>
+              </div>
             </div>
           </div>
         </div>
@@ -88,16 +92,18 @@ const ProjectsPage = () => {
           <div className="bg-gradient-to-r from-black/60 to-primaryBlue/70  absolute bottom-0 w-full backdrop-blur-sm text-white p-3 rounded-[10px] ">
             <p className="font-bold leading-[11.96px] text-[0.5rem]">2025</p>
             <h1 className="text-sm font-bold leading-[28px]">Gr Housing</h1>
-            <div className="flex justify-between items-center">
+            <div className="flex flex-col md:flex-row md:justify-between md:items-center space-y-2 md:space-y-0">
               <p className="text-xs font-light leading-[20px]">Landing page</p>
-              <Link
-                className="flex items-center justify-center gap-2 bg-primaryBlue py-1 px-4 rounded-md hover:scale-105 transition-all duration-300"
-                href="https://grhousing.com.ar/"
-                target="_blank"
-              >
-                <p className="text-xxs">Visita el sitio aquí</p>
-                <FaLocationArrow className="w-8 h-8 p-1" />
-              </Link>
+              <div className="flex justify-end">
+                <Link
+                  className="flex items-center justify-center max-w-[14rem]  gap-2 bg-primaryBlue py-1 px-4 rounded-md hover:scale-105 transition-all duration-300"
+                  href="https://grhousing.com.ar/"
+                  target="_blank"
+                >
+                  <p className="text-xs">Visita el sitio aquí</p>
+                  <FaLocationArrow className="w-8 h-8 p-1" />
+                </Link>
+              </div>
             </div>
           </div>
         </div>
@@ -115,18 +121,20 @@ const ProjectsPage = () => {
             <h1 className="text-sm font-bold leading-[28px]">
               St. Helen Institute
             </h1>
-            <div className="flex justify-between items-center">
+            <div className="flex flex-col md:flex-row md:justify-between md:items-center space-y-2 md:space-y-0">
               <p className="text-xs font-light leading-[20px]">
                 Landing page & dashboard
               </p>
-              <Link
-                className="flex items-center justify-center gap-2 bg-primaryBlue py-1 px-4 rounded-md hover:scale-105 transition-all duration-300"
-                href="https://sthelen-ingles.com.ar/"
-                target="_blank"
-              >
-                <p className="text-xxs">Visita el sitio aquí</p>
-                <FaLocationArrow className="w-8 h-8 p-1" />
-              </Link>
+              <div className="flex justify-end">
+                <Link
+                  className="flex items-center justify-center max-w-[14rem] gap-2 bg-primaryBlue py-1 px-4 rounded-md hover:scale-105 transition-all duration-300"
+                  href="https://sthelen-ingles.com.ar/"
+                  target="_blank"
+                >
+                  <p className="text-xs">Visita el sitio aquí</p>
+                  <FaLocationArrow className="w-8 h-8 p-1" />
+                </Link>
+              </div>
             </div>
           </div>
         </div>
