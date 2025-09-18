@@ -12,11 +12,11 @@ export const metadata = {
   openGraph: {
     title: "Universal App",
     description: "Universal App website",
-    url: "https://universalwebsite.vercel.app/home",
+    url: "https://universalappwebsite.vercel.app/home",
     siteName: "Universal App",
     images: [
       {
-        url: "https://universalwebsite.vercel.app/images/logo.png",
+        url: "https://universalappwebsite.vercel.app/images/logo.png",
         width: 1200,
         height: 630,
         alt: "Logo de Universal App",
