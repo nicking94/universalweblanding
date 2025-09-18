@@ -7,19 +7,19 @@ import Link from "next/link";
 import { Roboto } from "next/font/google";
 
 export const metadata = {
-  title: "Universal Web",
-  description: "Universal web website",
+  title: "Universal App",
+  description: "Universal App website",
   openGraph: {
-    title: "Universal Web",
-    description: "Universal web website",
+    title: "Universal App",
+    description: "Universal App website",
     url: "https://universalwebsite.vercel.app/home",
-    siteName: "Universal Web",
+    siteName: "Universal App",
     images: [
       {
         url: "https://universalwebsite.vercel.app/images/logo.png",
         width: 1200,
         height: 630,
-        alt: "Logo de Universal Web",
+        alt: "Logo de Universal App",
       },
     ],
     type: "website",
@@ -37,7 +37,7 @@ export default function RootLayout({ children }) {
     <html lang="es">
       <body className={`${roboto.variable} min-h-screen flex flex-col`}>
         <div className="fixed bottom-[5%] left-[86%] md:left-[90%] lg:left-[96%] z-50">
-          <Link href="https://wa.me/542613077147" target="_blank">
+          <Link href="https://wa.me/5492613077147" target="_blank">
             <Image
               className="cursor-pointer hover:scale-105 transition-all duration-300"
               src={whatsappLogo}

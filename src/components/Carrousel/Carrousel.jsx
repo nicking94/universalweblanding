@@ -3,43 +3,40 @@ import React from "react";
 
 const Carrousel = () => {
   const logos = [
-    "/icons/carruselIcon1.png",
-    "/icons/carruselIcon2.png",
-    "/icons/carruselIcon3.png",
-    "/icons/carruselIcon4.png",
-    "/icons/carruselIcon5.png",
-    "/icons/carruselIcon6.png",
-    "/icons/carruselIcon1.png",
-    "/icons/carruselIcon2.png",
-    "/icons/carruselIcon3.png",
-    "/icons/carruselIcon4.png",
-    "/icons/carruselIcon5.png",
-    "/icons/carruselIcon6.png",
-    "/icons/carruselIcon1.png",
-    "/icons/carruselIcon2.png",
-    "/icons/carruselIcon3.png",
-    "/icons/carruselIcon4.png",
-    "/icons/carruselIcon5.png",
-    "/icons/carruselIcon6.png",
-    "/icons/carruselIcon1.png",
-    "/icons/carruselIcon2.png",
-    "/icons/carruselIcon3.png",
-    "/icons/carruselIcon4.png",
-    "/icons/carruselIcon5.png",
-    "/icons/carruselIcon6.png",
+    "/images/logos/diamanteNaturalLogo.svg",
+    "/images/logos/iphoneMomentLogo.png",
+    "/images/logos/logoLodemaria.webp",
+    "/images/logos/logoBaronguille.jpg",
+    "/images/logos/logoElpolloloco.jpeg",
+    "/images/logos/logoCmtecnostore.jpg",
+    "/images/logos/logoAirba.webp",
+    "/images/logos/diamanteNaturalLogo.svg",
+    "/images/logos/iphoneMomentLogo.png",
+    "/images/logos/logoLodemaria.webp",
+    "/images/logos/logoBaronguille.jpg",
+    "/images/logos/logoElpolloloco.jpeg",
+    "/images/logos/logoCmtecnostore.jpg",
+    "/images/logos/logoAirba.webp",
+    "/images/logos/diamanteNaturalLogo.svg",
+    "/images/logos/iphoneMomentLogo.png",
+    "/images/logos/logoLodemaria.webp",
+    "/images/logos/logoBaronguille.jpg",
+    "/images/logos/logoElpolloloco.jpeg",
+    "/images/logos/logoCmtecnostore.jpg",
+    "/images/logos/logoAirba.webp",
   ];
 
   return (
     <div className="overflow-hidden relative w-full mt-10  ">
-      <div className="flex animate-slide-left space-x-10 lg:space-x-56 p-4 lg:p-16">
+      <div className="flex animate-slide-left space-x-5 lg:space-x-40 p-4 lg:p-16">
         {logos.concat(logos).map((logo, index) => (
           <Image
             key={index}
             src={logo}
             alt={`Logo ${index + 1}`}
-            width={350}
-            height={350}
-            sizes="(max-width: 768px) 300px, 350px"
+            width={80}
+            height={80}
+            className="rounded"
           />
         ))}
       </div>

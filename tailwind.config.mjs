@@ -24,8 +24,9 @@ export default {
         grayMedium: "#545454",
         grayDark: "#595959",
         black: "#0F050E",
-        primaryBlue: "#0891B2",
-        secondaryBlue: "#EBFBFF"
+        primaryBlue: "#2d78b9",
+        secondaryBlue: "#268ed4",
+        tertiaryBlue: "#85c1e9",
       },
     },
   },

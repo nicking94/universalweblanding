@@ -21,23 +21,35 @@ const Navbar = () => {
           section.scrollIntoView({ behavior: "smooth" });
         }
       }, 100);
+    } else if (path.startsWith("http") || path.startsWith("https")) {
+      // Abrir enlaces externos en una nueva pestaña
+      window.open(path, "_blank");
+    } else if (path.startsWith("whatsapp")) {
+      // Abrir enlaces de WhatsApp
+      window.open(path, "_blank");
     } else {
       router.push(path);
     }
   };
+
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const navLinks = [{ name: "Proyectos", path: "/home/proyectos" }];
+  const navLinks = [];
 
   if (pathname !== "/" && pathname !== "/home") {
     navLinks.unshift({ name: "Inicio", path: "/" });
   }
 
+  // Cambiar el path de "Contáctanos" para que apunte a WhatsApp
   if (pathname === "/home") {
-    navLinks.push({ name: "Contáctanos", path: "#contact" });
+    navLinks.push({
+      name: "Contáctanos",
+      path: "https://wa.me/5492613077147",
+    });
   }
+
   useEffect(() => {
     setIsMenuOpen(false);
   }, [pathname]);
@@ -49,8 +61,8 @@ const Navbar = () => {
           <div className="flex items-center text-lg font-bold ">
             <Link href="/" className="flex items-center gap-2">
               <Image src={logo} alt="Logo" width={40} height={40} />
-              <h1 class=" gradiente text-[1rem] md:text-[1.5rem] tracking-wide py-2 md:py-0">
-                UNIVERSAL WEB
+              <h1 className="gradiente text-[1rem] md:text-[1.5rem] tracking-wide py-2 md:py-0">
+                UNIVERSAL APP
               </h1>
             </Link>
           </div>
@@ -86,7 +98,8 @@ const Navbar = () => {
                 <button
                   onClick={() => handleNavigation(link.path)}
                   className={`${
-                    link.path === "#contact"
+                    link.path.startsWith("https://wa.me") ||
+                    link.path.startsWith("whatsapp")
                       ? "bg-primaryBlue px-3 text-white py-2 rounded hover:scale-105 transition-all duration-300"
                       : "hover:scale-105 transition-all duration-300"
                   }`}
@@ -107,8 +120,8 @@ const Navbar = () => {
           <div className="text-lg font-bold">
             <Link href="/" className="flex items-center gap-2">
               <Image src={logo} alt="Logo" width={40} height={40} />
-              <h1 class=" gradiente text-[1rem] md:text-[1.5rem] tracking-wide py-2 md:py-0">
-                UNIVERSAL WEB
+              <h1 className="gradiente text-[1rem] md:text-[1.5rem] tracking-wide py-2 md:py-0">
+                UNIVERSAL APP
               </h1>
             </Link>
           </div>
@@ -137,13 +150,27 @@ const Navbar = () => {
             <ul className="text-xs space-y-4 ">
               {navLinks.map((link, index) => (
                 <li key={index}>
-                  <Link
-                    href={link.path}
-                    onClick={toggleMenu}
-                    className="hover:scale-105 transition duration-300 font-medium"
-                  >
-                    {link.name}
-                  </Link>
+                  {link.path.startsWith("http") ||
+                  link.path.startsWith("https") ||
+                  link.path.startsWith("whatsapp") ? (
+                    <a
+                      href={link.path}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={toggleMenu}
+                      className="hover:scale-105 transition duration-300 font-medium"
+                    >
+                      {link.name}
+                    </a>
+                  ) : (
+                    <Link
+                      href={link.path}
+                      onClick={toggleMenu}
+                      className="hover:scale-105 transition duration-300 font-medium"
+                    >
+                      {link.name}
+                    </Link>
+                  )}
                 </li>
               ))}
             </ul>
