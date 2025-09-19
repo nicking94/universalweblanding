@@ -43,7 +43,7 @@ const ClientsSlider = ({ header, title, description }) => {
         pagination={{ clickable: true }}
         loop={true}
         autoplay={{ delay: 2000 }}
-        speed={1500}
+        speed={2500}
         ref={swiperRef}
         className="bg-white"
       >

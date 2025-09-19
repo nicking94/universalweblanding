@@ -1,5 +1,3 @@
-import Button from "../Button/Button";
-
 const ServicesCard = ({ header, title, description, children }) => {
   return (
     <div className="flex flex-col lg:flex-row lg:gap-[64px] h-full py-10 lg:py-20 ">
@@ -7,7 +5,7 @@ const ServicesCard = ({ header, title, description, children }) => {
         <p className="text-primaryBlue text-xxs lg:text-xs lg:leading-[20.8px] font-medium">
           {header}
         </p>
-        <h1 className="text-lg lg:text-xl font-semibold lg:leading-[70.4px] text-grayMedium">
+        <h1 className="text-md lg:text-xl font-semibold lg:leading-[70.4px] text-grayMedium">
           {title}
         </h1>
         <p className="text-xs lg:text-sm font-light lg:leading-[24px] mt-5 mb-10">
@@ -37,8 +35,7 @@ const ServicesCard = ({ header, title, description, children }) => {
               Plan Anual
               <br />
               <span className="text-xs md:text-sm text-grayMedium">
-                Ahorra hasta un 20% con un pago anual único. Incluye 2 meses
-                gratis
+                Ahorra hasta un 20% con un pago anual único.
               </span>
             </p>
           </div>

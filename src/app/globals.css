@@ -84,7 +84,7 @@
 }
 
 .animate-slide-left {
-  animation: animate-slide-left 10s linear infinite;
+  animation: animate-slide-left 5s linear infinite;
 }
 
 .swiper-pagination-bullet {

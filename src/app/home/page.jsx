@@ -67,15 +67,15 @@ export default function HomePage() {
         className=" bg-[url('/images/heroImg.jpg')] bg-cover bg-center bg-no-repeat md:min-h-[100vh] pointer-events-auto"
       >
         <div className="relative h-[100vh] flex flex-col items-center text-center ">
-          <h1 className="mt-16 2xl:mt-28 px-4 pt-2 text-lg md:text-lg lg:text-xxl font-semibold ">
-            La gestión de tu{" "}
+          <h1 className="mt-20 2xl:mt-28 px-4 pt-2 text-md md:text-lg lg:text-xxl font-semibold ">
+            La gestión de tu <br />
             <span className="gradiente">
               {displayedText}
               {showCursor ? "| " : ""}
             </span>{" "}
             más fácil
           </h1>
-          <p className="mb-8 text-sm italic ">
+          <p className="mb-2 lg:mb-8 text-xs lg:text-sm italic ">
             Gestión simple, resultados reales
           </p>
           <div className="w-full px-6 gap-4 flex flex-col lg:flex-row justify-center items-center text-white ">
@@ -164,7 +164,7 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div className="bg-primaryBlue shadow-2xl shadow-primaryBlue/80 rounded lg:h-[40vh] lg:w-1/2 flex flex-col justify-center space-y-4 text-start p-4">
+            <div className="hidden lg:flex  flex-col justify-center bg-primaryBlue shadow-2xl shadow-primaryBlue/80 rounded lg:h-[40vh] lg:w-1/2  space-y-4 text-start p-4">
               <div className="flex items-start">
                 <div className="bg-white p-1 lg:p-2 rounded-full mr-3 mt-2">
                   <svg
@@ -245,12 +245,12 @@ export default function HomePage() {
               </div>
             </div>
           </div>
-          <div className="w-full mt-8 lg:mt-[10vh]">
+          <div className="w-full mt-8 2xl:mt-[10vh]">
             <Link
               href="https://universalappkioskos.vercel.app/login"
               target="_blank"
             >
-              <button className=" bg-primaryBlue w-auto text-sm transition-all duration-300 hover:scale-105 text-white py-4 px-8 rounded-[8px] hover:bg-primaryBlue/90">
+              <button className=" bg-primaryBlue w-auto text-xs lg:text-sm transition-all duration-300 hover:scale-105 text-white py-2 2xl:py-4 px-4 2xl:px-8 rounded-[8px] hover:bg-primaryBlue/90">
                 Click Aquí para probar la demo x 7 días
               </button>
             </Link>
@@ -297,7 +297,7 @@ export default function HomePage() {
             <p className="text-primaryBlue text-xxs lg:text-xs lg:leading-[20.8px] font-medium">
               Nuestros clientes
             </p>
-            <h1 className="text-lg lg:text-xl font-semibold lg:leading-[70.4px] text-grayMedium">
+            <h1 className="text-md lg:text-xl font-semibold lg:leading-[70.4px] text-grayMedium">
               Clientes que confían en nosotros
             </h1>
           </div>

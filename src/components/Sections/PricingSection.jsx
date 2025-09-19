@@ -61,7 +61,7 @@ const PricingSection = () => {
           <p className="text-primaryBlue text-sm font-medium mb-2">
             Precios transparentes
           </p>
-          <h2 className="text-md lg:text-lg font-semibold lg:leading-[70.4px] text-grayMedium">
+          <h2 className="text-md lg:text-md lg:text-xl font-semibold lg:leading-[70.4px] text-grayMedium">
             Planes que se adaptan a tu negocio
           </h2>
           <p className="text-grayMedium text-xs max-w-2xl mx-auto">
