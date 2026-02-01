@@ -12,7 +12,7 @@ const PricingSection = () => {
   const plans = [
     {
       name: "Plan Mensual",
-      price: "ARS $36.300",
+      price: "ARS $49.000",
       description: "Ideal para probar el sistema",
       features: [
         "Acceso a todas las características",
@@ -26,7 +26,7 @@ const PricingSection = () => {
     },
     {
       name: "Plan Anual",
-      price: "ARS $338.800",
+      price: "ARS $457.000",
       description: "Ahorra 2 meses con el plan anual",
       features: [
         "Acceso a todas las características",
@@ -40,13 +40,13 @@ const PricingSection = () => {
     },
     {
       name: "Pago Único",
-      price: "ARS $677.600",
+      price: "ARS $911.000",
       description: "Acceso permanente al sistema",
       features: [
         "Acceso a todas las características",
         "Sin limitaciones de uso",
         "Soporte prioritario por WhatsApp",
-        "Actualizaciones por 2 años",
+        "Actualizaciones incluidas",
         "Sin compromiso de permanencia",
       ],
       cta: "Invertir una vez",
@@ -61,7 +61,7 @@ const PricingSection = () => {
           <p className="text-primaryBlue text-sm font-medium mb-2">
             Precios transparentes
           </p>
-          <h2 className="text-md lg:text-md lg:text-xl font-semibold lg:leading-[70.4px] text-grayMedium">
+          <h2 className="text-md lg:text-xl font-semibold lg:leading-[70.4px] text-grayMedium">
             Planes que se adaptan a tu negocio
           </h2>
           <p className="text-grayMedium text-xs max-w-2xl mx-auto">
@@ -132,7 +132,7 @@ const PricingSection = () => {
                   href={generateWhatsAppLink(
                     plan.name,
                     plan.price,
-                    plan.description
+                    plan.description,
                   )}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -147,16 +147,6 @@ const PricingSection = () => {
               </div>
             </div>
           ))}
-        </div>
-
-        <div className="mt-12 text-center">
-          <div className="mt-6 flex flex-wrap justify-center gap-4 text-xs text-gray-500">
-            <span>✅ Sin cargos ocultos</span>
-            <span>✅ Sin limitaciones</span>
-            <span>✅ Cancelación gratuita</span>
-            <span>✅ Actualizaciones incluidas</span>
-            <span>✅ Soporte 24/7</span>
-          </div>
         </div>
       </div>
     </section>

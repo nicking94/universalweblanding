@@ -75,11 +75,11 @@ export default function HomePage() {
             </span>{" "}
             más fácil
           </h1>
-          <p className="mb-2 lg:mb-8 text-xs lg:text-sm italic ">
+          <p className="mb-2 lg:mb-8 text-xs lg:text-sm italic text-grayMedium ">
             Gestión simple, resultados reales
           </p>
-          <div className="w-full px-6 gap-4 flex flex-col lg:flex-row justify-center items-center text-white ">
-            <div className="bg-primaryBlue shadow-2xl shadow-primaryBlue/80 rounded lg:h-[40vh] lg:w-1/2 flex flex-col justify-center space-y-4 text-start p-4">
+          <div className="w-full px-8 lg:px-40 gap-4 flex flex-col lg:flex-row justify-center items-center text-white ">
+            <div className="bg-primaryBlue/60 shadow-2xl shadow-primaryBlue/80 rounded lg:h-[40vh] lg:w-1/2 flex flex-col justify-center space-y-4 text-start p-4">
               <div className="flex items-start">
                 <div className="bg-white p-1 lg:p-2 rounded-full mr-3 mt-2">
                   <svg
@@ -164,7 +164,7 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div className="hidden lg:flex  flex-col justify-center bg-primaryBlue shadow-2xl shadow-primaryBlue/80 rounded lg:h-[40vh] lg:w-1/2  space-y-4 text-start p-4">
+            <div className="hidden lg:flex  flex-col justify-center bg-primaryBlue/60 shadow-2xl shadow-primaryBlue/80 rounded lg:h-[40vh] lg:w-1/2  space-y-4 text-start p-4">
               <div className="flex items-start">
                 <div className="bg-white p-1 lg:p-2 rounded-full mr-3 mt-2">
                   <svg
