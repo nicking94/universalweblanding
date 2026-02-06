@@ -14,7 +14,7 @@
     "aos": "^2.3.4",
     "framer-motion": "^12.4.10",
     "motion": "^12.4.10",
-    "next": "15.1.6",
+    "next": "15.1.11",
     "react": "^19.0.0",
     "react-calendly": "^4.3.1",
     "react-dom": "^19.0.0",
